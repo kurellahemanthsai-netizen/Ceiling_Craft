@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>About</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     CEILINGCRAFT
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="CeilingCraft Home">
+            <img src="images/logo.png" alt="CeilingCraft Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="ceiling">Ceiling</span
+              ><span class="craft">Craft</span>
+            </h1>
+
+            <p>Specialty Ceiling Services</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="index.html" class="avtive">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             OUR WORK
+        ================================================== -->
+
+            <!-- <li>
+
+          <a href="our-work.html">
+
+            <span>Our Work</span>
+
+          </a>
+
+        </li> -->
+
+            <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+            <li>
+              <a href="process.html">
+                <span>Process</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             PRICING
+        ================================================== -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- =================================================
+           MOBILE ESTIMATE BUTTON
+      ================================================== -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- =================================================
+           RTL TOGGLE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DARK MODE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DESKTOP FREE ESTIMATE BUTTON
+      ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- =================================================
+           MOBILE MENU
+      ================================================== -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     ABOUT PAGE — HERO
+     ========================================================= -->
+
+    <section class="about-hero" id="about-hero">
+      <!-- Background Image -->
+      <div class="about-hero-background">
+        <img
+          src="images/hero-3.jpeg"
+          alt="Modern residential interior with a refined ceiling"
+        />
+      </div>
+
+      <!-- Dark Overlay -->
+      <div class="about-hero-overlay"></div>
+
+      <!-- Main Content -->
+      <div class="about-hero-container">
+        <div class="about-hero-content">
+          <!-- Eyebrow -->
+          <div class="about-hero-eyebrow">
+            <span class="about-eyebrow-line"></span>
+            <span>About CeilingCraft</span>
+          </div>
+
+          <!-- Heading -->
+          <h1 class="about-hero-title">
+            We Look <span>Up.</span>
+            <br />
+            We See the Difference.
+          </h1>
+
+          <!-- Description -->
+          <p class="about-hero-description">
+            CeilingCraft specializes in transforming outdated, textured and
+            imperfect ceilings into cleaner, smoother and more refined surfaces
+            designed to complement the spaces below.
+          </p>
+
+          <!-- Actions -->
+          <div class="about-hero-actions">
+            <a href="contact.html#estimate" class="about-hero-primary">
+              <span>Get a Free Estimate</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#our-story" class="about-hero-secondary">
+              <span>Explore Our Story</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Information -->
+      <div class="about-hero-bottom">
+        <div class="about-hero-location">
+          <span class="about-location-dot"></span>
+          <span>Residential Ceiling Specialists</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT PAGE — SECTION 2
+     OUR STORY
+     ========================================================= -->
+
+    <section class="about-story-section" id="our-story">
+      <div class="about-story-container">
+        <!-- =====================================================
+         CENTERED SECTION HEADER
+         ===================================================== -->
+
+        <div class="about-story-header">
+          <div class="about-story-eyebrow">
+            <span></span>
+            <p>Our Story</p>
+          </div>
+
+          <h2 class="about-story-title">
+            More Than Ceiling Work.
+            <span>A Better Way to Finish a Room.</span>
+          </h2>
+
+          <p class="about-story-intro">
+            The details above can change the way an entire room feels. We focus
+            on creating ceiling surfaces that feel cleaner, smoother and more
+            intentional.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         IMAGE + CONTENT
+         ===================================================== -->
+
+        <div class="about-story-layout">
+          <!-- LEFT IMAGE -->
+          <div class="about-story-image">
+            <img
+              src="images/our-story.jpeg"
+              alt="Refined residential interior with a detailed ceiling finish"
+              loading="lazy"
+            />
+
+            <div class="about-story-image-overlay"></div>
+
+            <div class="about-story-image-label">
+              <span>01</span>
+              <strong>Built Around the Details</strong>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="about-story-content">
+            <span class="about-story-content-eyebrow"> Why CeilingCraft </span>
+
+            <h3 class="about-story-content-title">
+              A ceiling deserves the same attention as every other part of your
+              home.
+            </h3>
+
+            <p class="about-story-description">
+              CeilingCraft was built around a simple idea: the ceiling deserves
+              thoughtful attention from the first assessment through the final
+              finish.
+            </p>
+
+            <p class="about-story-description">
+              By focusing specifically on ceiling removal, repair and finishing,
+              we create surfaces that feel cleaner, more refined and naturally
+              connected to the space around them.
+            </p>
+
+            <!-- =================================================
+             THREE PRINCIPLES
+             ================================================= -->
+
+            <div class="about-story-principles">
+              <!-- 01 -->
+              <div class="about-story-principle">
+                <div class="principle-number">01</div>
+
+                <div class="principle-content">
+                  <h4>Attention to Detail</h4>
+
+                  <p>
+                    Every surface receives careful consideration from
+                    preparation through the final finish.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 02 -->
+              <div class="about-story-principle">
+                <div class="principle-number">02</div>
+
+                <div class="principle-content">
+                  <h4>Residential Focus</h4>
+
+                  <p>
+                    Our approach is designed around the needs of residential
+                    spaces and the people who live in them.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 03 -->
+              <div class="about-story-principle">
+                <div class="principle-number">03</div>
+
+                <div class="principle-content">
+                  <h4>Refined Results</h4>
+
+                  <p>
+                    We aim for a cleaner, smoother ceiling that naturally
+                    complements the entire room.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT SECTION 3 — THE CEILINGCRAFT DIFFERENCE
+     ========================================================= -->
+
+    <section class="difference-section" id="ceilingcraft-difference">
+      <div class="difference-container">
+        <!-- SECTION HEADER -->
+        <div class="difference-header">
+          <div class="difference-eyebrow">
+            <span></span>
+            <p>THE CEILINGCRAFT DIFFERENCE</p>
+          </div>
+
+          <h2 class="difference-title">
+            What Makes the Difference
+            <span>Is Often Above You.</span>
+          </h2>
+
+          <p class="difference-intro">
+            Better ceiling work starts with understanding the surface,
+            respecting the space and paying attention to the finish.
+          </p>
+        </div>
+
+        <!-- DIFFERENCE CARDS -->
+        <div class="difference-grid">
+          <!-- CARD 01 -->
+          <article class="difference-card">
+            <div class="difference-card-image">
+              <img
+                src="images/focoused.jpeg"
+                alt="Specialized ceiling work in a residential interior"
+                loading="lazy"
+              />
+
+              <div class="difference-image-overlay"></div>
+
+              <span class="difference-number">01</span>
+            </div>
+
+            <div class="difference-card-content">
+              <span class="difference-label"> SPECIALIZED FOCUS </span>
+
+              <h3>Specialized Focus</h3>
+
+              <p>
+                Our work is centered around ceilings, allowing every project to
+                receive focused attention from assessment through finishing.
+              </p>
+            </div>
+          </article>
+
+          <!-- CARD 02 -->
+          <article class="difference-card">
+            <div class="difference-card-image">
+              <img
+                src="images/careful.jpeg"
+                alt="Careful preparation of a residential ceiling"
+                loading="lazy"
+              />
+
+              <div class="difference-image-overlay"></div>
+
+              <span class="difference-number">02</span>
+            </div>
+
+            <div class="difference-card-content">
+              <span class="difference-label"> CAREFUL PREPARATION </span>
+
+              <h3>Careful Preparation</h3>
+
+              <p>
+                A refined result starts with proper preparation. We focus on the
+                existing surface before moving toward the final finish.
+              </p>
+            </div>
+          </article>
+
+          <!-- CARD 03 -->
+          <article class="difference-card">
+            <div class="difference-card-image">
+              <img
+                src="images/complete-transformation.jpeg"
+                alt="Finished smooth ceiling transformation"
+                loading="lazy"
+              />
+
+              <div class="difference-image-overlay"></div>
+
+              <span class="difference-number">03</span>
+            </div>
+
+            <div class="difference-card-content">
+              <span class="difference-label"> COMPLETE TRANSFORMATION </span>
+
+              <h3>Complete Transformation</h3>
+
+              <p>
+                Removal, repair and finishing come together to create a ceiling
+                that feels naturally integrated with the rest of the space.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT SECTION 4 — WHAT WE SPECIALIZE IN
+     ========================================================= -->
+
+    <section class="specialize-section" id="specialize">
+      <div class="specialize-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <div class="specialize-header">
+          <div class="specialize-eyebrow">
+            <span></span>
+            <p>WHAT WE SPECIALIZE IN</p>
+          </div>
+
+          <h2 class="specialize-title">
+            Focused Expertise.
+            <span>Refined Results.</span>
+          </h2>
+
+          <p class="specialize-intro">
+            Ceiling services designed around the details that influence the
+            finished space, from removing outdated textures to creating a clean
+            and polished final surface.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         CONTENT + IMAGE LAYOUT
+         ===================================================== -->
+
+        <div class="specialize-layout">
+          <!-- ===================================================
+           LEFT — SPECIALTY POINTS
+           =================================================== -->
+
+          <div class="specialize-content">
+            <div class="specialize-points">
+              <!-- POINT 01 -->
+              <article class="specialize-point">
+                <div class="specialize-point-number">01</div>
+
+                <div class="specialize-point-content">
+                  <h3>Popcorn Ceiling Removal</h3>
+
+                  <p>
+                    Remove outdated popcorn texture and create a cleaner,
+                    smoother ceiling surface.
+                  </p>
+                </div>
+
+                <div class="specialize-point-arrow">
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </article>
+
+              <!-- POINT 02 -->
+              <article class="specialize-point">
+                <div class="specialize-point-number">02</div>
+
+                <div class="specialize-point-content">
+                  <h3>Texture Removal</h3>
+
+                  <p>
+                    Carefully remove existing textures and prepare the surface
+                    for a refined finish.
+                  </p>
+                </div>
+
+                <div class="specialize-point-arrow">
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </article>
+
+              <!-- POINT 03 -->
+              <article class="specialize-point">
+                <div class="specialize-point-number">03</div>
+
+                <div class="specialize-point-content">
+                  <h3>Ceiling Repair</h3>
+
+                  <p>
+                    Address imperfections and surface issues before moving
+                    toward the final finish.
+                  </p>
+                </div>
+
+                <div class="specialize-point-arrow">
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </article>
+
+              <!-- POINT 04 -->
+              <article class="specialize-point">
+                <div class="specialize-point-number">04</div>
+
+                <div class="specialize-point-content">
+                  <h3>Repainting &amp; Finishing</h3>
+
+                  <p>
+                    Complete the transformation with a consistent, polished
+                    ceiling finish.
+                  </p>
+                </div>
+
+                <div class="specialize-point-arrow">
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ===================================================
+           RIGHT — LARGE IMAGE
+           =================================================== -->
+
+          <div class="specialize-visual">
+            <div class="specialize-image">
+              <img
+                src="images/specialize.jpeg"
+                alt="Refined residential interior with a smooth finished ceiling"
+                loading="lazy"
+              />
+
+              <div class="specialize-image-overlay"></div>
+
+              <div class="specialize-image-label">
+                <span>04</span>
+
+                <strong> Focused Expertise </strong>
+              </div>
+            </div>
+
+            <!-- IMAGE META -->
+            <div class="specialize-image-meta">
+              <span> CEILINGCRAFT </span>
+
+              <span> REFINED FROM ABOVE </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT SECTION 5 — OUR WORK PHILOSOPHY
+     ========================================================= -->
+
+    <section class="philosophy-section" id="work-philosophy">
+      <div class="philosophy-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <div class="philosophy-header">
+          <div class="philosophy-eyebrow">
+            <span></span>
+            <p>OUR WORK PHILOSOPHY</p>
+          </div>
+
+          <h2 class="philosophy-title">
+            Good Work Is in the
+            <span>Details.</span>
+          </h2>
+
+          <p class="philosophy-intro">
+            Prepare carefully. Work precisely. Finish beautifully.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         PHILOSOPHY ITEMS
+         ===================================================== -->
+
+        <div class="philosophy-list">
+          <!-- ===================================================
+           ITEM 01
+           =================================================== -->
+
+          <article class="philosophy-item">
+            <div class="philosophy-number">01</div>
+
+            <div class="philosophy-content">
+              <span class="philosophy-label"> CARE </span>
+
+              <h3>Consider the Space</h3>
+
+              <p>
+                We approach every residential project with careful consideration
+                for the surrounding space, architectural character, and details
+                that make a room feel complete. From assessing the existing
+                surface to preparing, restoring, and refining the ceiling, every
+                stage is thoughtfully planned. Our focus is on creating a
+                smooth, consistent finish that integrates naturally with your
+                home and enhances the character of the entire space.
+              </p>
+            </div>
+
+            <div class="philosophy-accent"></div>
+          </article>
+
+          <!-- ===================================================
+           ITEM 02
+           =================================================== -->
+
+          <article class="philosophy-item">
+            <div class="philosophy-number">02</div>
+
+            <div class="philosophy-content">
+              <span class="philosophy-label"> PRECISION </span>
+
+              <h3>Work With Purpose</h3>
+
+              <p>
+                We focus on the surface details that shape the finished
+                appearance of your space. From careful preparation and texture
+                removal to surface refinement and the final finish, every stage
+                is approached with precision and attention to detail. The result
+                is a cleaner, smoother ceiling that feels naturally integrated
+                with the character and design of your home.
+              </p>
+            </div>
+
+            <div class="philosophy-accent"></div>
+          </article>
+
+          <!-- ===================================================
+           ITEM 03
+           =================================================== -->
+
+          <article class="philosophy-item">
+            <div class="philosophy-number">03</div>
+
+            <div class="philosophy-content">
+              <span class="philosophy-label"> CONSISTENCY </span>
+
+              <h3>Finish Beautifully</h3>
+
+              <p>
+                We aim for a finished ceiling that feels clean, consistent, and
+                naturally connected to the rest of the room. From careful
+                surface preparation to the final finishing touches, every detail
+                is considered to create a smooth, refined result that
+                complements the architecture, lighting, and overall character of
+                your space.
+              </p>
+            </div>
+
+            <div class="philosophy-accent"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CEILINGCRAFT — FINAL CTA
+     ========================================================= -->
+
+    <section class="final-cta-section" id="final-cta">
+      <div class="final-cta-wrapper">
+        <div class="final-cta-inner">
+          <!-- Decorative circles -->
+          <div class="cta-circle cta-circle-top"></div>
+          <div class="cta-circle cta-circle-bottom"></div>
+
+          <!-- CTA CONTENT -->
+          <div class="final-cta-content">
+            <!-- Eyebrow -->
+            <div class="final-cta-eyebrow">
+              <span></span>
+              <p>READY TO TRANSFORM?</p>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="final-cta-title">
+              Let's Rethink Your
+              <span>Ceiling.</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="final-cta-description">
+              A smoother, more refined ceiling can change the way your entire
+              space looks and feels. Let's create a finish that works
+              beautifully with your home.
+            </p>
+
+            <!-- Buttons -->
+            <div class="final-cta-actions">
+              <a href="contact.html#estimate" class="final-cta-primary">
+                <span>Get a Free Estimate</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+              <a href="tel:+10000000000" class="final-cta-secondary">
+                <i data-lucide="phone"></i>
+                <span>Call Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CEILINGCRAFT
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="CeilingCraft Home">
+              <img src="images/logo.png" alt="CeilingCraft Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>Specialty Ceiling Services</p>
+            </div>
+          </div>
+
+          <!-- BRAND DESCRIPTION -->
+
+          <p class="footer-about">
+            CeilingCraft specializes in popcorn ceiling and texture removal,
+            ceiling repairs, texture matching, and professional repainting to
+            create smooth, clean, beautifully finished spaces.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- <li>
+          <a href="our-work.html">Our Work</a>
+        </li> -->
+            <li>
+              <a href="process.html">Process</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#popcorn-removal">
+                Popcorn Ceiling Removal
+              </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Texture Removal </a>
+            </li>
+
+            <li>
+              <a href="services.html#texture-matching"> Texture Matching </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Ceiling Repair </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Repainting & Finishing </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Removal Process </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CEILING SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aditional Services</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming soon </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing Guide </a>
+            </li>
+
+            <li>
+              <a href="process.html"> Our Process </a>
+            </li>
+
+            <li>
+              <a href="about.html"> Our Approach </a>
+            </li>
+
+            <li>
+              <a href="contact.html#estimate"> Request an Estimate </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +91 (040) 123-0897 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@ceilingcraft.com"> info@ceilingcraft.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#estimate" class="footer-book-btn">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="ceiling">Ceiling</span><span class="craft">Craft</span>.
+          All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="global.js"></script>
+  </body>
+</html>

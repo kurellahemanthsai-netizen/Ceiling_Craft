@@ -1,0 +1,2130 @@
+
+/* =========================================================
+   ROOT VARIABLES
+   ========================================================= */
+
+:root {
+
+  /* =======================================================
+     BRAND COLORS
+     THESE NEVER CHANGE
+     ======================================================= */
+
+  /* --primary: #B8864A;
+  --secondary: #63858A; */
+
+  
+  --primary:#B8864A;
+  --secondary:#63858A;
+
+
+  /* =======================================================
+     LIGHT MODE
+     ======================================================= */
+
+  --site-bg: #F7F5F0;
+
+  --surface: #FFFFFF;
+
+  --surface-hover: rgba(99, 133, 138, 0.08);
+
+  --text: #252525;
+
+  --muted: #77736C;
+
+  --border: #DEDAD2;
+
+  --footer-text: #252525;
+
+  --footer-muted: #77736C;
+
+
+  /* =======================================================
+     SHADOWS
+     ======================================================= */
+
+  --header-shadow:
+    0 6px 25px rgba(37, 37, 37, 0.06);
+
+  --dropdown-shadow:
+    0 18px 45px rgba(37, 37, 37, 0.12);
+
+
+  /* =======================================================
+     TRANSITION
+     ======================================================= */
+
+  --transition: 0.25s ease;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  background: var(--site-bg);
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+ul {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+
+button,
+input,
+textarea,
+select {
+
+  font-family: manrope;
+}
+
+
+button {
+
+  border: none;
+
+  outline: none;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  width: 100%;
+
+  height: 84px;
+
+  z-index: 1000;
+
+  background: var(--site-bg);
+
+  border-bottom: 1px solid var(--border);
+
+  box-shadow: var(--header-shadow);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+   ========================================================= */
+
+.header-container {
+
+  width: 100%;
+
+  max-width: 1440px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 0 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+
+  direction: ltr;
+}
+
+
+.logo > a {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.logo img {
+
+  width: 62px;
+
+  height: 60px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================================
+   LOGO TEXT
+   ========================================================= */
+
+.logo-text {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+
+.logo-text h1 {
+
+  margin: 0;
+
+  font-size: 26px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -0.7px;
+}
+
+
+/* =========================================================
+   CEILINGCRAFT BRAND COLORS
+   ========================================================= */
+
+.logo-text .ceiling {
+
+  color: var(--primary);
+}
+
+
+.logo-text .craft {
+
+  color: var(--secondary);
+}
+
+
+.logo-text p {
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 7.5px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navbar {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 1;
+
+  margin: 0;
+}
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 27px;
+}
+
+
+.nav-links > li {
+
+  position: relative;
+}
+
+
+/* =========================================================
+   MAIN NAVIGATION LINKS
+   ========================================================= */
+
+.nav-links > li > a {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 31px 0;
+
+  color: var(--text);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+
+.nav-links > li > a:hover {
+
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   NAVIGATION UNDERLINE
+   ========================================================= */
+
+.nav-links > li > a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 29px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--secondary);
+
+  border-radius: 50px;
+
+  transition: width 0.25s ease;
+}
+
+
+.nav-links > li > a:hover::after {
+
+  width: 100%;
+}
+
+
+.nav-links a.active {
+  color: var(--primary);
+  /* text-decoration: underline; */
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+body.dark-mode .nav-links a.active {
+  color: var(--primary);
+  /* text-decoration: underline; */
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+
+/* =========================================================
+   NAVIGATION ICONS
+   ========================================================= */
+
+.nav-links svg {
+
+  width: 15px;
+
+  height: 15px;
+
+  stroke-width: 2;
+}
+
+
+/* =========================================================
+   HOME DROPDOWN
+   ========================================================= */
+
+.dropdown-menu {
+
+  position: absolute;
+
+  top: 70px;
+
+  left: -18px;
+
+  width: 270px;
+
+  padding: 8px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+
+  box-shadow: var(--dropdown-shadow);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
+
+  z-index: 1100;
+}
+
+
+/* =========================================================
+   DESKTOP DROPDOWN HOVER
+   ========================================================= */
+
+.dropdown:hover .dropdown-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   DROPDOWN ITEMS
+   ========================================================= */
+
+.dropdown-menu li {
+
+  width: 100%;
+}
+
+
+.dropdown-menu li a {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border-radius: 9px;
+
+  color: var(--text);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+
+.dropdown-menu li a:hover {
+
+  background:
+    rgba(184, 134, 74, 0.10);
+
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   DROPDOWN ICONS
+   ========================================================= */
+
+.dropdown-menu svg {
+
+  width: 17px;
+
+  height: 17px;
+
+  color: var(--secondary);
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+   ========================================================= */
+
+.header-buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ICON BUTTON
+   ========================================================= */
+
+.icon-btn {
+
+  width: 40px;
+
+  height: 40px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--secondary);
+
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  color: var(--secondary);
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+
+.icon-btn:hover {
+
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-2px);
+}
+
+
+.icon-btn svg {
+
+  width: 18px;
+
+  height: 18px;
+
+  stroke-width: 2;
+}
+
+
+/* =========================================================
+   FREE ESTIMATE BUTTON
+   ========================================================= */
+
+.book-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 40px;
+
+  padding: 10px 17px;
+
+  border-radius: 8px;
+
+  background: var(--primary);
+
+  color: #FFFFFF;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 7px 18px rgba(184, 134, 74, 0.18);
+
+  transition: var(--transition);
+}
+
+
+.book-btn:hover {
+
+  background: var(--secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(99, 133, 138, 0.20);
+}
+
+
+.book-btn svg {
+
+  width: 15px;
+
+  height: 15px;
+}
+
+
+/* =========================================================
+   MOBILE BOOK BUTTON
+   ========================================================= */
+
+.mobile-book {
+
+  display: none;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.menu-btn {
+
+  display: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+
+  margin-top: 80px;
+
+  background: var(--site-bg);
+
+  color: var(--footer-text);
+
+  border-top: 1px solid var(--border);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================================================
+   FOOTER CONTAINER
+   ========================================================= */
+
+.footer-container {
+
+  width: 100%;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding: 70px 55px 45px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.65fr
+    1fr
+    1.2fr
+    1.2fr
+    1.35fr;
+
+  gap: 42px;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+   ========================================================= */
+
+.footer-logo {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 9px;
+
+  direction: ltr;
+
+  width: max-content;
+}
+
+
+.footer-logo > a {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.footer-logo img {
+
+  width: 62px;
+
+  height: 60px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================================
+   FOOTER BRANDING
+   ========================================================= */
+
+.footer-branding {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+
+.footer-branding h1 {
+
+  margin: 0;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -0.5px;
+}
+
+
+.footer-branding .ceiling {
+
+  color: var(--primary);
+}
+
+
+.footer-branding .craft {
+
+  color: var(--secondary);
+}
+
+
+.footer-branding p {
+
+  margin-top: 5px;
+
+  color: var(--footer-muted);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FOOTER ABOUT
+   ========================================================= */
+
+.footer-about {
+
+  max-width: 380px;
+
+  margin-top: 18px;
+
+  color: var(--footer-muted);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+   ========================================================= */
+
+.social-media {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+
+.social-media a {
+
+  width: 39px;
+
+  height: 39px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--secondary);
+
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  color: var(--secondary);
+
+  transition: var(--transition);
+}
+
+
+.social-media a:hover {
+
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-3px);
+}
+
+
+.social-media svg {
+
+  width: 17px;
+
+  height: 17px;
+
+  stroke: currentColor;
+
+  fill: none;
+
+  stroke-width: 2;
+}
+
+
+/* =========================================================
+   FOOTER COLUMN
+   ========================================================= */
+
+.footer-col h3 {
+
+  margin-bottom: 21px;
+
+  color: var(--primary);
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.footer-col ul {
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+.footer-col li {
+
+  margin-bottom: 12px;
+
+  color: var(--footer-muted);
+
+  font-size: 14px;
+}
+
+
+.footer-col li a {
+
+  display: inline-block;
+
+  color: var(--footer-muted);
+
+  transition: var(--transition);
+}
+
+
+.footer-col li a:hover {
+
+  color: var(--secondary);
+
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   FOOTER CONTACT
+   ========================================================= */
+
+.footer-contact li {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+
+.footer-contact li svg {
+
+  width: 17px;
+
+  height: 17px;
+
+  min-width: 17px;
+
+  margin-top: 3px;
+
+  color: var(--secondary);
+
+  stroke-width: 2;
+
+  flex-shrink: 0;
+}
+
+
+.footer-contact li a {
+
+  color: var(--footer-muted);
+
+  transition: var(--transition);
+}
+
+
+.footer-contact li a:hover {
+
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   FOOTER ESTIMATE BUTTON
+   ========================================================= */
+
+.footer-book-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 9px;
+
+  padding: 11px 17px;
+
+  border-radius: 8px;
+
+  background: var(--primary);
+
+  color: #FFFFFF;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+
+.footer-book-btn:hover {
+
+  background: var(--secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-2px);
+}
+
+
+.footer-book-btn svg {
+
+  width: 15px;
+
+  height: 15px;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.footer-bottom {
+
+  width: 100%;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding: 22px 55px;
+
+  border-top: 1px solid var(--border);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+.footer-bottom p {
+
+  color: var(--footer-muted);
+
+  font-size: 13px;
+}
+
+
+.footer-bottom .ceiling {
+
+  color: var(--secondary);
+}
+
+
+.footer-bottom .craft {
+
+  color: var(--primary);
+}
+
+
+.footer-bottom-links {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+.footer-bottom-links a {
+
+  color: var(--footer-muted);
+
+  font-size: 13px;
+
+  transition: var(--transition);
+}
+
+
+.footer-bottom-links a:hover {
+
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.top-btn {
+
+  width: 40px !important;
+
+  height: 40px !important;
+
+  display: inline-flex !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  color: #FFFFFF !important;
+
+  transition: var(--transition);
+}
+
+
+.top-btn:hover {
+
+  background: var(--secondary);
+
+  color: #FFFFFF !important;
+
+  transform: translateY(-3px);
+}
+
+
+.top-btn svg {
+
+  width: 17px;
+
+  height: 17px;
+}
+
+
+/* =========================================================
+   DARK MODE
+   =========================================================
+
+   IMPORTANT:
+   PRIMARY AND SECONDARY NEVER CHANGE.
+   ========================================================= */
+
+body.dark-mode {
+
+  /* =========================================
+     FIXED BRAND COLORS
+     ========================================= */
+
+  --primary: #B8864A;
+
+  --secondary: #63858A;
+
+
+  /* =========================================
+     DARK MODE SUPPORT COLORS
+     ========================================= */
+
+  --site-bg: #171A1B;
+
+  --surface: #222627;
+
+  --surface-hover:
+    rgba(99, 133, 138, 0.12);
+
+  --text: #F2F0EA;
+
+  --muted: #A9A59D;
+
+  --border:
+    rgba(242, 240, 234, 0.12);
+
+  --footer-text: #F2F0EA;
+
+  --footer-muted: #A9A59D;
+
+
+  --header-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.25);
+
+  --dropdown-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   DARK HEADER + FOOTER
+   ========================================================= */
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+
+  background: var(--site-bg);
+
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   DARK NAVIGATION
+   ========================================================= */
+
+body.dark-mode .nav-links > li > a {
+
+  color: var(--text);
+}
+
+
+body.dark-mode .nav-links > li > a:hover {
+
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   DARK DROPDOWN
+   ========================================================= */
+
+body.dark-mode .dropdown-menu {
+
+  background: var(--surface);
+
+  border-color: var(--border);
+}
+
+
+body.dark-mode .dropdown-menu li a {
+
+  color: var(--text);
+}
+
+
+body.dark-mode .dropdown-menu li a:hover {
+
+  background:
+    rgba(184, 134, 74, 0.12);
+
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   DARK ICON BUTTON
+   ========================================================= */
+
+body.dark-mode .icon-btn {
+
+  background: var(--surface);
+
+  border-color: var(--secondary);
+
+  color: var(--secondary);
+}
+
+
+body.dark-mode .icon-btn:hover {
+
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: #FFFFFF;
+}
+
+
+/* =========================================================
+   DARK SOCIAL
+   ========================================================= */
+
+body.dark-mode .social-media a {
+
+  background: var(--surface);
+
+  border-color: var(--secondary);
+
+  color: var(--secondary);
+}
+
+
+body.dark-mode .social-media a:hover {
+
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: #FFFFFF;
+}
+
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl {
+
+  direction: rtl;
+}
+
+
+body.rtl .header-container {
+
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL LOGO
+   ========================================================= */
+
+body.rtl .logo {
+
+  direction: ltr;
+
+  flex-direction: row;
+}
+
+
+body.rtl .logo > .logo-text {
+
+  order: 1;
+}
+
+
+body.rtl .logo > a {
+
+  order: 2;
+}
+
+
+/* =========================================================
+   RTL FOOTER
+   ========================================================= */
+
+body.rtl .footer-container {
+
+  direction: rtl;
+}
+
+
+body.rtl .footer-logo {
+
+  direction: ltr;
+
+  flex-direction: row;
+
+  align-items: center;
+}
+
+
+body.rtl .footer-logo > .footer-branding {
+
+  order: 1;
+}
+
+
+body.rtl .footer-logo > a {
+
+  order: 2;
+}
+
+
+body.rtl .footer-branding {
+
+  direction: ltr;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   RTL FOOTER BOTTOM
+   ========================================================= */
+
+body.rtl .footer-bottom {
+
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL DROPDOWN
+   ========================================================= */
+
+body.rtl .dropdown-menu {
+
+  left: auto;
+
+  right: -18px;
+}
+
+
+/* =========================================================
+   RTL FOOTER LINK HOVER
+   ========================================================= */
+
+body.rtl .footer-col li a:hover {
+
+  transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   HAMBURGER MENU CLICK AREA FIX
+   ========================================================= */
+
+.menu-btn {
+  position: relative;
+  z-index: 1200;
+  pointer-events: auto;
+  cursor: pointer;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 40px;
+}
+
+/* Make the entire button clickable, not only the SVG area */
+.menu-btn svg,
+.menu-btn i {
+  pointer-events: none;
+}
+
+/* Keep the header actions above other header elements */
+.header-buttons {
+  position: relative;
+  z-index: 1200;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+  .header-buttons {
+    position: relative;
+    z-index: 1200;
+  }
+
+  .menu-btn {
+    display: inline-flex;
+    position: relative;
+    z-index: 1201;
+
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+}
+
+/* Small mobile */
+@media (max-width: 600px) {
+
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+}
+
+/* Very small mobile */
+@media (max-width: 400px) {
+
+  .menu-btn {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .header-container {
+
+    padding: 0 28px;
+  }
+
+
+  .nav-links {
+
+    gap: 18px;
+  }
+
+
+  .nav-links > li > a {
+
+    font-size: 13px;
+  }
+
+
+  .footer-container {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    padding: 60px 35px 40px;
+
+    gap: 42px;
+  }
+
+
+  .footer-bottom {
+
+    padding-left: 35px;
+
+    padding-right: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .site-header {
+
+    height: 72px;
+  }
+
+
+  .header-container {
+
+    position: relative;
+
+    padding: 0 22px;
+  }
+
+
+  .header-buttons {
+
+    margin-left: auto;
+
+    flex: 0 0 auto;
+  }
+
+
+  /* =======================================================
+     MOBILE NAVBAR
+     ======================================================= */
+
+  .navbar {
+
+    position: absolute;
+
+    top: 72px;
+
+    left: 0;
+
+    right: 0;
+
+    width: 100%;
+
+    display: none;
+
+    margin: 0;
+
+    background: var(--site-bg);
+
+    border-top: 1px solid var(--border);
+
+    box-shadow:
+      0 15px 30px rgba(37, 37, 37, 0.10);
+  }
+
+
+  .navbar.active {
+
+    display: block;
+  }
+
+
+  /* =======================================================
+     MOBILE NAV LINKS
+     ======================================================= */
+
+  .nav-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    width: 100%;
+
+    gap: 0;
+
+    padding: 8px 25px 0;
+  }
+
+
+  .nav-links > li {
+
+    width: 100%;
+  }
+
+
+  .nav-links > li > a {
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 15px;
+  }
+
+
+  .nav-links > li > a::after {
+
+    display: none;
+  }
+
+
+  /* =======================================================
+     MOBILE HOME DROPDOWN
+     ======================================================= */
+
+  .dropdown-menu {
+
+    position: static;
+
+    display: none;
+
+    width: 100%;
+
+    padding: 4px 0;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: none;
+
+    background:
+      rgba(99, 133, 138, 0.06);
+  }
+
+
+  .dropdown.active .dropdown-menu {
+
+    display: block;
+  }
+
+
+  .dropdown-menu li a {
+
+    padding: 12px 15px;
+
+    font-size: 14px;
+  }
+
+
+  /* =======================================================
+     MOBILE ESTIMATE
+     ======================================================= */
+
+  .mobile-book {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 25px 20px;
+  }
+
+
+  .mobile-book .book-btn {
+
+    width: 100%;
+  }
+
+
+  .desktop-book {
+
+    display: none;
+  }
+
+
+  /* =======================================================
+     MOBILE MENU BUTTON
+     ======================================================= */
+
+  .menu-btn {
+
+    display: inline-flex;
+  }
+
+
+  /* =======================================================
+     DARK MOBILE NAV
+     ======================================================= */
+
+  body.dark-mode .navbar {
+
+    background: var(--site-bg);
+
+    border-color: var(--border);
+  }
+
+
+  body.dark-mode .dropdown-menu {
+
+    background:
+      rgba(99, 133, 138, 0.08);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .header-container {
+
+    padding: 0 18px;
+  }
+
+
+  .logo img {
+
+    width: 55px;
+
+    height: 53px;
+  }
+
+
+  .logo-text h1 {
+
+    font-size: 23px;
+  }
+
+
+  .logo-text p {
+
+    font-size: 6.5px;
+  }
+
+
+  .header-buttons {
+
+    gap: 7px;
+  }
+
+
+  .footer-container {
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .site-header {
+
+    height: 68px;
+  }
+
+
+  .header-container {
+
+    padding: 0 15px;
+
+    gap: 7px;
+  }
+
+
+  .logo {
+
+    gap: 5px;
+
+    min-width: 0;
+
+    flex: 1;
+
+    direction: ltr;
+  }
+
+
+  .logo img {
+
+    width: 47px;
+
+    height: 46px;
+  }
+
+
+  .logo-text {
+
+    min-width: 0;
+  }
+
+
+  .logo-text h1 {
+
+    font-size: 20px;
+
+    white-space: nowrap;
+  }
+
+
+  .logo-text p {
+
+    font-size: 5.8px;
+
+    letter-spacing: 0.6px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+  }
+
+
+  .header-buttons {
+
+    gap: 5px;
+  }
+
+
+  .icon-btn {
+
+    width: 36px;
+
+    height: 36px;
+  }
+
+
+  .icon-btn svg {
+
+    width: 16px;
+
+    height: 16px;
+  }
+
+
+  .navbar {
+
+    top: 68px;
+  }
+
+
+  .nav-links {
+
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+
+  .mobile-book {
+
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+  .footer-container {
+
+    grid-template-columns: 1fr;
+
+    padding: 50px 22px 35px;
+
+    gap: 34px;
+  }
+
+
+  .footer-logo img {
+
+    width: 55px;
+
+    height: 53px;
+  }
+
+
+  .footer-branding h1 {
+
+    font-size: 22px;
+  }
+
+
+  .footer-branding p {
+
+    font-size: 6.5px;
+  }
+
+
+  .footer-about {
+
+    max-width: 100%;
+
+    font-size: 13px;
+  }
+
+
+  .social-media {
+
+    gap: 9px;
+  }
+
+
+  .social-media a {
+
+    width: 38px;
+
+    height: 38px;
+  }
+
+
+  .footer-col h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 16px;
+  }
+
+
+  .footer-col li {
+
+    font-size: 13px;
+  }
+
+
+  .footer-bottom {
+
+    padding: 20px 22px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+
+
+  .footer-bottom-links {
+
+    justify-content: center;
+
+    gap: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .logo {
+
+    direction: ltr;
+  }
+
+
+  .logo img {
+
+    width: 43px;
+
+    height: 42px;
+  }
+
+
+  .logo-text h1 {
+
+    font-size: 18px;
+  }
+
+
+  .logo-text p {
+
+    font-size: 5.2px;
+
+    letter-spacing: 0.45px;
+  }
+
+
+  .icon-btn {
+
+    width: 34px;
+
+    height: 34px;
+  }
+
+
+  .header-buttons {
+
+    gap: 4px;
+  }
+
+}
+
+
+/* =========================================================
+   RTL MOBILE HEADER
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  body.rtl .header-buttons {
+
+    margin-left: 0;
+
+    margin-right: auto;
+  }
+
+
+  body.rtl .header-container {
+
+    direction: rtl;
+  }
+
+
+  body.rtl .footer-logo {
+
+    direction: ltr;
+
+    flex-direction: row;
+  }
+
+}

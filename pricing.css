@@ -1,0 +1,4751 @@
+/* =========================================================
+   PRICING HERO
+   ========================================================= */
+
+.pricing-hero {
+  position: relative;
+  min-height: 90vh;
+  margin-top: 78px;
+
+  background-image: url("../images/hero-7.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #f2f0ea;
+  overflow: hidden;
+}
+
+/* =========================================================
+   DARK IMAGE OVERLAY
+   ========================================================= */
+
+.pricing-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(23, 26, 27, 0.88) 0%,
+    rgba(23, 26, 27, 0.68) 42%,
+    rgba(23, 26, 27, 0.3) 75%,
+    rgba(23, 26, 27, 0.22) 100%
+  );
+
+  z-index: 1;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.pricing-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1240px, calc(100% - 110px));
+  min-height: 90vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.pricing-hero-content {
+  width: min(700px, 62%);
+
+  padding: 120px 0 90px;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.pricing-hero-eyebrow {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.pricing-hero-eyebrow::before {
+  content: "";
+
+  width: 30px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.pricing-hero-content h1 {
+  margin: 0;
+
+  max-width: 720px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.02;
+  font-weight: 450;
+
+  letter-spacing: -0.055em;
+
+  color: #f2f0ea;
+}
+
+.pricing-hero-content h1 span {
+  display: block;
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.pricing-hero-description {
+  max-width: 590px;
+
+  margin: 30px 0 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  font-weight: 400;
+
+  color: #f2f0ea;
+  opacity: 0.72;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.pricing-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.pricing-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 52px;
+  padding: 0 22px;
+
+  background: #b8864a;
+  border: 1px solid #b8864a;
+  border-radius: 8px;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-hero-primary i {
+  width: 16px;
+  height: 16px;
+}
+
+.pricing-hero-primary:hover {
+  background: #63858a;
+  border-color: #63858a;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.pricing-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+
+  min-height: 52px;
+  padding: 0 21px;
+
+  background: transparent;
+
+  border: 1px solid rgba(242, 240, 234, 0.35);
+  border-radius: 8px;
+  color: #f2f0ea;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-hero-secondary i {
+  width: 15px;
+  height: 15px;
+}
+
+.pricing-hero-secondary:hover {
+  border-color: #b8864a;
+  background: rgba(184, 134, 74, 0.1);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   BOTTOM INFORMATION
+   ========================================================= */
+
+.pricing-hero-bottom {
+  padding-bottom: 30px;
+}
+
+.pricing-hero-bottom-line {
+  width: 100%;
+  height: 1px;
+
+  margin-bottom: 17px;
+
+  background: rgba(242, 240, 234, 0.2);
+}
+
+.pricing-hero-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing-hero-bottom-content span {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+
+  color: #f2f0ea;
+  opacity: 0.62;
+}
+
+.pricing-hero-bottom-content span:last-child {
+  color: #b8864a;
+  opacity: 1;
+}
+
+/* =========================================================
+   PRICING FACTORS
+   SECTION 02 — WHAT DETERMINES YOUR PRICE?
+   ========================================================= */
+
+.pricing-factors {
+  position: relative;
+  padding: 140px 0 150px;
+  background: #f7f5f0;
+  color: #252525;
+  overflow: hidden;
+}
+
+.pricing-factors-container {
+  width: min(1240px, calc(100% - 110px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.pricing-factors-header {
+  max-width: 800px;
+  margin: 0 auto 85px;
+  text-align: center;
+}
+
+.pricing-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 23px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  line-height: 1;
+  text-transform: uppercase;
+
+  color: #63858a;
+}
+
+.pricing-section-eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  flex: 0 0 28px;
+
+  background: #b8864a;
+}
+
+.pricing-factors-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.03;
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.pricing-factors-header h2 span {
+  display: block;
+  color: #b8864a;
+}
+
+.pricing-factors-header p {
+  max-width: 620px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  font-weight: 400;
+
+  color: #252525;
+  opacity: 0.62;
+}
+
+/* =========================================================
+   FACTORS LIST
+   ========================================================= */
+
+.pricing-factors-list {
+  border-top: 1px solid rgba(37, 37, 37, 0.16);
+}
+
+/* =========================================================
+   FACTOR ITEM
+   ========================================================= */
+
+.pricing-factor-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) 42px;
+
+  align-items: center;
+
+  gap: 30px;
+
+  min-height: 145px;
+
+  padding: 25px 5px;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.16);
+
+  transition:
+    padding 0.35s ease,
+    background 0.35s ease;
+}
+
+.pricing-factor-item:hover {
+  padding-left: 18px;
+  padding-right: 18px;
+
+  background: rgba(184, 134, 74, 0.045);
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.pricing-factor-number {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.pricing-factor-number span {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.pricing-factor-content {
+  min-width: 0;
+}
+
+.pricing-factor-kicker {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.58rem;
+  line-height: 1.2;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  color: #63858a;
+}
+
+.pricing-factor-content h3 {
+  margin: 0 0 7px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  font-weight: 600;
+
+  letter-spacing: -0.025em;
+
+  color: #252525;
+}
+
+.pricing-factor-content p {
+  max-width: 680px;
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: #252525;
+  opacity: 0.58;
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.pricing-factor-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(184, 134, 74, 0.35);
+  border-radius: 50%;
+
+  color: #b8864a;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-factor-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pricing-factor-item:hover .pricing-factor-icon {
+  background: #b8864a;
+  border-color: #b8864a;
+  color: #ffffff;
+
+  transform: rotate(5deg);
+}
+
+/* =========================================================
+   BOTTOM STATEMENT
+   ========================================================= */
+
+.pricing-factors-statement {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 600px) 1fr;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 65px;
+
+  text-align: center;
+}
+
+.pricing-factors-statement-line {
+  width: 100%;
+  height: 1px;
+
+  background: rgba(37, 37, 37, 0.15);
+}
+
+.pricing-factors-statement p {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: #252525;
+  opacity: 0.65;
+}
+
+.pricing-factors-statement p span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-weight: 700;
+
+  color: #b8864a;
+
+  opacity: 1;
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .pricing-factors {
+  direction: rtl;
+}
+
+body.rtl .pricing-factors-header {
+  direction: rtl;
+  text-align: center;
+}
+
+body.rtl .pricing-section-eyebrow {
+  direction: rtl;
+}
+
+body.rtl .pricing-section-eyebrow::before {
+  order: 2;
+}
+
+body.rtl .pricing-factors-header h2 {
+  direction: rtl;
+}
+
+body.rtl .pricing-factors-header p {
+  direction: rtl;
+}
+
+/* =========================================================
+   RTL FACTOR ITEMS
+   ========================================================= */
+
+body.rtl .pricing-factor-item {
+  direction: rtl;
+
+  grid-template-columns: 42px minmax(0, 1fr) 70px;
+
+  text-align: right;
+}
+
+body.rtl .pricing-factor-number {
+  grid-column: 3;
+  grid-row: 1;
+
+  justify-content: flex-end;
+
+  text-align: right;
+}
+
+body.rtl .pricing-factor-content {
+  grid-column: 2;
+  grid-row: 1;
+
+  text-align: right;
+}
+
+body.rtl .pricing-factor-content h3,
+body.rtl .pricing-factor-content p,
+body.rtl .pricing-factor-kicker {
+  text-align: right;
+}
+
+body.rtl .pricing-factor-icon {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* =========================================================
+   RTL HOVER
+   ========================================================= */
+
+body.rtl .pricing-factor-item:hover {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* =========================================================
+   RTL STATEMENT
+   ========================================================= */
+
+body.rtl .pricing-factors-statement {
+  direction: rtl;
+  text-align: center;
+}
+
+body.rtl .pricing-factors-statement p {
+  direction: rtl;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .pricing-factors {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-factors-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-factors-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-factors-list {
+  border-top-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-factor-item {
+  border-bottom-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-factor-item:hover {
+  background: rgba(184, 134, 74, 0.07);
+}
+
+body.dark-mode .pricing-factor-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-factor-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-factor-icon {
+  border-color: rgba(184, 134, 74, 0.45);
+  color: #b8864a;
+}
+
+body.dark-mode .pricing-factor-item:hover .pricing-factor-icon {
+  background: #b8864a;
+  border-color: #b8864a;
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-factors-statement-line {
+  background: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-factors-statement p {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .pricing-factors {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factors-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factors-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factor-item {
+  border-bottom-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode.rtl .pricing-factor-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factor-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factors-statement p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-factors-statement-line {
+  background: rgba(242, 240, 234, 0.14);
+}
+
+/* =========================================================
+   SECTION 03 — OUR SERVICES & PRICING
+   ========================================================= */
+
+.pricing-services {
+  position: relative;
+
+  padding: 140px 0 150px;
+
+  margin-top: -175px;
+
+  background: #f7f5f0;
+  color: #252525;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.pricing-services-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.pricing-services-header {
+  max-width: 800px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+.pricing-services-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+  line-height: 1.03;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.pricing-services-header h2 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+.pricing-services-header p {
+  max-width: 620px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  color: #252525;
+
+  opacity: 0.62;
+}
+
+/* =========================================================
+   SERVICES GRID
+   ========================================================= */
+
+.pricing-services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  align-items: stretch;
+
+  gap: 18px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.pricing-service-card {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 650px;
+
+  padding: 32px 30px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.13);
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.pricing-service-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(184, 134, 74, 0.45);
+
+  box-shadow: 0 20px 45px rgba(37, 37, 37, 0.08);
+}
+
+/* =========================================================
+   FEATURED CARD
+   ========================================================= */
+
+.pricing-service-card-featured {
+  border: 1px solid #b8864a;
+
+  box-shadow: 0 15px 40px rgba(184, 134, 74, 0.1);
+}
+
+.pricing-service-card-featured:hover {
+  border-color: #b8864a;
+
+  box-shadow: 0 24px 50px rgba(184, 134, 74, 0.15);
+}
+
+/* =========================================================
+   FEATURED LABEL
+   ========================================================= */
+
+.pricing-service-featured-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-bottom: 26px;
+}
+
+.pricing-service-featured-label span {
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(184, 134, 74, 0.35);
+}
+
+.pricing-service-featured-label p {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.55rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.pricing-service-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 45px;
+}
+
+.pricing-service-number {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.66rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.pricing-service-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(184, 134, 74, 0.35);
+
+  border-radius: 50%;
+
+  color: #b8864a;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-service-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pricing-service-card:hover .pricing-service-icon {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+
+  transform: rotate(5deg);
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.pricing-service-card-content {
+  flex: 1;
+}
+
+.pricing-service-category {
+  display: block;
+
+  margin-bottom: 13px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.57rem;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+
+  color: #63858a;
+}
+
+.pricing-service-card h3 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 2rem;
+
+  line-height: 1.04;
+
+  font-weight: 500;
+
+  letter-spacing: -0.045em;
+
+  color: #252525;
+}
+
+.pricing-service-card h3 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+.pricing-service-description {
+  min-height: 78px;
+
+  margin: 20px 0 28px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.81rem;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  color: #252525;
+
+  opacity: 0.62;
+}
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.pricing-service-price {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 23px;
+}
+
+.pricing-service-price-label {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.53rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  color: #63858a;
+}
+
+.pricing-service-price strong {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 5px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 1.65rem;
+
+  line-height: 1.2;
+
+  font-weight: 650;
+
+  letter-spacing: -0.035em;
+
+  color: #252525;
+}
+
+.pricing-service-price strong small {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.68rem;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0;
+
+  color: #63858a;
+}
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.pricing-service-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-bottom: 23px;
+
+  background: rgba(37, 37, 37, 0.12);
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.pricing-service-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.pricing-service-features li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.74rem;
+
+  line-height: 1.4;
+
+  color: #252525;
+
+  opacity: 0.72;
+}
+
+.pricing-service-features li svg {
+  flex: 0 0 auto;
+
+  width: 14px;
+  height: 14px;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.pricing-service-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  min-height: 50px;
+
+  box-sizing: border-box;
+
+  margin-top: 35px;
+
+  padding: 0 17px;
+
+  background: transparent;
+
+  border: 1px solid rgba(37, 37, 37, 0.2);
+
+  border-radius: 8px;
+
+  color: #252525;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.pricing-service-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pricing-service-button:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   FEATURED BUTTON
+   ========================================================= */
+
+.pricing-service-card-featured .pricing-service-button {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+.pricing-service-card-featured .pricing-service-button:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .pricing-services {
+  direction: rtl;
+}
+
+body.rtl .pricing-services-header {
+  direction: rtl;
+
+  text-align: center;
+}
+
+body.rtl .pricing-service-card {
+  direction: rtl;
+
+  text-align: right;
+}
+
+body.rtl .pricing-service-card-top {
+  direction: rtl;
+}
+
+body.rtl .pricing-service-number {
+  text-align: right;
+}
+
+body.rtl .pricing-service-icon {
+  direction: ltr;
+}
+
+body.rtl .pricing-service-category,
+body.rtl .pricing-service-card h3,
+body.rtl .pricing-service-description,
+body.rtl .pricing-service-price,
+body.rtl .pricing-service-features {
+  text-align: right;
+}
+
+body.rtl .pricing-service-price strong {
+  direction: ltr;
+
+  justify-content: flex-end;
+}
+
+body.rtl .pricing-service-features li {
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+
+body.rtl .pricing-service-button {
+  direction: rtl;
+}
+
+body.rtl .pricing-service-button svg {
+  transform: scaleX(-1);
+}
+
+body.rtl .pricing-service-featured-label {
+  direction: rtl;
+}
+
+body.rtl .pricing-services-note {
+  direction: rtl;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .pricing-services {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-services-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-services-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-card {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.13);
+}
+
+body.dark-mode .pricing-service-card:hover {
+  border-color: rgba(184, 134, 74, 0.55);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .pricing-service-card-featured {
+  border-color: #b8864a;
+
+  box-shadow: 0 15px 40px rgba(184, 134, 74, 0.08);
+}
+
+body.dark-mode .pricing-service-card-featured:hover {
+  border-color: #b8864a;
+
+  box-shadow: 0 24px 50px rgba(184, 134, 74, 0.12);
+}
+
+body.dark-mode .pricing-service-card h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-description {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-price strong {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-price strong small {
+  color: #63858a;
+}
+
+body.dark-mode .pricing-service-divider {
+  background: rgba(242, 240, 234, 0.13);
+}
+
+body.dark-mode .pricing-service-features li {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-button {
+  border-color: rgba(242, 240, 234, 0.2);
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-service-button:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-services-note p {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .pricing-services {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-service-card {
+  background: #222627;
+}
+
+body.dark-mode.rtl .pricing-service-card h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-service-description {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-service-price strong {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-service-price strong small {
+  color: #63858a;
+}
+
+body.dark-mode.rtl .pricing-service-features li {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-service-divider {
+  background: rgba(242, 240, 234, 0.13);
+}
+
+body.dark-mode.rtl .pricing-service-button {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-services-note p {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   SECTION 04 — WHAT'S INCLUDED?
+   ========================================================= */
+
+.pricing-included {
+  position: relative;
+
+  padding: 140px 0 150px;
+  margin-top: -120px;
+  background: var(site bg);
+  margin-top: -100px;
+  color: #252525;
+
+  overflow: hidden;
+}
+
+.pricing-included-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.pricing-included-header {
+  max-width: 800px;
+
+  margin: 0 auto 85px;
+
+  text-align: center;
+}
+
+.pricing-included-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+  line-height: 1.03;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.pricing-included-header h2 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+.pricing-included-header p {
+  max-width: 620px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  color: #252525;
+
+  opacity: 0.62;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.pricing-included-layout {
+  display: grid;
+
+  grid-template-columns: 0.95fr 1.05fr;
+
+  gap: 80px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   LEFT IMAGE
+   ========================================================= */
+
+.pricing-included-image-wrap {
+  position: relative;
+
+  min-width: 0;
+}
+
+.pricing-included-image {
+  width: 100%;
+
+  height: 620px;
+
+  overflow: hidden;
+
+  background: #eae7df;
+}
+
+.pricing-included-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.pricing-included-image-wrap:hover .pricing-included-image img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.pricing-included-image-label {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 16px 21px;
+
+  background: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.61rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  color: #f2f0ea;
+}
+
+.pricing-included-image-label span:first-child {
+  color: #b8864a;
+}
+
+/* =========================================================
+   RIGHT POINTS
+   ========================================================= */
+
+.pricing-included-points {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   INCLUDED ITEM
+   ========================================================= */
+
+.pricing-included-item {
+  display: grid;
+
+  grid-template-columns: 45px minmax(0, 1fr) 38px;
+
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.14);
+}
+
+.pricing-included-item:first-child {
+  border-top: 1px solid rgba(37, 37, 37, 0.14);
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.pricing-included-number {
+  align-self: start;
+
+  padding-top: 3px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.64rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.pricing-included-content {
+  min-width: 0;
+}
+
+.pricing-included-kicker {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.55rem;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: #63858a;
+}
+
+.pricing-included-content h3 {
+  margin: 0 0 7px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 1.18rem;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  letter-spacing: -0.02em;
+
+  color: #252525;
+}
+
+.pricing-included-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.78rem;
+
+  line-height: 1.7;
+
+  color: #252525;
+
+  opacity: 0.58;
+}
+
+/* =========================================================
+   ITEM ICON
+   ========================================================= */
+
+.pricing-included-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid rgba(184, 134, 74, 0.35);
+
+  border-radius: 50%;
+
+  color: #b8864a;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-included-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.pricing-included-item:hover .pricing-included-icon {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .pricing-included {
+  direction: rtl;
+}
+
+body.rtl .pricing-included-header {
+  direction: rtl;
+
+  text-align: center;
+}
+
+body.rtl .pricing-included-layout {
+  direction: ltr;
+
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+body.rtl .pricing-included-image-wrap {
+  grid-column: 1;
+  grid-row: 1;
+
+  direction: ltr;
+}
+
+body.rtl .pricing-included-points {
+  grid-column: 2;
+  grid-row: 1;
+
+  direction: rtl;
+
+  text-align: right;
+}
+
+body.rtl .pricing-included-item {
+  direction: rtl;
+
+  grid-template-columns: 38px minmax(0, 1fr) 45px;
+
+  text-align: right;
+}
+
+body.rtl .pricing-included-number {
+  grid-column: 3;
+  grid-row: 1;
+
+  text-align: right;
+}
+
+body.rtl .pricing-included-content {
+  grid-column: 2;
+  grid-row: 1;
+
+  text-align: right;
+}
+
+body.rtl .pricing-included-icon {
+  grid-column: 1;
+  grid-row: 1;
+
+  direction: ltr;
+}
+
+body.rtl .pricing-included-content h3,
+body.rtl .pricing-included-content p,
+body.rtl .pricing-included-kicker {
+  text-align: right;
+}
+
+body.rtl .pricing-included-image-label {
+  left: auto;
+  right: 0;
+
+  direction: ltr;
+}
+
+body.rtl .pricing-included-item:hover .pricing-included-icon {
+  transform: translate(-2px, -2px);
+}
+
+body.rtl .pricing-included-standard {
+  direction: rtl;
+}
+
+body.rtl .pricing-included-standard-content {
+  direction: rtl;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .pricing-included {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-included-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-included-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-included-image {
+  background: #222627;
+}
+
+body.dark-mode .pricing-included-item {
+  border-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-included-item:first-child {
+  border-top-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-included-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-included-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-included-icon {
+  border-color: rgba(184, 134, 74, 0.45);
+
+  color: #b8864a;
+}
+
+body.dark-mode .pricing-included-item:hover .pricing-included-icon {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-included-standard-line {
+  background: rgba(242, 240, 234, 0.14);
+}
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .pricing-included {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-included-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-included-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-included-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-included-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-included-item {
+  border-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode.rtl .pricing-included-standard-line {
+  background: rgba(242, 240, 234, 0.14);
+}
+
+/* =========================================================
+   SECTION 05 — PRICING FAQ
+   ========================================================= */
+
+.pricing-faq {
+  position: relative;
+
+  padding: 140px 0 150px;
+
+  background: var(site bg);
+  margin-top: -150px;
+
+  color: #252525;
+
+  overflow: hidden;
+}
+
+.pricing-faq-container {
+  width: min(1040px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.pricing-faq-header {
+  max-width: 780px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+.pricing-faq-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  line-height: 1.03;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.pricing-faq-header h2 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+.pricing-faq-header p {
+  max-width: 610px;
+
+  margin: 25px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.94rem;
+
+  line-height: 1.8;
+
+  color: #252525;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   FAQ LIST
+   ========================================================= */
+
+.pricing-faq-list {
+  width: 100%;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.18);
+}
+
+/* =========================================================
+   FAQ ITEM
+   ========================================================= */
+
+.pricing-faq-item {
+  border-bottom: 1px solid rgba(37, 37, 37, 0.18);
+}
+
+/* =========================================================
+   QUESTION BUTTON
+   ========================================================= */
+
+.pricing-faq-question {
+  display: grid;
+
+  grid-template-columns: 55px minmax(0, 1fr) 42px;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 27px 0;
+
+  border: 0;
+
+  background: transparent;
+
+  font-family: "Manrope", sans-serif;
+
+  color: #252525;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  appearance: none;
+}
+
+.pricing-faq-question:hover {
+  color: #b8864a;
+}
+
+/* =========================================================
+   FAQ NUMBER
+   ========================================================= */
+
+.pricing-faq-number {
+  font-size: 0.62rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   QUESTION TEXT
+   ========================================================= */
+
+.pricing-faq-question-text {
+  padding-right: 25px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.45;
+
+  font-weight: 600;
+
+  letter-spacing: -0.015em;
+
+  transition: color 0.25s ease;
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.pricing-faq-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border: 1px solid rgba(184, 134, 74, 0.4);
+
+  border-radius: 50%;
+
+  color: #b8864a;
+
+  transition:
+    transform 0.35s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.pricing-faq-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* =========================================================
+   ACTIVE QUESTION
+   ========================================================= */
+
+.pricing-faq-item.active .pricing-faq-question {
+  color: #b8864a;
+}
+
+.pricing-faq-item.active .pricing-faq-icon {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+/* =========================================================
+   ANSWER
+   ========================================================= */
+
+.pricing-faq-answer {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.4s ease;
+}
+
+.pricing-faq-item.active .pricing-faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.pricing-faq-answer-inner {
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+.pricing-faq-answer p {
+  max-width: 760px;
+
+  margin: 0;
+
+  padding: 0 70px 28px 55px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.84rem;
+
+  line-height: 1.85;
+
+  color: #252525;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .pricing-faq {
+  direction: rtl;
+}
+
+body.rtl .pricing-faq-header {
+  direction: rtl;
+
+  text-align: center;
+}
+
+body.rtl .pricing-faq-question {
+  grid-template-columns: 42px minmax(0, 1fr) 55px;
+
+  direction: rtl;
+
+  text-align: right;
+}
+
+body.rtl .pricing-faq-number {
+  grid-column: 3;
+
+  text-align: right;
+}
+
+body.rtl .pricing-faq-question-text {
+  grid-column: 2;
+
+  padding-right: 0;
+
+  padding-left: 25px;
+
+  text-align: right;
+}
+
+body.rtl .pricing-faq-icon {
+  grid-column: 1;
+
+  direction: ltr;
+}
+
+body.rtl .pricing-faq-answer p {
+  margin-right: 0;
+
+  margin-left: auto;
+
+  padding: 0 55px 28px 70px;
+
+  text-align: right;
+}
+
+body.rtl .pricing-faq-footer {
+  direction: rtl;
+}
+
+body.rtl .pricing-faq-footer-content {
+  direction: rtl;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .pricing-faq {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-faq-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-faq-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-faq-list {
+  border-color: rgba(242, 240, 234, 0.15);
+}
+
+body.dark-mode .pricing-faq-item {
+  border-color: rgba(242, 240, 234, 0.15);
+}
+
+body.dark-mode .pricing-faq-question {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-faq-question:hover {
+  color: #b8864a;
+}
+
+body.dark-mode .pricing-faq-answer p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-faq-icon {
+  border-color: rgba(184, 134, 74, 0.45);
+
+  color: #b8864a;
+}
+
+body.dark-mode .pricing-faq-item.active .pricing-faq-icon {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-faq-footer-line {
+  background: rgba(242, 240, 234, 0.15);
+}
+
+body.dark-mode .pricing-faq-footer-content strong {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .pricing-faq {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-faq-question {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-faq-answer p {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-faq-footer-content strong {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   SECTION 06 — FINAL CTA
+   ========================================================= */
+
+.pricing-final-cta {
+  position: relative;
+
+  padding: 80px 0 90px;
+
+  background: #f7f5f0;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
+.pricing-final-cta-box {
+  position: relative;
+
+  width: min(900px, calc(100% - 70px));
+
+  min-height: 500px;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.16);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   INNER GOLD BORDER
+   ========================================================= */
+
+.pricing-final-cta-box::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 13px;
+
+  border: 1px solid rgba(184, 134, 74, 0.55);
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   INNER CONTENT
+   ========================================================= */
+
+.pricing-final-cta-inner {
+  position: relative;
+
+  z-index: 4;
+
+  min-height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 58px 65px 25px;
+}
+
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
+
+.pricing-final-cta-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(184, 134, 74, 0.15);
+
+  pointer-events: none;
+}
+
+.pricing-final-cta-circle-one {
+  width: 410px;
+  height: 410px;
+
+  top: -175px;
+  right: -120px;
+}
+
+.pricing-final-cta-circle-two {
+  width: 360px;
+  height: 360px;
+
+  bottom: -185px;
+  left: -125px;
+
+  border-color: rgba(99, 133, 138, 0.14);
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.pricing-final-cta-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.pricing-final-cta-eyebrow span {
+  width: 45px;
+
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.pricing-final-cta-eyebrow p {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.57rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #63858a;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.pricing-final-cta-content {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.pricing-final-cta-content h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.8rem;
+
+  line-height: 1.02;
+
+  font-weight: 500;
+
+  letter-spacing: -0.06em;
+
+  color: #252525;
+}
+
+.pricing-final-cta-content h2 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+.pricing-final-cta-content p {
+  max-width: 610px;
+
+  margin: 25px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.88rem;
+
+  line-height: 1.8;
+
+  color: #252525;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.pricing-final-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 32px;
+
+  min-height: 50px;
+
+  padding: 0 25px;
+
+  background: #b8864a;
+
+  border: 1px solid #b8864a;
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.73rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-final-cta-button svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.pricing-final-cta-button:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  transform: translateY(-2px);
+}
+
+.pricing-final-cta-button:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.pricing-final-cta-footer {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  padding-top: 25px;
+}
+
+.pricing-final-cta-footer-left span {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.54rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  color: #63858a;
+}
+
+.pricing-final-cta-footer-right {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 2px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+}
+
+.pricing-final-cta-footer-right span {
+  color: #63858a;
+}
+
+.pricing-final-cta-footer-right strong {
+  color: #b8864a;
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .pricing-final-cta {
+  direction: rtl;
+}
+
+body.rtl .pricing-final-cta-content {
+  direction: rtl;
+
+  text-align: center;
+}
+
+body.rtl .pricing-final-cta-footer {
+  direction: rtl;
+}
+
+body.rtl .pricing-final-cta-button {
+  direction: rtl;
+}
+
+body.rtl .pricing-final-cta-button svg {
+  transform: scaleX(-1);
+}
+
+body.rtl .pricing-final-cta-button:hover svg {
+  transform: scaleX(-1) translate(2px, -2px);
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .pricing-final-cta {
+  background: #171a1b;
+}
+
+body.dark-mode .pricing-final-cta-box {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .pricing-final-cta-box::before {
+  border-color: rgba(184, 134, 74, 0.55);
+}
+
+body.dark-mode .pricing-final-cta-content h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-final-cta-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .pricing-final-cta-circle {
+  border-color: rgba(184, 134, 74, 0.15);
+}
+
+body.dark-mode .pricing-final-cta-circle-two {
+  border-color: rgba(99, 133, 138, 0.18);
+}
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .pricing-final-cta {
+  background: #171a1b;
+}
+
+body.dark-mode.rtl .pricing-final-cta-box {
+  background: #222627;
+}
+
+body.dark-mode.rtl .pricing-final-cta-content h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .pricing-final-cta-content p {
+  color: #f2f0ea;
+}
+
+
+/* =========================================================
+   PRICING PAGE — RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* =======================================================
+     GLOBAL PRICING CONTAINERS
+     ======================================================= */
+
+  .pricing-hero-container,
+  .pricing-factors-container,
+  .pricing-services-container,
+  .pricing-included-container {
+    width: calc(100% - 40px);
+  }
+
+
+  /* =======================================================
+     SECTION 01 — PRICING HERO
+     ======================================================= */
+
+  .pricing-hero {
+    min-height: 760px;
+
+    margin-top: 70px;
+
+    background-position: center center;
+  }
+
+  .pricing-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(23, 26, 27, 0.92) 0%,
+      rgba(23, 26, 27, 0.82) 55%,
+      rgba(23, 26, 27, 0.58) 100%
+    );
+  }
+
+  .pricing-hero-container {
+    min-height: 760px;
+
+    width: calc(100% - 40px);
+  }
+
+  .pricing-hero-content {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 95px 0 50px;
+  }
+
+  .pricing-hero-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.56rem;
+
+    letter-spacing: 0.15em;
+  }
+
+  .pricing-hero-eyebrow::before {
+    width: 22px;
+  }
+
+  .pricing-hero-content h1 {
+    max-width: 100%;
+
+    font-size: 2.9rem;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.045em;
+  }
+
+  .pricing-hero-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 0.78rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin-top: 29px;
+  }
+
+  .pricing-hero-primary,
+  .pricing-hero-secondary {
+    width: 100%;
+
+    min-height: 48px;
+
+    box-sizing: border-box;
+
+    font-size: 0.68rem;
+  }
+
+  .pricing-hero-bottom {
+    padding-bottom: 22px;
+  }
+
+  .pricing-hero-bottom-line {
+    margin-bottom: 13px;
+  }
+
+  .pricing-hero-bottom-content span {
+    font-size: 0.46rem;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  /* =======================================================
+     SECTION 02 — PRICING FACTORS
+     ======================================================= */
+
+  .pricing-factors {
+    padding: 90px 0 100px;
+
+    margin-top: 0;
+  }
+
+  .pricing-factors-header {
+    margin-bottom: 52px;
+  }
+
+  .pricing-section-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    font-size: 0.55rem;
+
+    letter-spacing: 0.14em;
+  }
+
+  .pricing-section-eyebrow::before {
+    width: 22px;
+
+    flex-basis: 22px;
+  }
+
+  .pricing-factors-header h2 {
+    font-size: 2.55rem;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.045em;
+  }
+
+  .pricing-factors-header p {
+    margin-top: 19px;
+
+    font-size: 0.79rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-factor-item {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+
+    gap: 12px;
+
+    min-height: auto;
+
+    padding: 22px 0;
+  }
+
+  .pricing-factor-item:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .pricing-factor-number span {
+    font-size: 0.56rem;
+  }
+
+  .pricing-factor-kicker {
+    margin-bottom: 6px;
+
+    font-size: 0.49rem;
+
+    letter-spacing: 0.12em;
+  }
+
+  .pricing-factor-content h3 {
+    margin-bottom: 6px;
+
+    font-size: 1rem;
+
+    line-height: 1.3;
+  }
+
+  .pricing-factor-content p {
+    font-size: 0.71rem;
+
+    line-height: 1.65;
+  }
+
+  .pricing-factor-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .pricing-factor-icon svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .pricing-factors-statement {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    margin-top: 48px;
+  }
+
+  .pricing-factors-statement-line {
+    width: 50px;
+  }
+
+  .pricing-factors-statement p {
+    font-size: 0.71rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 02
+     ======================================================= */
+
+  body.rtl .pricing-factor-item {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+
+    gap: 12px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body.rtl .pricing-factor-number {
+    grid-column: 3;
+  }
+
+  body.rtl .pricing-factor-content {
+    grid-column: 2;
+  }
+
+  body.rtl .pricing-factor-icon {
+    grid-column: 1;
+  }
+
+  body.rtl .pricing-factor-item:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+
+  /* =======================================================
+     SECTION 03 — SERVICES & PRICING
+     ======================================================= */
+
+  .pricing-services {
+    padding: 90px 0 100px;
+
+    margin-top: 0;
+  }
+
+  .pricing-services-header {
+    margin-bottom: 52px;
+  }
+
+  .pricing-services-header h2 {
+    font-size: 2.55rem;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.045em;
+  }
+
+  .pricing-services-header p {
+    margin-top: 19px;
+
+    font-size: 0.79rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .pricing-service-card {
+    min-height: auto;
+
+    padding: 27px 23px 23px;
+
+    border-radius: 12px;
+  }
+
+  .pricing-service-card-top {
+    margin-bottom: 35px;
+  }
+
+  .pricing-service-number {
+    font-size: 0.58rem;
+  }
+
+  .pricing-service-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .pricing-service-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .pricing-service-category {
+    margin-bottom: 11px;
+
+    font-size: 0.5rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .pricing-service-card h3 {
+    font-size: 1.75rem;
+
+    line-height: 1.05;
+  }
+
+  .pricing-service-description {
+    min-height: auto;
+
+    margin: 17px 0 25px;
+
+    font-size: 0.74rem;
+
+    line-height: 1.7;
+  }
+
+  .pricing-service-price {
+    margin-bottom: 20px;
+  }
+
+  .pricing-service-price-label {
+    font-size: 0.48rem;
+  }
+
+  .pricing-service-price strong {
+    font-size: 1.45rem;
+  }
+
+  .pricing-service-price strong small {
+    font-size: 0.62rem;
+  }
+
+  .pricing-service-divider {
+    margin-bottom: 20px;
+  }
+
+  .pricing-service-features {
+    gap: 11px;
+  }
+
+  .pricing-service-features li {
+    font-size: 0.69rem;
+  }
+
+  .pricing-service-button {
+    min-height: 47px;
+
+    margin-top: 28px;
+
+    padding: 0 15px;
+
+    font-size: 0.67rem;
+  }
+
+  .pricing-service-featured-label {
+    margin-bottom: 21px;
+  }
+
+  .pricing-service-featured-label p {
+    font-size: 0.48rem;
+
+    letter-spacing: 0.12em;
+  }
+
+  .pricing-services-note {
+    margin-top: 25px;
+  }
+
+
+  /* =======================================================
+     SECTION 04 — WHAT'S INCLUDED
+     ======================================================= */
+
+  .pricing-included {
+    padding: 90px 0 100px;
+
+    margin-top: 0;
+
+    background: #ffffff;
+  }
+
+  .pricing-included-header {
+    margin-bottom: 52px;
+  }
+
+  .pricing-included-header h2 {
+    font-size: 2.55rem;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.045em;
+  }
+
+  .pricing-included-header p {
+    margin-top: 19px;
+
+    font-size: 0.79rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-included-layout {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .pricing-included-image {
+    height: 400px;
+  }
+
+  .pricing-included-image-label {
+    padding: 13px 15px;
+
+    gap: 11px;
+
+    font-size: 0.48rem;
+
+    letter-spacing: 0.1em;
+  }
+
+  .pricing-included-item {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+
+    gap: 12px;
+
+    padding: 21px 0;
+  }
+
+  .pricing-included-number {
+    font-size: 0.56rem;
+  }
+
+  .pricing-included-kicker {
+    margin-bottom: 6px;
+
+    font-size: 0.48rem;
+
+    letter-spacing: 0.11em;
+  }
+
+  .pricing-included-content h3 {
+    margin-bottom: 6px;
+
+    font-size: 1rem;
+  }
+
+  .pricing-included-content p {
+    font-size: 0.71rem;
+
+    line-height: 1.65;
+  }
+
+  .pricing-included-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .pricing-included-icon svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .pricing-included-standard {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    margin-top: 50px;
+  }
+
+  .pricing-included-standard-line {
+    width: 50px;
+  }
+
+  .pricing-included-standard-content {
+    gap: 8px;
+  }
+
+  .pricing-included-standard-content span {
+    font-size: 0.48rem;
+  }
+
+  .pricing-included-standard-content strong {
+    font-size: 0.55rem;
+
+    letter-spacing: 0.08em;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 04
+     ======================================================= */
+
+  body.rtl .pricing-included-layout {
+    direction: rtl;
+  }
+
+  body.rtl .pricing-included-image-wrap {
+    direction: ltr;
+  }
+
+  body.rtl .pricing-included-points {
+    direction: rtl;
+  }
+
+  body.rtl .pricing-included-item {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+  }
+
+
+  /* =======================================================
+     SECTION 05 — FAQ
+     ======================================================= */
+
+  .pricing-faq {
+    padding: 90px 0 100px;
+
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .pricing-faq-container {
+    width: calc(100% - 40px);
+  }
+
+  .pricing-faq-header {
+    margin-bottom: 52px;
+  }
+
+  .pricing-faq-header h2 {
+    font-size: 2.55rem;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.045em;
+  }
+
+  .pricing-faq-header p {
+    margin-top: 19px;
+
+    font-size: 0.79rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-faq-question {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+
+    gap: 8px;
+
+    padding: 21px 0;
+  }
+
+  .pricing-faq-number {
+    font-size: 0.54rem;
+  }
+
+  .pricing-faq-question-text {
+    padding-right: 8px;
+
+    font-size: 0.88rem;
+
+    line-height: 1.45;
+  }
+
+  .pricing-faq-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .pricing-faq-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pricing-faq-answer p {
+    padding: 0 40px 22px 32px;
+
+    font-size: 0.72rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-faq-footer {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    margin-top: 52px;
+  }
+
+  .pricing-faq-footer-line {
+    width: 50px;
+  }
+
+  .pricing-faq-footer-content {
+    gap: 8px;
+  }
+
+  .pricing-faq-footer-content span {
+    font-size: 0.48rem;
+  }
+
+  .pricing-faq-footer-content strong {
+    font-size: 0.78rem;
+  }
+
+
+  /* =======================================================
+     RTL — FAQ
+     ======================================================= */
+
+  body.rtl .pricing-faq-question {
+    grid-template-columns: 32px minmax(0, 1fr) 32px;
+  }
+
+  body.rtl .pricing-faq-question-text {
+    padding-right: 0;
+
+    padding-left: 8px;
+  }
+
+  body.rtl .pricing-faq-answer p {
+    padding: 0 32px 22px 40px;
+  }
+
+
+  /* =======================================================
+     SECTION 06 — FINAL CTA
+     ======================================================= */
+
+  .pricing-final-cta {
+    padding: 55px 0 65px;
+  }
+
+  .pricing-final-cta-box {
+    width: calc(100% - 32px);
+
+    min-height: 500px;
+  }
+
+  .pricing-final-cta-box::before {
+    inset: 9px;
+  }
+
+  .pricing-final-cta-inner {
+    min-height: 500px;
+
+    padding: 42px 28px 20px;
+  }
+
+  .pricing-final-cta-circle-one {
+    width: 270px;
+    height: 270px;
+
+    top: -115px;
+    right: -95px;
+  }
+
+  .pricing-final-cta-circle-two {
+    width: 240px;
+    height: 240px;
+
+    bottom: -125px;
+    left: -95px;
+  }
+
+  .pricing-final-cta-eyebrow {
+    gap: 10px;
+  }
+
+  .pricing-final-cta-eyebrow span {
+    width: 25px;
+  }
+
+  .pricing-final-cta-eyebrow p {
+    font-size: 0.48rem;
+
+    letter-spacing: 0.12em;
+  }
+
+  .pricing-final-cta-content h2 {
+    font-size: 2.55rem;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.05em;
+  }
+
+  .pricing-final-cta-content p {
+    margin-top: 19px;
+
+    font-size: 0.76rem;
+
+    line-height: 1.75;
+  }
+
+  .pricing-final-cta-button {
+    margin-top: 26px;
+
+    min-height: 47px;
+
+    padding: 0 19px;
+
+    font-size: 0.67rem;
+  }
+
+  .pricing-final-cta-button svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pricing-final-cta-footer {
+    padding-top: 20px;
+  }
+
+  .pricing-final-cta-footer-left span {
+    font-size: 0.43rem;
+
+    letter-spacing: 0.08em;
+  }
+
+  .pricing-final-cta-footer-right {
+    font-size: 0.58rem;
+  }
+
+  body.rtl .pricing-final-cta-button svg {
+    transform: scaleX(-1);
+  }
+
+  body.rtl .pricing-final-cta-button:hover svg {
+    transform: scaleX(-1) translate(2px, -2px);
+  }
+
+}
+
+
+/* =========================================================
+   iPad Mini
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* =======================================================
+     CONTAINERS
+     ======================================================= */
+
+  .pricing-hero-container,
+  .pricing-factors-container,
+  .pricing-services-container,
+  .pricing-included-container {
+    width: calc(100% - 70px);
+  }
+
+
+  /* =======================================================
+     SECTION 01 — HERO
+     ======================================================= */
+
+  .pricing-hero {
+    min-height: 760px;
+
+    margin-top: 75px;
+
+    background-position: center center;
+  }
+
+  .pricing-hero-container {
+    min-height: 760px;
+  }
+
+  .pricing-hero-content {
+    width: 82%;
+
+    max-width: 620px;
+
+    padding: 105px 0 70px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 3.65rem;
+
+    line-height: 1.03;
+  }
+
+  .pricing-hero-description {
+    max-width: 560px;
+
+    font-size: 0.86rem;
+  }
+
+  .pricing-hero-actions {
+    margin-top: 32px;
+  }
+
+  .pricing-hero-bottom {
+    padding-bottom: 25px;
+  }
+
+
+  /* =======================================================
+     SECTION 02
+     ======================================================= */
+
+  .pricing-factors {
+    padding: 110px 0 120px;
+
+    margin-top: 0;
+  }
+
+  .pricing-factors-header {
+    margin-bottom: 62px;
+  }
+
+  .pricing-factors-header h2 {
+    font-size: 3rem;
+  }
+
+  .pricing-factors-header p {
+    font-size: 0.86rem;
+  }
+
+  .pricing-factor-item {
+    grid-template-columns: 48px minmax(0, 1fr) 38px;
+
+    gap: 22px;
+
+    min-height: 125px;
+
+    padding: 22px 0;
+  }
+
+  .pricing-factor-content h3 {
+    font-size: 1.18rem;
+  }
+
+  .pricing-factor-content p {
+    font-size: 0.77rem;
+  }
+
+  .pricing-factor-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .pricing-factors-statement {
+    margin-top: 55px;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 02
+     ======================================================= */
+
+  body.rtl .pricing-factor-item {
+    grid-template-columns: 38px minmax(0, 1fr) 48px;
+  }
+
+
+  /* =======================================================
+     SECTION 03
+     ======================================================= */
+
+  .pricing-services {
+    padding: 110px 0 120px;
+
+    margin-top: 0;
+  }
+
+  .pricing-services-header {
+    margin-bottom: 62px;
+  }
+
+  .pricing-services-header h2 {
+    font-size: 3rem;
+  }
+
+  .pricing-services-header p {
+    font-size: 0.86rem;
+  }
+
+  .pricing-services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+  }
+
+  .pricing-service-card {
+    min-height: 590px;
+
+    padding: 30px 30px 27px;
+  }
+
+  .pricing-service-card-top {
+    margin-bottom: 40px;
+  }
+
+  .pricing-service-card h3 {
+    font-size: 2rem;
+  }
+
+  .pricing-service-description {
+    min-height: 65px;
+
+    font-size: 0.78rem;
+  }
+
+
+  /* =======================================================
+     SECTION 04
+     ======================================================= */
+
+  .pricing-included {
+    padding: 110px 0 120px;
+
+    margin-top: 0;
+
+    background: #ffffff;
+  }
+
+  .pricing-included-header {
+    margin-bottom: 62px;
+  }
+
+  .pricing-included-header h2 {
+    font-size: 3rem;
+  }
+
+  .pricing-included-header p {
+    font-size: 0.86rem;
+  }
+
+  .pricing-included-layout {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .pricing-included-image {
+    height: 480px;
+  }
+
+  .pricing-included-points {
+    width: 100%;
+  }
+
+  .pricing-included-item {
+    padding: 22px 0;
+  }
+
+  .pricing-included-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .pricing-included-content p {
+    font-size: 0.76rem;
+  }
+
+
+  /* =======================================================
+     SECTION 05
+     ======================================================= */
+
+  .pricing-faq {
+    padding: 110px 0 120px;
+
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .pricing-faq-container {
+    width: calc(100% - 70px);
+  }
+
+  .pricing-faq-header {
+    margin-bottom: 60px;
+  }
+
+  .pricing-faq-header h2 {
+    font-size: 3rem;
+  }
+
+  .pricing-faq-header p {
+    font-size: 0.86rem;
+  }
+
+  .pricing-faq-question {
+    padding: 25px 0;
+  }
+
+  .pricing-faq-question-text {
+    font-size: 1rem;
+  }
+
+  .pricing-faq-answer p {
+    padding: 0 60px 26px 55px;
+
+    font-size: 0.79rem;
+  }
+
+
+  /* =======================================================
+     RTL — FAQ
+     ======================================================= */
+
+  body.rtl .pricing-faq-answer p {
+    padding: 0 55px 26px 60px;
+  }
+
+
+  /* =======================================================
+     SECTION 06
+     ======================================================= */
+
+  .pricing-final-cta {
+    padding: 65px 0 75px;
+  }
+
+  .pricing-final-cta-box {
+    width: calc(100% - 60px);
+
+    min-height: 480px;
+  }
+
+  .pricing-final-cta-inner {
+    min-height: 480px;
+
+    padding: 52px 45px 23px;
+  }
+
+  .pricing-final-cta-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .pricing-final-cta-content p {
+    font-size: 0.83rem;
+  }
+
+}
+
+
+/* =========================================================
+   iPad Pro 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* =======================================================
+     CONTAINERS
+     ======================================================= */
+
+  .pricing-hero-container,
+  .pricing-factors-container,
+  .pricing-services-container,
+  .pricing-included-container {
+    width: calc(100% - 80px);
+  }
+
+
+  /* =======================================================
+     SECTION 01 — HERO
+     ======================================================= */
+
+  .pricing-hero {
+    min-height: 780px;
+
+    margin-top: 76px;
+
+    background-position: center center;
+  }
+
+  .pricing-hero-container {
+    min-height: 780px;
+  }
+
+  .pricing-hero-content {
+    width: 70%;
+
+    max-width: 680px;
+
+    padding: 110px 0 75px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 4rem;
+
+    line-height: 1.02;
+  }
+
+  .pricing-hero-description {
+    max-width: 570px;
+
+    font-size: 0.89rem;
+  }
+
+  .pricing-hero-actions {
+    margin-top: 34px;
+  }
+
+
+  /* =======================================================
+     SECTION 02
+     ======================================================= */
+
+  .pricing-factors {
+    padding: 120px 0 130px;
+
+    margin-top: 0;
+  }
+
+  .pricing-factors-header {
+    margin-bottom: 70px;
+  }
+
+  .pricing-factors-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .pricing-factors-header p {
+    font-size: 0.88rem;
+  }
+
+  .pricing-factor-item {
+    grid-template-columns: 58px minmax(0, 1fr) 40px;
+
+    gap: 25px;
+
+    min-height: 135px;
+
+    padding: 24px 0;
+  }
+
+  .pricing-factor-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .pricing-factor-content p {
+    font-size: 0.79rem;
+  }
+
+  .pricing-factor-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 02
+     ======================================================= */
+
+  body.rtl .pricing-factor-item {
+    grid-template-columns: 40px minmax(0, 1fr) 58px;
+  }
+
+
+  /* =======================================================
+     SECTION 03
+     ======================================================= */
+
+  .pricing-services {
+    padding: 120px 0 130px;
+
+    margin-top: 0;
+  }
+
+  .pricing-services-header {
+    margin-bottom: 65px;
+  }
+
+  .pricing-services-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .pricing-services-header p {
+    font-size: 0.88rem;
+  }
+
+  .pricing-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+  }
+
+  .pricing-service-card {
+    min-height: 620px;
+
+    padding: 27px 21px 24px;
+
+    border-radius: 13px;
+  }
+
+  .pricing-service-card-top {
+    margin-bottom: 38px;
+  }
+
+  .pricing-service-icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .pricing-service-category {
+    font-size: 0.51rem;
+  }
+
+  .pricing-service-card h3 {
+    font-size: 1.55rem;
+  }
+
+  .pricing-service-description {
+    min-height: 92px;
+
+    margin: 18px 0 24px;
+
+    font-size: 0.7rem;
+  }
+
+  .pricing-service-price strong {
+    font-size: 1.42rem;
+  }
+
+  .pricing-service-features {
+    gap: 11px;
+  }
+
+  .pricing-service-features li {
+    font-size: 0.66rem;
+  }
+
+  .pricing-service-button {
+    min-height: 47px;
+
+    font-size: 0.65rem;
+  }
+
+
+  /* =======================================================
+     SECTION 04
+     ======================================================= */
+
+  .pricing-included {
+    padding: 120px 0 130px;
+
+    margin-top: 0;
+
+    background: #ffffff;
+  }
+
+  .pricing-included-header {
+    margin-bottom: 70px;
+  }
+
+  .pricing-included-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .pricing-included-header p {
+    font-size: 0.88rem;
+  }
+
+  .pricing-included-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 50px;
+  }
+
+  .pricing-included-image {
+    height: 560px;
+  }
+
+  .pricing-included-item {
+    grid-template-columns: 40px minmax(0, 1fr) 36px;
+
+    gap: 17px;
+
+    padding: 21px 0;
+  }
+
+  .pricing-included-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .pricing-included-content p {
+    font-size: 0.72rem;
+  }
+
+  .pricing-included-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .pricing-included-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pricing-included-standard {
+    margin-top: 60px;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 04
+     ======================================================= */
+
+  body.rtl .pricing-included-layout {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  body.rtl .pricing-included-item {
+    grid-template-columns: 36px minmax(0, 1fr) 40px;
+  }
+
+
+  /* =======================================================
+     SECTION 05
+     ======================================================= */
+
+  .pricing-faq {
+    padding: 120px 0 130px;
+
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .pricing-faq-container {
+    width: calc(100% - 80px);
+  }
+
+  .pricing-faq-header {
+    margin-bottom: 65px;
+  }
+
+  .pricing-faq-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .pricing-faq-header p {
+    font-size: 0.88rem;
+  }
+
+  .pricing-faq-question {
+    padding: 25px 0;
+  }
+
+  .pricing-faq-question-text {
+    font-size: 1rem;
+  }
+
+  .pricing-faq-answer p {
+    padding: 0 65px 27px 55px;
+
+    font-size: 0.8rem;
+  }
+
+
+  /* =======================================================
+     RTL — FAQ
+     ======================================================= */
+
+  body.rtl .pricing-faq-answer p {
+    padding: 0 55px 27px 65px;
+  }
+
+
+  /* =======================================================
+     SECTION 06
+     ======================================================= */
+
+  .pricing-final-cta {
+    padding: 70px 0 80px;
+  }
+
+  .pricing-final-cta-box {
+    width: calc(100% - 80px);
+
+    min-height: 500px;
+  }
+
+  .pricing-final-cta-inner {
+    min-height: 500px;
+
+    padding: 55px 55px 24px;
+  }
+
+  .pricing-final-cta-content h2 {
+    font-size: 3.5rem;
+  }
+
+  .pricing-final-cta-content p {
+    font-size: 0.84rem;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   MUST COME LAST
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =======================================================
+     CONTAINERS
+     ======================================================= */
+
+  .pricing-hero-container,
+  .pricing-factors-container,
+  .pricing-services-container,
+  .pricing-included-container {
+    width: calc(100% - 80px);
+  }
+
+
+  /* =======================================================
+     SECTION 01 — HERO
+     ======================================================= */
+
+  .pricing-hero {
+    min-height: 600px;
+
+    margin-top: 76px;
+
+    background-position: center center;
+  }
+
+  .pricing-hero-container {
+    min-height: 600px;
+  }
+
+  .pricing-hero-content {
+    width: 62%;
+
+    padding: 75px 0 50px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 3rem;
+
+    line-height: 1.04;
+  }
+
+  .pricing-hero-description {
+    max-width: 520px;
+
+    margin-top: 18px;
+
+    font-size: 0.73rem;
+
+    line-height: 1.65;
+  }
+
+  .pricing-hero-actions {
+    margin-top: 23px;
+  }
+
+  .pricing-hero-primary,
+  .pricing-hero-secondary {
+    min-height: 45px;
+
+    font-size: 0.65rem;
+  }
+
+  .pricing-hero-bottom {
+    padding-bottom: 20px;
+  }
+
+  .pricing-hero-bottom-content span {
+    font-size: 0.47rem;
+  }
+
+
+  /* =======================================================
+     SECTION 02
+     ======================================================= */
+
+  .pricing-factors {
+    padding: 85px 0 95px;
+
+    margin-top: 0;
+  }
+
+  .pricing-factors-header {
+    margin-bottom: 45px;
+  }
+
+  .pricing-factors-header h2 {
+    font-size: 2.8rem;
+  }
+
+  .pricing-factors-header p {
+    margin-top: 18px;
+
+    font-size: 0.76rem;
+
+    line-height: 1.65;
+  }
+
+  .pricing-factor-item {
+    min-height: 100px;
+
+    padding: 16px 0;
+
+    grid-template-columns: 40px minmax(0, 1fr) 34px;
+
+    gap: 17px;
+  }
+
+  .pricing-factor-kicker {
+    font-size: 0.48rem;
+  }
+
+  .pricing-factor-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 0.98rem;
+  }
+
+  .pricing-factor-content p {
+    font-size: 0.66rem;
+
+    line-height: 1.55;
+  }
+
+  .pricing-factor-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pricing-factor-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pricing-factors-statement {
+    margin-top: 40px;
+  }
+
+  .pricing-factors-statement p {
+    font-size: 0.67rem;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 02
+     ======================================================= */
+
+  body.rtl .pricing-factor-item {
+    grid-template-columns: 34px minmax(0, 1fr) 40px;
+  }
+
+
+  /* =======================================================
+     SECTION 03
+     ======================================================= */
+
+  .pricing-services {
+    padding: 85px 0 95px;
+
+    margin-top: 0;
+  }
+
+  .pricing-services-header {
+    margin-bottom: 45px;
+  }
+
+  .pricing-services-header h2 {
+    font-size: 2.8rem;
+  }
+
+  .pricing-services-header p {
+    margin-top: 18px;
+
+    font-size: 0.76rem;
+  }
+
+  .pricing-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .pricing-service-card {
+    min-height: 470px;
+
+    padding: 22px 18px 19px;
+
+    border-radius: 11px;
+  }
+
+  .pricing-service-card-top {
+    margin-bottom: 27px;
+  }
+
+  .pricing-service-number {
+    font-size: 0.54rem;
+  }
+
+  .pricing-service-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .pricing-service-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pricing-service-category {
+    margin-bottom: 8px;
+
+    font-size: 0.44rem;
+
+    letter-spacing: 0.11em;
+  }
+
+  .pricing-service-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .pricing-service-description {
+    min-height: 65px;
+
+    margin: 13px 0 17px;
+
+    font-size: 0.61rem;
+
+    line-height: 1.55;
+  }
+
+  .pricing-service-price {
+    gap: 5px;
+
+    margin-bottom: 15px;
+  }
+
+  .pricing-service-price-label {
+    font-size: 0.43rem;
+  }
+
+  .pricing-service-price strong {
+    font-size: 1.18rem;
+  }
+
+  .pricing-service-price strong small {
+    font-size: 0.52rem;
+  }
+
+  .pricing-service-divider {
+    margin-bottom: 15px;
+  }
+
+  .pricing-service-features {
+    gap: 8px;
+  }
+
+  .pricing-service-features li {
+    gap: 6px;
+
+    font-size: 0.56rem;
+  }
+
+  .pricing-service-features li svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .pricing-service-button {
+    min-height: 40px;
+
+    margin-top: 20px;
+
+    padding: 0 11px;
+
+    font-size: 0.55rem;
+  }
+
+  .pricing-service-featured-label {
+    margin-bottom: 17px;
+
+    gap: 7px;
+  }
+
+  .pricing-service-featured-label p {
+    font-size: 0.42rem;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  /* =======================================================
+     SECTION 04
+     ======================================================= */
+
+  .pricing-included {
+    padding: 85px 0 95px;
+
+    margin-top: 0;
+
+    background: #ffffff;
+  }
+
+  .pricing-included-header {
+    margin-bottom: 45px;
+  }
+
+  .pricing-included-header h2 {
+    font-size: 2.8rem;
+  }
+
+  .pricing-included-header p {
+    margin-top: 18px;
+
+    font-size: 0.76rem;
+  }
+
+  .pricing-included-layout {
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 45px;
+  }
+
+  .pricing-included-image {
+    height: 430px;
+  }
+
+  .pricing-included-item {
+    grid-template-columns: 35px minmax(0, 1fr) 30px;
+
+    gap: 13px;
+
+    padding: 14px 0;
+  }
+
+  .pricing-included-number {
+    font-size: 0.52rem;
+  }
+
+  .pricing-included-kicker {
+    margin-bottom: 5px;
+
+    font-size: 0.43rem;
+  }
+
+  .pricing-included-content h3 {
+    margin-bottom: 4px;
+
+    font-size: 0.91rem;
+  }
+
+  .pricing-included-content p {
+    font-size: 0.61rem;
+
+    line-height: 1.5;
+  }
+
+  .pricing-included-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .pricing-included-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pricing-included-standard {
+    margin-top: 38px;
+  }
+
+  .pricing-included-standard-content span {
+    font-size: 0.44rem;
+  }
+
+  .pricing-included-standard-content strong {
+    font-size: 0.52rem;
+  }
+
+
+  /* =======================================================
+     RTL — SECTION 04
+     ======================================================= */
+
+  body.rtl .pricing-included-layout {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  body.rtl .pricing-included-item {
+    grid-template-columns: 30px minmax(0, 1fr) 35px;
+  }
+
+
+  /* =======================================================
+     SECTION 05 — FAQ
+     ======================================================= */
+
+  .pricing-faq {
+    padding: 85px 0 95px;
+
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .pricing-faq-container {
+    width: calc(100% - 80px);
+  }
+
+  .pricing-faq-header {
+    margin-bottom: 45px;
+  }
+
+  .pricing-faq-header h2 {
+    font-size: 2.8rem;
+  }
+
+  .pricing-faq-header p {
+    margin-top: 18px;
+
+    font-size: 0.76rem;
+  }
+
+  .pricing-faq-question {
+    grid-template-columns: 40px minmax(0, 1fr) 34px;
+
+    gap: 15px;
+
+    padding: 17px 0;
+  }
+
+  .pricing-faq-number {
+    font-size: 0.52rem;
+  }
+
+  .pricing-faq-question-text {
+    font-size: 0.9rem;
+  }
+
+  .pricing-faq-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pricing-faq-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pricing-faq-answer p {
+    padding: 0 55px 20px 55px;
+
+    font-size: 0.67rem;
+
+    line-height: 1.6;
+  }
+
+  .pricing-faq-footer {
+    margin-top: 40px;
+  }
+
+  .pricing-faq-footer-content span {
+    font-size: 0.45rem;
+  }
+
+  .pricing-faq-footer-content strong {
+    font-size: 0.78rem;
+  }
+
+
+  /* =======================================================
+     RTL — FAQ
+     ======================================================= */
+
+  body.rtl .pricing-faq-question {
+    grid-template-columns: 34px minmax(0, 1fr) 40px;
+  }
+
+  body.rtl .pricing-faq-question-text {
+    padding-right: 0;
+
+    padding-left: 15px;
+  }
+
+  body.rtl .pricing-faq-answer p {
+    padding: 0 55px 20px 55px;
+  }
+
+
+  /* =======================================================
+     SECTION 06 — FINAL CTA
+     ======================================================= */
+
+  .pricing-final-cta {
+    padding: 50px 0 60px;
+  }
+
+  .pricing-final-cta-box {
+    width: calc(100% - 80px);
+
+    min-height: 430px;
+  }
+
+  .pricing-final-cta-inner {
+    min-height: 430px;
+
+    padding: 42px 50px 20px;
+  }
+
+  .pricing-final-cta-content h2 {
+    font-size: 2.9rem;
+
+    line-height: 1.04;
+  }
+
+  .pricing-final-cta-content p {
+    margin-top: 18px;
+
+    font-size: 0.72rem;
+
+    line-height: 1.65;
+  }
+
+  .pricing-final-cta-button {
+    margin-top: 23px;
+
+    min-height: 45px;
+
+    padding: 0 20px;
+
+    font-size: 0.65rem;
+  }
+
+  .pricing-final-cta-footer {
+    padding-top: 15px;
+  }
+
+  .pricing-final-cta-footer-left span {
+    font-size: 0.45rem;
+  }
+
+  .pricing-final-cta-footer-right {
+    font-size: 0.58rem;
+  }
+
+  .pricing-final-cta-circle-one {
+    width: 340px;
+    height: 340px;
+  }
+
+  .pricing-final-cta-circle-two {
+    width: 300px;
+    height: 300px;
+  }
+
+}

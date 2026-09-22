@@ -1,0 +1,4461 @@
+/* =========================================================
+   SERVICES HERO
+   ========================================================= */
+
+.services-hero {
+  position: relative;
+  height: 90vh;
+  margin-top: 84px;
+  overflow: hidden;
+
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.services-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.services-hero-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    90deg,
+    rgba(23, 26, 27, 0.96) 0%,
+    rgba(23, 26, 27, 0.88) 27%,
+    rgba(23, 26, 27, 0.68) 50%,
+    rgba(23, 26, 27, 0.38) 75%,
+    rgba(23, 26, 27, 0.45) 100%
+  );
+}
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.services-hero-container {
+  position: relative;
+  z-index: 3;
+
+  width: min(1240px, calc(100% - 110px));
+
+  min-height: 88vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.services-hero-content {
+  width: min(700px, 62%);
+  padding: 80px 0;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.services-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 23px;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.services-eyebrow-line {
+  width: 30px;
+  height: 1px;
+
+  background: #b8864a;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.services-hero-title {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: -0.055em;
+}
+
+.services-hero-title span {
+  display: block;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.services-hero-description {
+  max-width: 590px;
+
+  margin: 27px 0 0;
+
+  color: rgba(242, 240, 234, 0.76);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.services-hero-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+
+  margin-top: 35px;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.services-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 48px;
+
+  padding: 13px 20px;
+
+  border: 1px solid #b8864a;
+  border-radius: 5px;
+
+  background: #b8864a;
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.03em;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.services-hero-primary svg {
+  width: 15px;
+  height: 15px;
+}
+
+.services-hero-primary:hover {
+  background: #63858a;
+  border-color: #63858a;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.services-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.services-hero-secondary svg {
+  width: 14px;
+  height: 14px;
+}
+
+.services-hero-secondary:hover {
+  color: #b8864a;
+  transform: translateY(2px);
+}
+
+/* =========================================================
+   HERO BOTTOM
+   ========================================================= */
+
+.services-hero-bottom {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 28px;
+
+  z-index: 4;
+
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.services-hero-location {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: rgba(242, 240, 234, 0.72);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.services-location-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #b8864a;
+
+  box-shadow: 0 0 0 4px rgba(184, 134, 74, 0.14);
+}
+
+/* =========================================================
+   SCROLL
+   ========================================================= */
+
+.services-hero-scroll {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: rgba(242, 240, 234, 0.68);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  transition: color 0.25s ease;
+}
+
+.services-hero-scroll svg {
+  width: 14px;
+  height: 14px;
+}
+
+.services-hero-scroll:hover {
+  color: #b8864a;
+}
+
+/* =========================================================
+   SERVICES PAGE
+   SECTION 02 — OUR SPECIALTY SERVICES
+   ========================================================= */
+
+.specialty-services-section {
+  position: relative;
+
+  padding: 125px 0 135px;
+
+  background: #f7f5f0;
+  color: #252525;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.specialty-services-container {
+  width: min(1200px, calc(100% - 70px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.specialty-services-header {
+  max-width: 820px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.specialty-services-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-bottom: 21px;
+}
+
+.specialty-services-eyebrow span {
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+
+  flex-shrink: 0;
+}
+
+.specialty-services-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.specialty-services-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.055em;
+}
+
+.specialty-services-title span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.specialty-services-intro {
+  max-width: 650px;
+
+  margin: 22px auto 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   SERVICES GRID
+   ========================================================= */
+
+.specialty-services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.specialty-service-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.1);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.specialty-service-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(184, 134, 74, 0.45);
+
+  box-shadow: 0 18px 45px rgba(37, 37, 37, 0.09);
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.specialty-service-image {
+  position: relative;
+
+  height: 295px;
+
+  overflow: hidden;
+
+  background: #e8e3da;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.specialty-service-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.specialty-service-card:hover .specialty-service-image img {
+  transform: scale(1.035);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.specialty-service-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(23, 26, 27, 0.65) 0%,
+    rgba(23, 26, 27, 0.12) 50%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   SERVICE NUMBER
+   ========================================================= */
+
+.specialty-service-number {
+  position: absolute;
+
+  right: 20px;
+  bottom: 18px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.specialty-service-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 29px 28px 30px;
+}
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.specialty-service-category {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   SERVICE TITLE
+   ========================================================= */
+
+.specialty-service-content h3 {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.specialty-service-content p {
+  margin: 13px 0 0;
+
+  color: #77736c;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   SERVICE LINK
+   ========================================================= */
+
+.specialty-service-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  width: max-content;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.specialty-service-link svg {
+  width: 14px;
+  height: 14px;
+
+  stroke-width: 2;
+}
+
+.specialty-service-link:hover {
+  color: #63858a;
+
+  gap: 11px;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .specialty-services-section {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialty-services-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialty-services-intro {
+  color: #a8aaa5;
+}
+
+body.dark-mode .specialty-service-card {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.1);
+}
+
+body.dark-mode .specialty-service-card:hover {
+  background: #25292a;
+
+  border-color: rgba(184, 134, 74, 0.5);
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .specialty-service-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialty-service-content p {
+  color: #a8aaa5;
+}
+
+/* =========================================================
+   SECTION 4 — POPCORN REMOVAL & TEXTURE MATCHING
+   ========================================================= */
+
+.core-specialties-section {
+  position: relative;
+  padding: 135px 0 145px;
+  margin-top: -125px;
+  background: var(site bg);
+  color: #f2f0ea;
+  overflow: hidden;
+}
+
+.core-specialties-container {
+  width: min(1200px, calc(100% - 70px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.core-specialties-header {
+  max-width: 850px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.core-specialties-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+
+.core-specialties-eyebrow span {
+  width: 28px;
+  height: 1px;
+  background: #b8864a;
+  flex-shrink: 0;
+}
+
+.core-specialties-eyebrow p {
+  margin: 0;
+  color: var(--secondary);
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.core-specialties-title {
+  margin: 0;
+  color: black;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+body.dark-mode .core-specialties-title {
+  color: white;
+}
+
+.core-specialties-title span {
+  display: block;
+  color: #b8864a;
+}
+
+.core-specialties-intro {
+  max-width: 660px;
+  margin: 23px auto 0;
+  color: #a8aaa5;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   MAIN GRID
+   ========================================================= */
+
+.core-specialties-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    70px
+    minmax(0, 1fr);
+
+  align-items: center;
+  width: 100%;
+}
+
+/* =========================================================
+   SPECIALTY
+   ========================================================= */
+
+.core-specialty {
+  min-width: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.core-specialty-image {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background: #222627;
+}
+
+.core-specialty-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(23, 26, 27, 0.62) 0%,
+    rgba(23, 26, 27, 0.1) 52%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.core-specialty-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.core-specialty:hover .core-specialty-image img {
+  transform: scale(1.035);
+}
+
+/* =========================================================
+   IMAGE NUMBER
+   ========================================================= */
+
+.core-specialty-number {
+  position: absolute;
+  right: 24px;
+  bottom: 22px;
+  z-index: 2;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.core-specialty-content {
+  padding: 29px 4px 0;
+}
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.core-specialty-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.core-specialty-line {
+  width: 25px;
+  height: 1px;
+  background: #63858a;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.core-specialty-content h3 {
+  margin: 0;
+  color: black;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+.core-specialty-content h3 span {
+  color: #b8864a;
+}
+body.dark-mode .core-specialties-container h3 {
+  color: white;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.core-specialty-content > p {
+  max-width: 490px;
+  margin: 15px 0 0;
+
+  color: #a8aaa5;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.core-specialty-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  margin-top: 25px;
+  padding-top: 19px;
+
+  border-top: 1px solid rgba(242, 240, 234, 0.1);
+}
+
+.core-specialty-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #d8d6d0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.core-specialty-detail svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+
+  color: #b8864a;
+  stroke-width: 2;
+}
+
+/* =========================================================
+   CENTER DIVIDER
+   ========================================================= */
+
+.core-specialties-divider {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  min-height: 420px;
+}
+
+.core-divider-line {
+  position: absolute;
+
+  width: 1px;
+  height: 100%;
+
+  background: rgba(184, 134, 74, 0.25);
+}
+
+.core-divider-symbol {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border: 1px solid rgba(184, 134, 74, 0.55);
+  border-radius: 50%;
+
+  background: #171a1b;
+}
+
+.core-divider-symbol svg {
+  width: 13px;
+  height: 13px;
+
+  color: #b8864a;
+  stroke-width: 1.8;
+}
+
+/* =========================================================
+   CEILINGCRAFT
+   SECTION 5 — REPAINTING & FINISHING
+   ========================================================= */
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.repainting-section {
+  position: relative;
+  margin-top: -100px;
+  padding: 135px 0 145px;
+  margin-top: -100px;
+
+  background: #f7f5f0;
+  color: #252525;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.repainting-container {
+  width: min(1200px, calc(100% - 70px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CENTERED SECTION HEADER
+   ========================================================= */
+
+.repainting-header {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.repainting-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-bottom: 21px;
+}
+
+.repainting-eyebrow > span {
+  width: 28px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #b8864a;
+}
+
+.repainting-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.repainting-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.055em;
+}
+
+.repainting-title span {
+  display: block;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRO DESCRIPTION
+   ========================================================= */
+
+.repainting-header .repainting-description {
+  max-width: 650px;
+
+  margin: 23px auto 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.85;
+
+  text-align: center;
+}
+
+/* =========================================================
+   IMAGE + CONTENT AREA
+   ========================================================= */
+
+.repainting-main {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 0.92fr);
+
+  gap: 95px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.repainting-image-wrap {
+  position: relative;
+
+  min-width: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.repainting-image {
+  position: relative;
+
+  width: 100%;
+  height: 560px;
+
+  overflow: hidden;
+
+  background: #e8e3da;
+}
+
+.repainting-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(23, 26, 27, 0.25), transparent 45%);
+
+  pointer-events: none;
+}
+
+.repainting-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+.repainting-image-wrap:hover .repainting-image img {
+  transform: scale(1.035);
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.repainting-image-label {
+  position: absolute;
+
+  left: 0;
+  bottom: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 18px;
+
+  background: #171a1b;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.repainting-label-line {
+  width: 22px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.repainting-content {
+  width: 100%;
+
+  max-width: 540px;
+
+  min-width: 0;
+}
+
+/* =========================================================
+   DETAILS CONTAINER
+   ========================================================= */
+
+.repainting-details {
+  width: 100%;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.13);
+}
+
+/* =========================================================
+   INDIVIDUAL DETAIL
+   ========================================================= */
+
+.repainting-detail {
+  display: grid;
+
+  grid-template-columns: 38px minmax(0, 1fr);
+
+  gap: 17px;
+
+  padding: 21px 0;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.13);
+}
+
+/* =========================================================
+   DETAIL NUMBER
+   ========================================================= */
+
+.repainting-detail-number {
+  padding-top: 2px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   DETAIL TITLE
+   ========================================================= */
+
+.repainting-detail-content h3 {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: -0.015em;
+}
+
+/* =========================================================
+   DETAIL DESCRIPTION
+   ========================================================= */
+
+.repainting-detail-content p {
+  max-width: 430px;
+
+  margin: 6px 0 0;
+
+  color: #77736c;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11.5px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.repainting-cta {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 34px;
+
+  padding: 14px 21px;
+  border-radius: 8px;
+
+  background: #b8864a;
+
+  border: 1px solid #b8864a;
+
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.11em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.repainting-cta svg {
+  width: 14px;
+  height: 14px;
+
+  stroke-width: 2;
+}
+
+.repainting-cta:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  color: #ffffff;
+
+  gap: 13px;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .repainting-section {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .repainting-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .repainting-header .repainting-description {
+  color: #a8aaa5;
+}
+
+body.dark-mode .repainting-details {
+  border-color: rgba(242, 240, 234, 0.11);
+}
+
+body.dark-mode .repainting-detail {
+  border-color: rgba(242, 240, 234, 0.11);
+}
+
+body.dark-mode .repainting-detail-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .repainting-detail-content p {
+  color: #a8aaa5;
+}
+
+/* =========================================================
+   SECTION 6 — TESTIMONIALS
+   ========================================================= */
+
+.services-testimonials {
+  position: relative;
+  margin-top: -125px;
+  padding: 130px 0 135px;
+  margin-top: -100px;
+  background: #f7f5f0;
+  color: #252525;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.services-testimonials-container {
+  width: min(1120px, calc(100% - 70px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.services-testimonials-header {
+  max-width: 820px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.services-testimonials-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-bottom: 21px;
+}
+
+.services-testimonials-eyebrow span {
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+
+  flex-shrink: 0;
+}
+
+.services-testimonials-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.services-testimonials-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.055em;
+}
+
+.services-testimonials-title span {
+  display: block;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.services-testimonials-intro {
+  max-width: 640px;
+
+  margin: 22px auto 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   SLIDER
+   ========================================================= */
+
+.services-testimonials-slider {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 58px minmax(0, 1fr) 58px;
+
+  gap: 22px;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+/* =========================================================
+   VIEWPORT
+   ========================================================= */
+
+.services-testimonials-viewport {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.services-testimonials-track {
+  display: flex;
+
+  width: 100%;
+
+  transform: translateX(0);
+
+  transition: transform 0.5s ease;
+}
+
+/* =========================================================
+   SLIDE
+   ========================================================= */
+
+.services-testimonial-slide {
+  position: relative;
+
+  flex: 0 0 100%;
+
+  min-width: 100%;
+
+  min-height: 365px;
+
+  padding: 58px 75px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.1);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   DECORATIVE LINE
+   ========================================================= */
+
+.services-testimonial-slide::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   QUOTE MARK
+   ========================================================= */
+
+.services-testimonial-mark {
+  position: absolute;
+
+  top: 40px;
+  right: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  color: #b8864a;
+
+  opacity: 0.55;
+}
+
+.services-testimonial-mark svg {
+  width: 42px;
+  height: 42px;
+
+  stroke-width: 1.2;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.services-testimonial-content {
+  max-width: 790px;
+}
+
+/* =========================================================
+   TESTIMONIAL TEXT
+   ========================================================= */
+
+.services-testimonial-text {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: clamp(20px, 2.2vw, 27px);
+
+  font-weight: 500;
+
+  line-height: 1.55;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   AUTHOR
+   ========================================================= */
+
+.services-testimonial-author {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 34px;
+}
+
+.services-testimonial-avatar {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #63858a;
+
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+}
+
+.services-testimonial-author h3 {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  line-height: 1.3;
+}
+
+.services-testimonial-author span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #77736c;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   SLIDE NUMBER
+   ========================================================= */
+
+.services-testimonial-number {
+  position: absolute;
+
+  right: 55px;
+  bottom: 40px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.12em;
+}
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.services-testimonial-arrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  padding: 0;
+
+  border: 1px solid rgba(37, 37, 37, 0.16);
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #252525;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.services-testimonial-arrow svg {
+  width: 17px;
+  height: 17px;
+
+  stroke-width: 1.8;
+}
+
+.services-testimonial-arrow:hover {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   DOT NAVIGATION
+   ========================================================= */
+
+.services-testimonials-navigation {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 30px;
+}
+
+.services-testimonial-dot {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: rgba(37, 37, 37, 0.2);
+
+  cursor: pointer;
+
+  transition:
+    width 0.25s ease,
+    border-radius 0.25s ease,
+    background 0.25s ease;
+}
+
+.services-testimonial-dot.active {
+  width: 28px;
+
+  border-radius: 5px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .services-testimonials {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-testimonials-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-testimonials-intro {
+  color: #a8aaa5;
+}
+
+body.dark-mode .services-testimonial-slide {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.1);
+}
+
+body.dark-mode .services-testimonial-text {
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-testimonial-author h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-testimonial-author span {
+  color: #a8aaa5;
+}
+
+body.dark-mode .services-testimonial-arrow {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.15);
+
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-testimonial-arrow:hover {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+body.dark-mode .services-testimonial-dot {
+  background: rgba(242, 240, 234, 0.22);
+}
+
+body.dark-mode .services-testimonial-dot.active {
+  background: #b8864a;
+}
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .services-testimonials-container {
+  direction: rtl;
+}
+
+body.rtl .services-testimonials-header {
+  direction: rtl;
+}
+
+body.rtl .services-testimonials-eyebrow {
+  flex-direction: row-reverse;
+}
+
+body.rtl .services-testimonial-slide {
+  direction: rtl;
+}
+
+body.rtl .services-testimonial-slide::before {
+  left: auto;
+  right: 0;
+}
+
+body.rtl .services-testimonial-mark {
+  right: auto;
+  left: 55px;
+}
+
+body.rtl .services-testimonial-number {
+  right: auto;
+  left: 55px;
+}
+
+body.rtl .services-testimonial-author {
+  flex-direction: row-reverse;
+
+  justify-content: flex-end;
+
+  text-align: right;
+}
+
+/* =========================================================
+   SECTION 6 — FINAL CTA
+   ========================================================= */
+
+.services-final-cta {
+  position: relative;
+margin-top: -90px;
+  padding: 125px 0 45px;
+
+  background: var(site bg);
+  color: #f2f0ea;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   SUBTLE BACKGROUND DETAILS
+   ========================================================= */
+
+.services-final-cta::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 650px;
+  height: 650px;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(184, 134, 74, 0.07);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.services-final-cta::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 430px;
+  height: 430px;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(99, 133, 138, 0.07);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.services-final-cta-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1200px, calc(100% - 70px));
+
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   TOP DECORATIVE LINE
+   ========================================================= */
+
+.services-final-cta-top-line {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-bottom: 75px;
+}
+
+.services-final-cta-top-line span {
+  display: block;
+
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.services-final-cta-top-line span:nth-child(1) {
+  width: 55px;
+  opacity: 0.35;
+}
+
+.services-final-cta-top-line span:nth-child(2) {
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid #b8864a;
+
+  background: #171a1b;
+
+  border-radius: 50%;
+
+  opacity: 1;
+}
+
+.services-final-cta-top-line span:nth-child(3) {
+  width: 55px;
+  opacity: 0.35;
+}
+
+/* =========================================================
+   SECTION 6 — FINAL CTA
+   LIGHT MODE
+   ========================================================= */
+
+.services-final-cta {
+  position: relative;
+
+  padding: 75px 0;
+
+  background: #f7f5f0;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
+.services-final-cta-box {
+  position: relative;
+
+  width: min(900px, calc(100% - 70px));
+
+  min-height: 550px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 90px 70px 35px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.14);
+
+  border-radius: 32px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   INNER BORDER
+   ========================================================= */
+
+.services-final-cta-box::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 12px;
+
+  border: 1px solid rgba(184, 134, 74, 0.28);
+
+  border-radius: 24px;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+/* =========================================================
+   DECORATIVE ARCS
+   ========================================================= */
+
+.services-final-cta-arc {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+/* LEFT ARC */
+
+.services-final-cta-arc-left {
+  width: 570px;
+  height: 570px;
+
+  top: -360px;
+  left: -150px;
+
+  border: 1px solid rgba(184, 134, 74, 0.2);
+}
+
+/* RIGHT ARC */
+
+.services-final-cta-arc-right {
+  width: 570px;
+  height: 570px;
+
+  right: -200px;
+  bottom: -390px;
+
+  border: 1px solid rgba(99, 133, 138, 0.18);
+}
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.services-final-cta-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.services-final-cta-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 36px;
+}
+
+.services-final-cta-eyebrow span {
+  width: 55px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.services-final-cta-eyebrow p {
+  margin: 0;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.services-final-cta-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 600;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.065em;
+}
+
+.services-final-cta-title span {
+  display: block;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.services-final-cta-description {
+  max-width: 900px;
+
+  margin: 42px auto 0;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.services-final-cta-button {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  margin-top: 42px;
+
+  min-width: 200px;
+
+  padding: 19px 30px;
+
+  background: #b8864a;
+
+  border: 1px solid #b8864a;
+
+  border-radius: 9px;
+
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    gap 0.25s ease;
+}
+
+.services-final-cta-button svg {
+  width: 18px;
+  height: 18px;
+
+  stroke-width: 2;
+}
+
+.services-final-cta-button:hover {
+  background: #63858a;
+
+  border-color: #63858a;
+
+  transform: translateY(-2px);
+
+  gap: 17px;
+}
+
+/* =========================================================
+   BOTTOM INFORMATION
+   ========================================================= */
+
+.services-final-cta-bottom {
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 28px 12px 0;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.12);
+}
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.services-final-cta-location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.services-final-cta-dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.services-final-cta-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 2px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.04em;
+}
+
+.services-final-cta-brand span {
+  color: #63858a;
+}
+
+.services-final-cta-brand strong {
+  color: #b8864a;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .services-final-cta {
+  background: #171a1b;
+}
+
+body.dark-mode .services-final-cta-box {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .services-final-cta-box::before {
+  border-color: rgba(184, 134, 74, 0.32);
+}
+
+body.dark-mode .services-final-cta-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .services-final-cta-description {
+  color: #a8aaa5;
+}
+
+body.dark-mode .services-final-cta-bottom {
+  border-color: rgba(242, 240, 234, 0.11);
+}
+
+
+/* =========================================================
+   CEILINGCRAFT SERVICES PAGE
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* =======================================================
+     SERVICES HERO
+     ======================================================= */
+
+  .services-hero {
+    height: 700px;
+    min-height: 700px;
+
+    margin-top: 68px;
+  }
+
+  .services-hero-image img {
+    object-position: center center;
+  }
+
+  .services-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(23, 26, 27, 0.92) 0%,
+      rgba(23, 26, 27, 0.78) 48%,
+      rgba(23, 26, 27, 0.90) 100%
+    );
+  }
+
+  .services-hero-container {
+    width: calc(100% - 36px);
+
+    min-height: 630px;
+
+    align-items: center;
+  }
+
+  .services-hero-content {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 55px 0 90px;
+  }
+
+  .services-hero-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .services-eyebrow-line {
+    width: 20px;
+  }
+
+  .services-hero-title {
+    max-width: 100%;
+
+    font-size: clamp(40px, 11vw, 54px);
+
+    line-height: 1.04;
+  }
+
+  .services-hero-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .services-hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 12px;
+
+    margin-top: 28px;
+  }
+
+  .services-hero-primary,
+  .services-hero-secondary {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .services-hero-primary {
+    min-height: 50px;
+  }
+
+  .services-hero-secondary {
+    min-height: 42px;
+  }
+
+  .services-hero-bottom {
+    bottom: 20px;
+
+    width: calc(100% - 36px);
+  }
+
+  .services-hero-location {
+    font-size: 8px;
+
+    letter-spacing: 0.10em;
+  }
+
+  .services-hero-scroll {
+    font-size: 8px;
+
+    letter-spacing: 0.10em;
+  }
+
+
+  /* =======================================================
+     SECTION 2 — SPECIALTY SERVICES
+     ======================================================= */
+
+  .specialty-services-section {
+    padding: 90px 0 95px;
+  }
+
+  .specialty-services-container {
+    width: calc(100% - 36px);
+  }
+
+  .specialty-services-header {
+    margin-bottom: 40px;
+  }
+
+  .specialty-services-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+  }
+
+  .specialty-services-eyebrow span {
+    width: 20px;
+  }
+
+  .specialty-services-eyebrow p {
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .specialty-services-title {
+    font-size: 39px;
+
+    line-height: 1.06;
+  }
+
+  .specialty-services-intro {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .specialty-services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .specialty-service-card {
+    width: 100%;
+  }
+
+  .specialty-service-card:nth-child(3) {
+    grid-column: auto;
+
+    width: 100%;
+  }
+
+  .specialty-service-image {
+    height: 245px;
+  }
+
+  .specialty-service-content {
+    padding: 25px 22px 27px;
+  }
+
+  .specialty-service-category {
+    font-size: 8px;
+  }
+
+  .specialty-service-content h3 {
+    font-size: 21px;
+  }
+
+  .specialty-service-content p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+  .specialty-service-link {
+    padding-top: 22px;
+
+    font-size: 9px;
+  }
+
+  .specialty-service-card:hover {
+    transform: none;
+
+    box-shadow: none;
+  }
+
+  .specialty-service-card:hover
+  .specialty-service-image img {
+    transform: none;
+  }
+
+
+  /* =======================================================
+     SECTION 4 — CORE SPECIALTIES
+     ======================================================= */
+
+  .core-specialties-section {
+    padding: 90px 0 100px;
+  }
+
+  .core-specialties-container {
+    width: calc(100% - 36px);
+  }
+
+  .core-specialties-header {
+    margin-bottom: 45px;
+  }
+
+  .core-specialties-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+  }
+
+  .core-specialties-eyebrow span {
+    width: 20px;
+  }
+
+  .core-specialties-eyebrow p {
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .core-specialties-title {
+    font-size: 39px;
+
+    line-height: 1.06;
+  }
+
+  .core-specialties-intro {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .core-specialties-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 55px;
+  }
+
+  .core-specialty {
+    width: 100%;
+  }
+
+  .core-specialty-image {
+    height: 280px;
+  }
+
+  .core-specialty-number {
+    right: 18px;
+
+    bottom: 18px;
+
+    font-size: 12px;
+  }
+
+  .core-specialty-content {
+    padding: 24px 0 0;
+  }
+
+  .core-specialty-meta {
+    gap: 8px;
+
+    margin-bottom: 13px;
+
+    font-size: 8px;
+  }
+
+  .core-specialty-line {
+    width: 20px;
+  }
+
+  .core-specialty-content h3 {
+    font-size: 22px;
+
+    line-height: 1.25;
+  }
+
+  .core-specialty-content > p {
+    max-width: 100%;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .core-specialty-details {
+    gap: 10px 18px;
+
+    margin-top: 20px;
+
+    padding-top: 17px;
+  }
+
+  .core-specialty-detail {
+    font-size: 9px;
+  }
+
+  .core-specialties-divider {
+    display: none;
+  }
+
+
+  /* =======================================================
+     SECTION 5 — REPAINTING
+     ======================================================= */
+
+  .repainting-section {
+    padding: 90px 0 100px;
+
+    margin-top: 0;
+  }
+
+  .repainting-container {
+    width: calc(100% - 36px);
+  }
+
+  .repainting-header {
+    margin-bottom: 45px;
+  }
+
+  .repainting-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+  }
+
+  .repainting-eyebrow > span {
+    width: 20px;
+  }
+
+  .repainting-eyebrow p {
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .repainting-title {
+    font-size: 39px;
+
+    line-height: 1.06;
+  }
+
+  .repainting-header .repainting-description {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .repainting-main {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .repainting-image {
+    height: 320px;
+  }
+
+  .repainting-image-label {
+    bottom: 18px;
+
+    padding: 11px 14px;
+
+    font-size: 8px;
+  }
+
+  .repainting-label-line {
+    width: 18px;
+  }
+
+  .repainting-content {
+    max-width: 100%;
+  }
+
+  .repainting-detail {
+    grid-template-columns: 32px minmax(0, 1fr);
+
+    gap: 13px;
+
+    padding: 18px 0;
+  }
+
+  .repainting-detail-number {
+    font-size: 10px;
+  }
+
+  .repainting-detail-content h3 {
+    font-size: 14px;
+  }
+
+  .repainting-detail-content p {
+    max-width: 100%;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+  }
+
+  .repainting-cta {
+    margin-top: 27px;
+
+    padding: 13px 18px;
+
+    font-size: 9px;
+  }
+
+
+  /* =======================================================
+     SECTION 6 — TESTIMONIALS
+     ======================================================= */
+
+  .services-testimonials {
+    padding: 90px 0 95px;
+
+    margin-top: 0;
+  }
+
+  .services-testimonials-container {
+    width: calc(100% - 36px);
+  }
+
+  .services-testimonials-header {
+    margin-bottom: 42px;
+  }
+
+  .services-testimonials-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 18px;
+  }
+
+  .services-testimonials-eyebrow span {
+    width: 20px;
+  }
+
+  .services-testimonials-eyebrow p {
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .services-testimonials-title {
+    font-size: 39px;
+
+    line-height: 1.06;
+  }
+
+  .services-testimonials-intro {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .services-testimonials-slider {
+    display: block;
+  }
+
+  .services-testimonial-slide {
+    min-height: 390px;
+
+    padding: 45px 25px 40px;
+  }
+
+  .services-testimonial-slide::before {
+    width: 4px;
+  }
+
+  .services-testimonial-mark {
+    top: 22px;
+
+    right: 22px;
+
+    width: 35px;
+    height: 35px;
+  }
+
+  .services-testimonial-mark svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .services-testimonial-text {
+    font-size: 18px;
+
+    line-height: 1.55;
+  }
+
+  .services-testimonial-author {
+    margin-top: 28px;
+  }
+
+  .services-testimonial-number {
+    right: 25px;
+
+    bottom: 22px;
+
+    font-size: 8px;
+  }
+
+  .services-testimonial-arrow {
+    position: absolute;
+
+    z-index: 5;
+
+    top: auto;
+
+    bottom: -72px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+  .services-testimonial-prev {
+    left: calc(50% - 52px);
+  }
+
+  .services-testimonial-next {
+    right: calc(50% - 52px);
+  }
+
+  .services-testimonial-arrow svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .services-testimonials-navigation {
+    margin-top: 92px;
+  }
+
+
+  /* =======================================================
+     SECTION 7 — FINAL CTA
+     ======================================================= */
+
+  .services-final-cta {
+    padding: 45px 0;
+  }
+
+  .services-final-cta-box {
+    width: calc(100% - 28px);
+
+    min-height: 560px;
+
+    padding: 75px 25px 25px;
+
+    border-radius: 22px;
+  }
+
+  .services-final-cta-box::before {
+    inset: 8px;
+
+    border-radius: 16px;
+  }
+
+  .services-final-cta-arc-left {
+    width: 400px;
+    height: 400px;
+
+    top: -250px;
+    left: -170px;
+  }
+
+  .services-final-cta-arc-right {
+    width: 400px;
+    height: 400px;
+
+    right: -190px;
+    bottom: -275px;
+  }
+
+  .services-final-cta-eyebrow {
+    gap: 10px;
+
+    margin-bottom: 25px;
+  }
+
+  .services-final-cta-eyebrow span {
+    width: 25px;
+  }
+
+  .services-final-cta-eyebrow p {
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .services-final-cta-title {
+    font-size: 42px;
+
+    line-height: 1.02;
+  }
+
+  .services-final-cta-description {
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+  .services-final-cta-button {
+    width: 100%;
+
+    min-width: 0;
+
+    margin-top: 28px;
+
+    padding: 16px 20px;
+
+    font-size: 10px;
+  }
+
+  .services-final-cta-bottom {
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding-top: 23px;
+
+    text-align: center;
+  }
+
+  .services-final-cta-location {
+    font-size: 8px;
+  }
+
+  .services-final-cta-brand {
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     RTL — MOBILE
+     ======================================================= */
+
+  body.rtl .services-hero-content,
+  body.rtl .specialty-services-container,
+  body.rtl .core-specialties-container,
+  body.rtl .repainting-container,
+  body.rtl .services-testimonials-container,
+  body.rtl .services-final-cta-box {
+    direction: rtl;
+  }
+
+  body.rtl .services-hero-actions {
+    align-items: stretch;
+  }
+
+  body.rtl .core-specialty-number {
+    right: auto;
+
+    left: 18px;
+  }
+
+  body.rtl .services-testimonial-mark {
+    right: auto;
+
+    left: 22px;
+  }
+
+  body.rtl .services-testimonial-number {
+    right: auto;
+
+    left: 25px;
+  }
+
+  body.rtl .services-testimonial-prev {
+    left: auto;
+
+    right: calc(50% - 52px);
+  }
+
+  body.rtl .services-testimonial-next {
+    right: auto;
+
+    left: calc(50% - 52px);
+  }
+
+  body.rtl .services-final-cta-location {
+    flex-direction: row-reverse;
+  }
+
+  body.rtl .services-final-cta-brand {
+    flex-direction: row-reverse;
+  }
+
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* =======================================================
+     SERVICES HERO
+     ======================================================= */
+
+  .services-hero {
+    height: 720px;
+    min-height: 720px;
+
+    margin-top: 72px;
+  }
+
+  .services-hero-container {
+    width: calc(100% - 56px);
+
+    min-height: 650px;
+  }
+
+  .services-hero-content {
+    width: min(620px, 78%);
+
+    padding: 60px 0 100px;
+  }
+
+  .services-hero-title {
+    font-size: clamp(48px, 7vw, 58px);
+
+    line-height: 1.03;
+  }
+
+  .services-hero-description {
+    max-width: 540px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+  .services-hero-actions {
+    gap: 18px;
+
+    margin-top: 30px;
+  }
+
+  .services-hero-bottom {
+    width: calc(100% - 56px);
+
+    bottom: 24px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+     ======================================================= */
+
+  .specialty-services-section {
+    padding: 105px 0 115px;
+  }
+
+  .specialty-services-container {
+    width: calc(100% - 56px);
+  }
+
+  .specialty-services-header {
+    max-width: 700px;
+
+    margin-bottom: 50px;
+  }
+
+  .specialty-services-title {
+    font-size: 48px;
+  }
+
+  .specialty-services-intro {
+    font-size: 13px;
+  }
+
+  .specialty-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .specialty-service-card:nth-child(3) {
+    grid-column: 1 / -1;
+
+    width: min(100%, 360px);
+
+    justify-self: center;
+  }
+
+  .specialty-service-image {
+    height: 270px;
+  }
+
+  .specialty-service-content {
+    padding: 26px 24px 28px;
+  }
+
+  .specialty-service-content h3 {
+    font-size: 21px;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+     ======================================================= */
+
+  .core-specialties-section {
+    padding: 110px 0 120px;
+  }
+
+  .core-specialties-container {
+    width: calc(100% - 56px);
+  }
+
+  .core-specialties-header {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+  }
+
+  .core-specialties-title {
+    font-size: 48px;
+  }
+
+  .core-specialties-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      45px
+      minmax(0, 1fr);
+
+    gap: 0;
+  }
+
+  .core-specialty-image {
+    height: 310px;
+  }
+
+  .core-specialty-content {
+    padding-top: 24px;
+  }
+
+  .core-specialty-content h3 {
+    font-size: 22px;
+  }
+
+  .core-specialty-content > p {
+    font-size: 11.5px;
+  }
+
+  .core-specialty-details {
+    gap: 10px 14px;
+  }
+
+  .core-specialty-detail {
+    font-size: 9px;
+  }
+
+  .core-specialties-divider {
+    min-height: 310px;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+     ======================================================= */
+
+  .repainting-section {
+    padding: 110px 0 120px;
+
+    margin-top: 0;
+  }
+
+  .repainting-container {
+    width: calc(100% - 56px);
+  }
+
+  .repainting-header {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+  }
+
+  .repainting-title {
+    font-size: 48px;
+  }
+
+  .repainting-header .repainting-description {
+    font-size: 13px;
+  }
+
+  .repainting-main {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 0.9fr);
+
+    gap: 45px;
+  }
+
+  .repainting-image {
+    height: 470px;
+  }
+
+  .repainting-content {
+    max-width: 100%;
+  }
+
+  .repainting-detail {
+    grid-template-columns: 34px minmax(0, 1fr);
+
+    gap: 13px;
+
+    padding: 19px 0;
+  }
+
+  .repainting-detail-content h3 {
+    font-size: 14px;
+  }
+
+  .repainting-detail-content p {
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     SECTION 6 — TESTIMONIALS
+     ======================================================= */
+
+  .services-testimonials {
+    padding: 110px 0 115px;
+
+    margin-top: 0;
+  }
+
+  .services-testimonials-container {
+    width: calc(100% - 56px);
+  }
+
+  .services-testimonials-header {
+    max-width: 700px;
+
+    margin-bottom: 50px;
+  }
+
+  .services-testimonials-title {
+    font-size: 48px;
+  }
+
+  .services-testimonials-intro {
+    font-size: 13px;
+  }
+
+  .services-testimonials-slider {
+    grid-template-columns: 48px minmax(0, 1fr) 48px;
+
+    gap: 14px;
+  }
+
+  .services-testimonial-arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .services-testimonial-slide {
+    min-height: 350px;
+
+    padding: 50px 50px;
+  }
+
+  .services-testimonial-text {
+    font-size: 21px;
+
+    line-height: 1.55;
+  }
+
+  .services-testimonial-mark {
+    top: 30px;
+
+    right: 35px;
+  }
+
+  .services-testimonial-number {
+    right: 35px;
+
+    bottom: 28px;
+  }
+
+
+  /* =======================================================
+     SECTION 7 — FINAL CTA
+     ======================================================= */
+
+  .services-final-cta {
+    padding: 60px 0;
+  }
+
+  .services-final-cta-box {
+    width: calc(100% - 56px);
+
+    min-height: 570px;
+
+    padding: 80px 45px 30px;
+
+    border-radius: 28px;
+  }
+
+  .services-final-cta-box::before {
+    inset: 10px;
+
+    border-radius: 21px;
+  }
+
+  .services-final-cta-title {
+    font-size: 52px;
+  }
+
+  .services-final-cta-description {
+    max-width: 650px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+  .services-final-cta-button {
+    margin-top: 34px;
+  }
+
+  .services-final-cta-bottom {
+    padding-top: 25px;
+  }
+
+
+  /* =======================================================
+     RTL — iPAD MINI
+     ======================================================= */
+
+  body.rtl .core-specialty-number {
+    right: auto;
+
+    left: 20px;
+  }
+
+  body.rtl .services-testimonial-mark {
+    right: auto;
+
+    left: 35px;
+  }
+
+  body.rtl .services-testimonial-number {
+    right: auto;
+
+    left: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* =======================================================
+     SERVICES HERO
+     ======================================================= */
+
+  .services-hero {
+    height: 760px;
+    min-height: 760px;
+
+    margin-top: 72px;
+  }
+
+  .services-hero-container {
+    width: calc(100% - 70px);
+
+    min-height: 690px;
+  }
+
+  .services-hero-content {
+    width: min(680px, 68%);
+
+    padding: 70px 0 100px;
+  }
+
+  .services-hero-title {
+    font-size: clamp(52px, 6.5vw, 68px);
+  }
+
+  .services-hero-description {
+    max-width: 570px;
+
+    font-size: 13px;
+  }
+
+  .services-hero-bottom {
+    width: calc(100% - 70px);
+
+    bottom: 25px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+     ======================================================= */
+
+  .specialty-services-section {
+    padding: 115px 0 125px;
+  }
+
+  .specialty-services-container {
+    width: calc(100% - 70px);
+  }
+
+  .specialty-services-header {
+    margin-bottom: 55px;
+  }
+
+  .specialty-services-title {
+    font-size: 54px;
+  }
+
+  .specialty-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+  }
+
+  .specialty-service-card:nth-child(3) {
+    grid-column: 1 / -1;
+
+    width: min(100%, 390px);
+
+    justify-self: center;
+  }
+
+  .specialty-service-image {
+    height: 285px;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+     ======================================================= */
+
+  .core-specialties-section {
+    padding: 120px 0 130px;
+  }
+
+  .core-specialties-container {
+    width: calc(100% - 70px);
+  }
+
+  .core-specialties-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      55px
+      minmax(0, 1fr);
+  }
+
+  .core-specialty-image {
+    height: 360px;
+  }
+
+  .core-specialties-divider {
+    min-height: 360px;
+  }
+
+  .core-specialty-content h3 {
+    font-size: 24px;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+     ======================================================= */
+
+  .repainting-section {
+    padding: 120px 0 130px;
+
+    margin-top: 0;
+  }
+
+  .repainting-container {
+    width: calc(100% - 70px);
+  }
+
+  .repainting-main {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 0.9fr);
+
+    gap: 60px;
+  }
+
+  .repainting-image {
+    height: 500px;
+  }
+
+  .repainting-detail {
+    padding: 20px 0;
+  }
+
+
+  /* =======================================================
+     SECTION 6 — TESTIMONIALS
+     ======================================================= */
+
+  .services-testimonials {
+    padding: 120px 0 125px;
+
+    margin-top: 0;
+  }
+
+  .services-testimonials-container {
+    width: calc(100% - 70px);
+  }
+
+  .services-testimonials-slider {
+    grid-template-columns: 52px minmax(0, 1fr) 52px;
+
+    gap: 18px;
+  }
+
+  .services-testimonial-arrow {
+    width: 52px;
+    height: 52px;
+  }
+
+  .services-testimonial-slide {
+    min-height: 365px;
+
+    padding: 55px 65px;
+  }
+
+  .services-testimonial-text {
+    font-size: 24px;
+  }
+
+  .services-testimonial-mark {
+    right: 45px;
+  }
+
+  .services-testimonial-number {
+    right: 45px;
+  }
+
+
+  /* =======================================================
+     SECTION 7 — FINAL CTA
+     ======================================================= */
+
+  .services-final-cta {
+    padding: 65px 0;
+  }
+
+  .services-final-cta-box {
+    width: calc(100% - 70px);
+
+    min-height: 600px;
+
+    padding: 85px 55px 32px;
+
+    border-radius: 30px;
+  }
+
+  .services-final-cta-box::before {
+    inset: 11px;
+
+    border-radius: 22px;
+  }
+
+  .services-final-cta-title {
+    font-size: 58px;
+  }
+
+  .services-final-cta-description {
+    max-width: 760px;
+
+    font-size: 14px;
+  }
+
+
+  /* =======================================================
+     RTL — iPAD PRO
+     ======================================================= */
+
+  body.rtl .core-specialty-number {
+    right: auto;
+
+    left: 22px;
+  }
+
+  body.rtl .services-testimonial-mark {
+    right: auto;
+
+    left: 45px;
+  }
+
+  body.rtl .services-testimonial-number {
+    right: auto;
+
+    left: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   MUST BE LAST
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =======================================================
+     SERVICES HERO
+     ======================================================= */
+
+  .services-hero {
+    height: 528px;
+    min-height: 528px;
+
+    margin-top: 72px;
+  }
+
+  .services-hero-container {
+    width: calc(100% - 70px);
+
+    min-height: 500px;
+  }
+
+  .services-hero-content {
+    width: 62%;
+
+    padding: 35px 0 65px;
+  }
+
+  .services-hero-eyebrow {
+    margin-bottom: 16px;
+
+    font-size: 9px;
+  }
+
+  .services-eyebrow-line {
+    width: 22px;
+  }
+
+  .services-hero-title {
+    font-size: 48px;
+
+    line-height: 1;
+  }
+
+  .services-hero-description {
+    max-width: 500px;
+
+    margin-top: 16px;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+  }
+
+  .services-hero-actions {
+    gap: 18px;
+
+    margin-top: 22px;
+  }
+
+  .services-hero-primary {
+    min-height: 42px;
+
+    padding: 10px 16px;
+
+    font-size: 10px;
+  }
+
+  .services-hero-secondary {
+    font-size: 10px;
+  }
+
+  .services-hero-bottom {
+    width: calc(100% - 70px);
+
+    bottom: 16px;
+  }
+
+  .services-hero-location,
+  .services-hero-scroll {
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+     ======================================================= */
+
+  .specialty-services-section {
+    padding: 75px 0 80px;
+  }
+
+  .specialty-services-container {
+    width: calc(100% - 70px);
+  }
+
+  .specialty-services-header {
+    margin-bottom: 38px;
+  }
+
+  .specialty-services-eyebrow {
+    margin-bottom: 15px;
+  }
+
+  .specialty-services-eyebrow p {
+    font-size: 9px;
+  }
+
+  .specialty-services-title {
+    font-size: 42px;
+  }
+
+  .specialty-services-intro {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+
+  .specialty-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .specialty-service-card:nth-child(3) {
+    grid-column: auto;
+
+    width: 100%;
+  }
+
+  .specialty-service-image {
+    height: 190px;
+  }
+
+  .specialty-service-content {
+    padding: 20px 18px 22px;
+  }
+
+  .specialty-service-category {
+    margin-bottom: 9px;
+
+    font-size: 7px;
+  }
+
+  .specialty-service-content h3 {
+    font-size: 17px;
+  }
+
+  .specialty-service-content p {
+    margin-top: 9px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+  }
+
+  .specialty-service-link {
+    padding-top: 17px;
+
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+     ======================================================= */
+
+  .core-specialties-section {
+    padding: 80px 0 85px;
+  }
+
+  .core-specialties-container {
+    width: calc(100% - 70px);
+  }
+
+  .core-specialties-header {
+    margin-bottom: 40px;
+  }
+
+  .core-specialties-title {
+    font-size: 42px;
+  }
+
+  .core-specialties-intro {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+
+  .core-specialties-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      40px
+      minmax(0, 1fr);
+  }
+
+  .core-specialty-image {
+    height: 240px;
+  }
+
+  .core-specialties-divider {
+    min-height: 240px;
+  }
+
+  .core-specialty-content {
+    padding-top: 18px;
+  }
+
+  .core-specialty-meta {
+    margin-bottom: 11px;
+
+    font-size: 7px;
+  }
+
+  .core-specialty-content h3 {
+    font-size: 19px;
+  }
+
+  .core-specialty-content > p {
+    margin-top: 9px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+  }
+
+  .core-specialty-details {
+    gap: 7px 12px;
+
+    margin-top: 16px;
+
+    padding-top: 13px;
+  }
+
+  .core-specialty-detail {
+    font-size: 7.5px;
+  }
+
+  .core-divider-symbol {
+    width: 28px;
+    height: 28px;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+     ======================================================= */
+
+  .repainting-section {
+    padding: 80px 0 85px;
+
+    margin-top: 0;
+  }
+
+  .repainting-container {
+    width: calc(100% - 70px);
+  }
+
+  .repainting-header {
+    margin-bottom: 40px;
+  }
+
+  .repainting-eyebrow {
+    margin-bottom: 15px;
+  }
+
+  .repainting-eyebrow p {
+    font-size: 9px;
+  }
+
+  .repainting-title {
+    font-size: 42px;
+  }
+
+  .repainting-header .repainting-description {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+
+  .repainting-main {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 0.9fr);
+
+    gap: 40px;
+  }
+
+  .repainting-image {
+    height: 330px;
+  }
+
+  .repainting-image-label {
+    bottom: 18px;
+
+    padding: 10px 14px;
+
+    font-size: 7px;
+  }
+
+  .repainting-detail {
+    grid-template-columns: 30px minmax(0, 1fr);
+
+    gap: 11px;
+
+    padding: 15px 0;
+  }
+
+  .repainting-detail-number {
+    font-size: 9px;
+  }
+
+  .repainting-detail-content h3 {
+    font-size: 12px;
+  }
+
+  .repainting-detail-content p {
+    margin-top: 4px;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+  }
+
+  .repainting-cta {
+    margin-top: 20px;
+
+    padding: 11px 16px;
+
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     SECTION 6 — TESTIMONIALS
+     ======================================================= */
+
+  .services-testimonials {
+    padding: 80px 0 85px;
+
+    margin-top: 0;
+  }
+
+  .services-testimonials-container {
+    width: calc(100% - 70px);
+  }
+
+  .services-testimonials-header {
+    margin-bottom: 38px;
+  }
+
+  .services-testimonials-eyebrow {
+    margin-bottom: 15px;
+  }
+
+  .services-testimonials-eyebrow p {
+    font-size: 9px;
+  }
+
+  .services-testimonials-title {
+    font-size: 42px;
+  }
+
+  .services-testimonials-intro {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+
+  .services-testimonials-slider {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+
+    gap: 12px;
+  }
+
+  .services-testimonial-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .services-testimonial-slide {
+    min-height: 275px;
+
+    padding: 38px 48px;
+  }
+
+  .services-testimonial-text {
+    font-size: 17px;
+
+    line-height: 1.5;
+  }
+
+  .services-testimonial-mark {
+    top: 24px;
+
+    right: 30px;
+
+    width: 35px;
+    height: 35px;
+  }
+
+  .services-testimonial-mark svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .services-testimonial-author {
+    margin-top: 22px;
+  }
+
+  .services-testimonial-avatar {
+    width: 34px;
+    height: 34px;
+
+    font-size: 8px;
+  }
+
+  .services-testimonial-author h3 {
+    font-size: 10px;
+  }
+
+  .services-testimonial-author span {
+    font-size: 8px;
+  }
+
+  .services-testimonial-number {
+    right: 30px;
+
+    bottom: 23px;
+
+    font-size: 8px;
+  }
+
+  .services-testimonials-navigation {
+    margin-top: 20px;
+  }
+
+
+  /* =======================================================
+     SECTION 7 — FINAL CTA
+     ======================================================= */
+
+  .services-final-cta {
+    padding: 40px 0;
+  }
+
+  .services-final-cta-box {
+    width: calc(100% - 70px);
+
+    min-height: 470px;
+
+    padding: 60px 50px 25px;
+
+    border-radius: 24px;
+  }
+
+  .services-final-cta-box::before {
+    inset: 9px;
+
+    border-radius: 17px;
+  }
+
+  .services-final-cta-title {
+    font-size: 48px;
+  }
+
+  .services-final-cta-eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .services-final-cta-eyebrow p {
+    font-size: 9px;
+  }
+
+  .services-final-cta-description {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+  }
+
+  .services-final-cta-button {
+    margin-top: 25px;
+
+    min-width: 180px;
+
+    padding: 15px 22px;
+
+    font-size: 10px;
+  }
+
+  .services-final-cta-bottom {
+    padding-top: 20px;
+  }
+
+  .services-final-cta-location {
+    font-size: 7px;
+  }
+
+  .services-final-cta-brand {
+    font-size: 10px;
+  }
+
+
+  /* =======================================================
+     NEST HUB — RTL
+     ======================================================= */
+
+  body.rtl .core-specialty-number {
+    right: auto;
+
+    left: 20px;
+  }
+
+  body.rtl .services-testimonial-mark {
+    right: auto;
+
+    left: 30px;
+  }
+
+  body.rtl .services-testimonial-number {
+    right: auto;
+
+    left: 30px;
+  }
+
+}

@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Contact</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     CEILINGCRAFT
+     HEADER
+     ========================================================= -->
+
+   <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="CeilingCraft Home">
+            <img src="images/logo.png" alt="CeilingCraft Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="ceiling">Ceiling</span
+              ><span class="craft">Craft</span>
+            </h1>
+
+            <p>Specialty Ceiling Services</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="index.html" class="avtive">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             OUR WORK
+        ================================================== -->
+
+            <!-- <li>
+
+          <a href="our-work.html">
+
+            <span>Our Work</span>
+
+          </a>
+
+        </li> -->
+
+            <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+            <li>
+              <a href="process.html">
+                <span>Process</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             PRICING
+        ================================================== -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- =================================================
+           MOBILE ESTIMATE BUTTON
+      ================================================== -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- =================================================
+           RTL TOGGLE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DARK MODE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DESKTOP FREE ESTIMATE BUTTON
+      ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- =================================================
+           MOBILE MENU
+      ================================================== -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     CONTACT HERO
+========================================================= -->
+
+    <section class="contact-hero" id="contact-hero">
+      <div class="contact-hero-overlay"></div>
+
+      <div class="contact-hero-container">
+        <div class="contact-hero-content">
+          <span class="contact-hero-eyebrow"> CONTACT CEILINGCRAFT </span>
+
+          <h1>
+            Let’s Talk About
+            <span>Your Ceiling.</span>
+          </h1>
+
+          <p class="contact-hero-description">
+            Whether you're ready to remove an outdated popcorn ceiling, match an
+            existing texture, or complete a clean new finish, we're here to help
+            you understand what's involved and what your space needs.
+          </p>
+
+          <div class="contact-hero-actions">
+            <a href="#estimate" class="contact-hero-primary">
+              <span>Get a Free Estimate</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#next-step" class="contact-hero-secondary">
+              <span>See How It Works</span>
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CONTACT INFORMATION
+========================================================= -->
+
+   <section class="contact-info" id="contact-info">
+
+  <div class="contact-info-container">
+
+    <!-- SECTION HEADER -->
+    <header class="contact-info-header">
+
+      <span class="contact-hero-eyebrow">
+        GET IN TOUCH
+      </span>
+
+      <h2>
+        Start With
+        <span>A Conversation.</span>
+      </h2>
+
+      <p>
+        Have a question about your ceiling, need help understanding the work
+        involved, or ready to request an estimate? Reach out and tell us a
+        little about your space. We'll help you understand the next step.
+      </p>
+
+    </header>
+
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-info-details">
+
+      <!-- PHONE -->
+      <article class="contact-info-item">
+
+        <div class="contact-info-icon">
+          <i data-lucide="phone" aria-hidden="true"></i>
+        </div>
+
+        <div class="contact-info-item-content">
+
+          <h3>Let's Talk</h3>
+
+          <p>
+            Speak with us about your ceiling, project requirements, or any
+            questions you may have.
+          </p>
+
+          <a href="tel:+914503204801" class="contact-info-link">
+            <span>(+91) 45032-04801</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- EMAIL -->
+      <article class="contact-info-item">
+
+        <div class="contact-info-icon">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </div>
+
+        <div class="contact-info-item-content">
+
+          <h3>Send a Message</h3>
+
+          <p>
+            Share the details of your project and we'll get back to you with
+            the information you need.
+          </p>
+
+          <a
+            href="mailto:hello@ceilingcraft.com"
+            class="contact-info-link"
+          >
+            <span>hello@ceilingcraft.com</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE AREA -->
+      <article class="contact-info-item">
+
+        <div class="contact-info-icon">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+        </div>
+
+        <div class="contact-info-item-content">
+
+          <h3>Serving Your Area</h3>
+
+          <p>
+            We provide residential ceiling services throughout our local
+            service area.
+          </p>
+
+          <span class="contact-info-static">
+            Residential Ceiling Specialists
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- /* ========================================================= CONTACT
+    ESTIMATE SECTION =========================================================
+    */ -->
+
+    <section class="contact-estimate" id="estimate">
+      <div class="contact-estimate-container">
+        <!-- LEFT CONTENT -->
+        <div class="contact-estimate-intro">
+          <span class="contact-hero-eyebrow"> START YOUR PROJECT </span>
+
+          <h2>
+            Tell Us About
+            <span>Your Space.</span>
+          </h2>
+
+          <p class="contact-estimate-intro-text">
+            Every ceiling has its own requirements. Tell us a little about your
+            space, the existing ceiling, and what you'd like to change. We'll
+            use the details to understand the project and guide you toward the
+            right next step.
+          </p>
+
+          <div class="contact-estimate-note">
+            <div class="contact-estimate-note-icon">
+              <i data-lucide="clipboard-list" aria-hidden="true"></i>
+            </div>
+
+            <div>
+              <span>PROJECT INFORMATION</span>
+
+              <p>
+                The more details you provide, the better we can understand what
+                your ceiling may need.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-estimate-process">
+            <div class="contact-estimate-process-line"></div>
+
+            <div class="contact-estimate-process-item">
+              <span>01</span>
+              <p>Tell us about your space</p>
+            </div>
+
+            <div class="contact-estimate-process-item">
+              <span>02</span>
+              <p>We review your project</p>
+            </div>
+
+            <div class="contact-estimate-process-item">
+              <span>03</span>
+              <p>Discuss the next step</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-estimate-form-wrap">
+          <form class="contact-estimate-form" id="estimateForm">
+            <div class="contact-form-heading">
+              <span>PROJECT INQUIRY</span>
+              <h3>Request a Free Estimate</h3>
+            </div>
+
+            <!-- NAME -->
+            <div class="contact-form-row">
+              <div class="contact-form-field">
+                <label for="estimateName"> Your Name </label>
+
+                <input
+                  type="text"
+                  id="estimateName"
+                  name="name"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="contact-form-field">
+                <label for="estimateEmail"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="estimateEmail"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- PHONE + PROPERTY -->
+            <div class="contact-form-row">
+              <div class="contact-form-field">
+                <label for="estimatePhone"> Phone Number </label>
+
+                <input
+                  type="tel"
+                  id="estimatePhone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="contact-form-field">
+                <label for="propertyType"> Property Type </label>
+
+                <select id="propertyType" name="propertyType">
+                  <option value="" selected disabled>
+                    Select property type
+                  </option>
+
+                  <option value="single-family">Single-Family Home</option>
+
+                  <option value="townhome">Townhome</option>
+
+                  <option value="condo">Condo</option>
+
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- SERVICE -->
+            <div class="contact-form-field">
+              <label for="serviceNeeded"> Service Needed </label>
+
+              <select id="serviceNeeded" name="serviceNeeded">
+                <option value="" selected disabled>Select a service</option>
+
+                <option value="popcorn-removal">Popcorn Ceiling Removal</option>
+
+                <option value="texture-matching">Texture Matching</option>
+
+                <option value="repainting-finishing">
+                  Repainting & Finishing
+                </option>
+
+                <option value="not-sure">Not Sure — I Need Guidance</option>
+              </select>
+            </div>
+
+            <!-- CEILING SIZE -->
+            <div class="contact-form-field">
+              <label for="ceilingSize"> Approximate Ceiling Size </label>
+
+              <input
+                type="text"
+                id="ceilingSize"
+                name="ceilingSize"
+                placeholder="Example: 1,500 sq. ft."
+              />
+            </div>
+
+            <!-- MESSAGE -->
+            <div class="contact-form-field">
+              <label for="projectDetails"> Tell Us About Your Project </label>
+
+              <textarea
+                id="projectDetails"
+                name="projectDetails"
+                rows="5"
+                placeholder="Tell us about your existing ceiling, what you'd like to change, and anything else that may help us understand the project."
+              ></textarea>
+            </div>
+
+            <!-- SUBMIT -->
+            <div class="contact-form-submit">
+              <p>
+                By submitting this form, you're simply starting a conversation
+                about your project.
+              </p>
+
+              <button type="submit" class="contact-form-button">
+                <span>Request a Free Estimate</span>
+
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CONTACT SERVICE AREA
+========================================================= -->
+
+    <section class="contact-service-area" id="service-area">
+      <div class="contact-service-area-container">
+        <!-- =====================================================
+         MAP
+    ====================================================== -->
+
+        <div class="contact-service-area-map-wrap">
+          <div class="contact-service-area-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.231603879999!2d78.37036097521288!3d17.49645418340942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9210223833d5%3A0x9d68b6d67e5b0783!2sMiyapur!5e0!3m2!1sen!2sin!4v1790013285258!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+
+          <!-- MAP LABEL -->
+
+          <div class="contact-service-area-map-label">
+            <span>SERVICE AREA</span>
+
+            <strong>CEILINGCRAFT</strong>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+        <div class="contact-service-area-content">
+          <span class="contact-hero-eyebrow"> OUR SERVICE AREA </span>
+
+          <h2>
+            Serving Homes
+            <span>Across The Area.</span>
+          </h2>
+
+          <p class="contact-service-area-description">
+            CeilingCraft specializes in residential ceiling work, helping
+            homeowners create cleaner, more refined spaces. Our focus is on
+            careful preparation, controlled removal, surface refinement, and a
+            finish that works naturally with the room.
+          </p>
+
+          <!-- ===================================================
+           SERVICE DETAILS
+      ==================================================== -->
+
+          <div class="contact-service-area-details">
+            <!-- SERVICE AREA -->
+
+            <div class="contact-service-area-detail">
+              <div class="contact-service-area-detail-icon">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+              </div>
+
+              <div class="contact-service-area-detail-content">
+                <span>SERVICE AREA</span>
+
+                <strong> Your Local Area </strong>
+              </div>
+            </div>
+
+            <!-- SPECIALTY -->
+
+            <div class="contact-service-area-detail">
+              <div class="contact-service-area-detail-icon">
+                <i data-lucide="home" aria-hidden="true"></i>
+              </div>
+
+              <div class="contact-service-area-detail-content">
+                <span>SPECIALTY</span>
+
+                <strong> Residential Ceilings </strong>
+              </div>
+            </div>
+
+            <!-- AVAILABILITY -->
+
+            <div class="contact-service-area-detail">
+              <div class="contact-service-area-detail-icon">
+                <i data-lucide="clock-3" aria-hidden="true"></i>
+              </div>
+
+              <div class="contact-service-area-detail-content">
+                <span>AVAILABILITY</span>
+
+                <strong> By Appointment </strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================
+           CTA
+      ==================================================== -->
+
+          <a href="#estimate" class="contact-service-area-button">
+            <span> Tell Us About Your Project </span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CONTACT FINAL CTA
+========================================================= -->
+
+    <section class="contact-final-cta" id="contact-final">
+      <div class="contact-final-cta-box">
+        <!-- DECORATIVE CIRCLES -->
+
+        <span class="contact-final-cta-circle contact-final-cta-circle-one">
+        </span>
+
+        <span class="contact-final-cta-circle contact-final-cta-circle-two">
+        </span>
+
+        <div class="contact-final-cta-inner">
+          <!-- ===================================================
+           EYEBROW
+      ==================================================== -->
+
+          <div class="contact-final-cta-eyebrow">
+            <span></span>
+
+            <p>READY TO GET STARTED?</p>
+
+          </div>
+
+          <!-- ===================================================
+           CONTENT
+      ==================================================== -->
+
+          <div class="contact-final-cta-content">
+            <h2>
+              Your Ceiling.
+              <span>Your Next Step.</span>
+            </h2>
+
+            <p>
+              Tell us about your ceiling, the space you're working with, and
+              what you'd like to change. We'll help you understand the work
+              involved and guide you toward the right next step.
+            </p>
+
+            <a href="#estimate" class="contact-final-cta-button">
+              <span> Get a Free Estimate </span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+            </a>
+          </div>
+
+          <!-- ===================================================
+           FOOTER
+      ==================================================== -->
+
+          <div class="contact-final-cta-footer">
+            <div class="contact-final-cta-footer-left">
+              <span> RESIDENTIAL CEILING SPECIALISTS </span>
+            </div>
+
+            <div class="contact-final-cta-footer-right">
+              <span> CEILING </span>
+
+              <strong> CRAFT </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     CEILINGCRAFT
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="CeilingCraft Home">
+              <img src="images/logo.png" alt="CeilingCraft Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>Specialty Ceiling Services</p>
+            </div>
+          </div>
+
+          <!-- BRAND DESCRIPTION -->
+
+          <p class="footer-about">
+            CeilingCraft specializes in popcorn ceiling and texture removal,
+            ceiling repairs, texture matching, and professional repainting to
+            create smooth, clean, beautifully finished spaces.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- <li>
+          <a href="our-work.html">Our Work</a>
+        </li> -->
+            <li>
+              <a href="process.html">Process</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#popcorn-removal">
+                Popcorn Ceiling Removal
+              </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Texture Removal </a>
+            </li>
+
+            <li>
+              <a href="services.html#texture-matching"> Texture Matching </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Ceiling Repair </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Repainting & Finishing </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Removal Process </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CEILING SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aditional Services</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming soon </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing Guide </a>
+            </li>
+
+            <li>
+              <a href="process.html"> Our Process </a>
+            </li>
+
+            <li>
+              <a href="about.html"> Our Approach </a>
+            </li>
+
+            <li>
+              <a href="contact.html#estimate"> Request an Estimate </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +91 (040) 123-0897 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@ceilingcraft.com"> info@ceilingcraft.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#estimate" class="footer-book-btn">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="ceiling">Ceiling</span><span class="craft">Craft</span>.
+          All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

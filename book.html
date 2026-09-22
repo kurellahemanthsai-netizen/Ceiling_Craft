@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Book a Visit</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <section class="book-visit" id="book-visit">
+      <!-- TOP CONTROLS -->
+      <div class="book-visit-controls">
+        <button
+          type="button"
+          class="book-visit-control-btn"
+          id="bookRtlToggle"
+          aria-label="Toggle RTL"
+          title="Toggle RTL"
+        >
+          <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <button
+          type="button"
+          class="book-visit-control-btn"
+          id="bookThemeToggle"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <i data-lucide="moon" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="book-visit-container">
+        <!-- =====================================================
+         INTRO
+         ===================================================== -->
+
+        <div class="book-visit-intro">
+          <div class="booking-logo">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="AquaCare Aquarium Setup & Maintenance"
+              />
+            </a>
+
+            <div
+              class="logo-text"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>CEILING SERVICE MAINTAINCE</p>
+            </div>
+          </div>
+
+          <!-- EYEBROW -->
+          <div class="book-visit-eyebrow">
+            <span></span>
+
+            <p>BOOK A VISIT</p>
+
+            <span></span>
+          </div>
+
+          <!-- TITLE -->
+          <h2>
+            Let's Look At
+            <span>Your Ceiling.</span>
+          </h2>
+
+          <!-- DESCRIPTION -->
+          <p class="book-visit-description">
+            Share a few details about your space, your ceiling, and what you
+            need. We'll get in touch to plan the right visit for your project.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         FORM CARD
+         ===================================================== -->
+
+        <div class="book-visit-card">
+          <form id="bookingForm">
+            <!-- FORM HEADER -->
+
+            <div class="book-visit-form-header">
+              <span>YOUR PROJECT</span>
+
+              <h3>Book a Ceiling Visit</h3>
+
+              <p>Tell us a little about your space and your ceiling.</p>
+            </div>
+
+            <!-- =================================================
+             NAME + PHONE
+             ================================================= -->
+
+            <div class="book-visit-field-row">
+              <!-- NAME -->
+
+              <div class="book-visit-field">
+                <label for="name"> Full Name </label>
+
+                <div class="book-visit-input-wrap">
+                  <i data-lucide="user-round" aria-hidden="true"></i>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- PHONE -->
+
+              <div class="book-visit-field">
+                <label for="phone"> Phone Number </label>
+
+                <div class="book-visit-input-wrap">
+                  <i data-lucide="phone" aria-hidden="true"></i>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+1 (555) 000-0000"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- =================================================
+             EMAIL + SERVICE
+             ================================================= -->
+
+            <div class="book-visit-field-row">
+              <!-- EMAIL -->
+
+              <div class="book-visit-field">
+                <label for="email"> Email Address </label>
+
+                <div class="book-visit-input-wrap">
+                  <i data-lucide="mail" aria-hidden="true"></i>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <!-- SERVICE -->
+
+              <div class="book-visit-field">
+                <label for="service"> Service Required </label>
+
+                <div class="book-visit-input-wrap select-wrap">
+                  <i data-lucide="layers-2" aria-hidden="true"></i>
+
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+
+                    <option value="popcorn-removal">
+                      Popcorn Ceiling Removal
+                    </option>
+
+                    <option value="texture-matching">Texture Matching</option>
+
+                    <option value="repainting-finishing">
+                      Repainting &amp; Finishing
+                    </option>
+
+                    <option value="not-sure">Not Sure — I Need Guidance</option>
+                  </select>
+
+                  <span class="book-visit-select-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- =================================================
+             DATE + TIME
+             ================================================= -->
+
+            <div class="book-visit-field-row">
+              <!-- DATE -->
+
+              <div class="book-visit-field">
+                <label for="date"> Preferred Visit Date </label>
+
+                <div class="book-visit-input-wrap">
+                  <i data-lucide="calendar-days" aria-hidden="true"></i>
+
+                  <input type="date" id="date" name="date" required />
+                </div>
+              </div>
+
+              <!-- TIME -->
+
+              <div class="book-visit-field">
+                <label for="time"> Preferred Time </label>
+
+                <div class="book-visit-input-wrap select-wrap">
+                  <i data-lucide="clock-3" aria-hidden="true"></i>
+
+                  <select id="time" name="time" required>
+                    <option value="" disabled selected>
+                      Select a preferred time
+                    </option>
+
+                    <option value="morning">Morning — 9 AM to 12 PM</option>
+
+                    <option value="afternoon">Afternoon — 12 PM to 3 PM</option>
+
+                    <option value="evening">Evening — 3 PM to 6 PM</option>
+                  </select>
+
+                  <span class="book-visit-select-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- =================================================
+             PROPERTY TYPE + SIZE
+             ================================================= -->
+
+            <div class="book-visit-field-row">
+              <!-- PROPERTY TYPE -->
+
+              <div class="book-visit-field">
+                <label for="propertyType"> Property Type </label>
+
+                <div class="book-visit-input-wrap select-wrap">
+                  <i data-lucide="house" aria-hidden="true"></i>
+
+                  <select id="propertyType" name="propertyType" required>
+                    <option value="" disabled selected>
+                      Select property type
+                    </option>
+
+                    <option value="single-family">Single-Family Home</option>
+
+                    <option value="townhome">Townhome</option>
+
+                    <option value="condo">Condo</option>
+
+                    <option value="other">Other</option>
+                  </select>
+
+                  <span class="book-visit-select-arrow"></span>
+                </div>
+              </div>
+
+              <!-- CEILING SIZE -->
+
+              <div class="book-visit-field">
+                <label for="ceilingSize"> Approximate Ceiling Size </label>
+
+                <div class="book-visit-input-wrap">
+                  <i data-lucide="ruler" aria-hidden="true"></i>
+
+                  <input
+                    type="text"
+                    id="ceilingSize"
+                    name="ceilingSize"
+                    placeholder="Example: 1,500 sq. ft."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- =================================================
+             ADDRESS
+             ================================================= -->
+
+            <div class="book-visit-full-field">
+              <label for="address"> Property Address </label>
+
+              <div class="book-visit-input-wrap">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Enter the property address"
+                  autocomplete="street-address"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- =================================================
+             MESSAGE
+             ================================================= -->
+
+            <div class="book-visit-full-field">
+              <label for="message"> Tell Us About Your Ceiling </label>
+
+              <div class="book-visit-textarea-wrap">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your ceiling, existing texture, approximate room size, or anything else you'd like us to know..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- =================================================
+             SUBMIT
+             ================================================= -->
+
+            <button type="submit" class="book-visit-submit-btn">
+              <span>Request a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </button>
+
+            <!-- =================================================
+             SECURITY
+             ================================================= -->
+
+            <div class="book-visit-security">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+
+              <span>
+                Your information will only be used to contact you about your
+                ceiling project and visit request.
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="book.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

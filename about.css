@@ -1,0 +1,3702 @@
+/* =========================================================
+   ABOUT PAGE — HERO
+   ========================================================= */
+
+.about-hero {
+  position: relative;
+  height: 90vh;
+  margin-top: 78px;
+  overflow: hidden;
+  background: #171a1b;
+  isolation: isolate;
+}
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.about-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+
+.about-hero-background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background: linear-gradient(
+    90deg,
+    rgba(23, 26, 27, 0.96) 0%,
+    rgba(23, 26, 27, 0.9) 25%,
+    rgba(23, 26, 27, 0.68) 48%,
+    rgba(23, 26, 27, 0.32) 75%,
+    rgba(23, 26, 27, 0.42) 100%
+  );
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1240px, calc(100% - 80px));
+  min-height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.about-hero-content {
+  width: 700px;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.about-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 24px;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.about-eyebrow-line {
+  width: 34px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--primary);
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.about-hero-title {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 450;
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.about-hero-title span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.about-hero-description {
+  max-width: 590px;
+
+  margin: 30px 0 0;
+
+  color: rgba(242, 240, 234, 0.78);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.about-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 34px;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.about-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  height: 45px;
+  padding: 0 22px;
+
+  color: white;
+  background: #b8864a;
+
+  border: 1px solid #b8864a;
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.about-hero-primary i {
+  width: 16px;
+  height: 16px;
+}
+
+.about-hero-primary:hover {
+  background: var(--secondary);
+  color: white;
+  border: 1px solid var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   SECONDARY LINK
+   ========================================================= */
+
+.about-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #f2f0ea;
+
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  height: 45px;
+  padding: 0 22px;
+
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition: color 0.25s ease;
+}
+
+.about-hero-secondary i {
+  width: 15px;
+  height: 15px;
+  color: #b8864a;
+}
+
+.about-hero-secondary:hover {
+  color: #b8864a;
+}
+
+/* =========================================================
+   BOTTOM INFORMATION
+   ========================================================= */
+
+.about-hero-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  z-index: 3;
+
+  width: min(1240px, calc(100% - 80px));
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.about-hero-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: rgba(242, 240, 234, 0.72);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-location-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background: #63858a;
+
+  box-shadow: 0 0 0 4px rgba(99, 133, 138, 0.12);
+}
+
+/* =========================================================
+   ABOUT PAGE — SECTION 2
+   OUR STORY
+   ========================================================= */
+
+.about-story-section {
+  position: relative;
+  padding: 125px 0 135px;
+  overflow: hidden;
+
+  background: #f7f5f0;
+  color: #252525;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-story-container {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CENTERED HEADER
+   ========================================================= */
+
+.about-story-header {
+  max-width: 820px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.about-story-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 21px;
+}
+
+.about-story-eyebrow span {
+  width: 28px;
+  height: 1px;
+  flex-shrink: 0;
+
+  background: #b8864a;
+}
+
+.about-story-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.about-story-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.06em;
+}
+
+.about-story-title span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   HEADER DESCRIPTION
+   ========================================================= */
+
+.about-story-intro {
+  max-width: 610px;
+
+  margin: 23px auto 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   IMAGE + CONTENT LAYOUT
+   ========================================================= */
+
+.about-story-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(0, 0.95fr);
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   LEFT IMAGE
+   ========================================================= */
+
+.about-story-image {
+  position: relative;
+
+  width: 100%;
+  height: 620px;
+
+  overflow: hidden;
+
+  background: #e5e0d6;
+}
+
+.about-story-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.about-story-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(23, 26, 27, 0.7) 0%,
+    rgba(23, 26, 27, 0.18) 35%,
+    transparent 65%
+  );
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.about-story-image-label {
+  position: absolute;
+
+  left: 25px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-story-image-label span {
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.about-story-image-label strong {
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.about-story-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* =========================================================
+   CONTENT EYEBROW
+   ========================================================= */
+
+.about-story-content-eyebrow {
+  display: block;
+
+  margin-bottom: 17px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CONTENT HEADING
+   ========================================================= */
+
+.about-story-content-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(27px, 2.8vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+/* =========================================================
+   CONTENT PARAGRAPHS
+   ========================================================= */
+
+.about-story-description {
+  max-width: 480px;
+
+  margin: 20px 0 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.about-story-description + .about-story-description {
+  margin-top: 12px;
+}
+
+/* =========================================================
+   THREE PRINCIPLES
+   ========================================================= */
+
+.about-story-principles {
+  margin-top: 36px;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.13);
+}
+
+/* =========================================================
+   PRINCIPLE ROW
+   ========================================================= */
+
+.about-story-principle {
+  display: grid;
+
+  grid-template-columns: 42px minmax(0, 1fr);
+
+  gap: 16px;
+
+  padding: 19px 0;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.13);
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.principle-number {
+  padding-top: 2px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   PRINCIPLE CONTENT
+   ========================================================= */
+
+.principle-content h4 {
+  margin: 0 0 6px;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.principle-content p {
+  max-width: 410px;
+
+  margin: 0;
+
+  color: #777772;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   SUBTLE HOVER
+   ========================================================= */
+
+.about-story-image:hover img {
+  transform: scale(1.025);
+}
+
+.about-story-principle {
+  transition: padding-left 0.25s ease;
+}
+
+.about-story-principle:hover {
+  padding-left: 5px;
+}
+
+.about-story-principle:hover .principle-content h4 {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .about-story-section {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .about-story-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .about-story-intro {
+  color: #a8aaa5;
+}
+
+body.dark-mode .about-story-content-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .about-story-description {
+  color: #a8aaa5;
+}
+
+body.dark-mode .about-story-principles {
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .about-story-principle {
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .principle-content h4 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .principle-content p {
+  color: #a8aaa5;
+}
+
+/* =========================================================
+   ABOUT SECTION 3
+   THE CEILINGCRAFT DIFFERENCE
+   ========================================================= */
+
+.difference-section {
+  position: relative;
+  padding: 130px 0;
+  margin-top: -100px;
+  background: #171a1b;
+  color: #f2f0ea;
+  overflow: hidden;
+}
+
+.difference-container {
+  width: min(1200px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.difference-header {
+  max-width: 820px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.difference-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 21px;
+}
+
+.difference-eyebrow span {
+  width: 28px;
+  height: 1px;
+  flex-shrink: 0;
+
+  background: #b8864a;
+}
+
+.difference-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.difference-title {
+  margin: 0;
+  color: #f2f0ea;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+
+.difference-title span {
+  display: block;
+  color: #b8864a;
+}
+
+.difference-intro {
+  max-width: 650px;
+  margin: 24px auto 0;
+  color: #a8aaa5;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.difference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.difference-card {
+  position: relative;
+  background: #222627;
+  border: 1px solid rgba(242, 240, 234, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    border-color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.difference-card:hover {
+  border-color: rgba(184, 134, 74, 0.65);
+  transform: translateY(-5px);
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.difference-card-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background: #1d2021;
+}
+
+.difference-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.difference-card:hover .difference-card-image img {
+  transform: scale(1.035);
+}
+
+/* IMAGE OVERLAY */
+
+.difference-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(23, 26, 27, 0.72) 0%,
+    rgba(23, 26, 27, 0.08) 65%,
+    transparent 100%
+  );
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.difference-number {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  color: #b8864a;
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.difference-card-content {
+  position: relative;
+  padding: 30px 28px 32px;
+}
+
+.difference-label {
+  display: block;
+  margin-bottom: 13px;
+  color: #63858a;
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.difference-card-content h3 {
+  margin: 0;
+  color: #f2f0ea;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.difference-card-content p {
+  margin: 16px 0 0;
+  color: #a8aaa5;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+body:not(.dark-mode) .difference-section {
+  background: #f7f5f0;
+  color: #252525;
+}
+
+body:not(.dark-mode) .difference-title {
+  color: #252525;
+}
+
+body:not(.dark-mode) .difference-intro {
+  color: #6d6d69;
+}
+
+body:not(.dark-mode) .difference-card {
+  background: #ffffff;
+  border-color: rgba(37, 37, 37, 0.1);
+}
+
+body:not(.dark-mode) .difference-card-content h3 {
+  color: #252525;
+}
+
+body:not(.dark-mode) .difference-card-content p {
+  color: #6d6d69;
+}
+
+body:not(.dark-mode) .difference-card-image {
+  background: #e6e1d7;
+}
+
+body:not(.dark-mode) .difference-card:hover {
+  border-color: rgba(184, 134, 74, 0.6);
+}
+
+/* =========================================================
+   ABOUT SECTION 4
+   WHAT WE SPECIALIZE IN
+   ========================================================= */
+
+.specialize-section {
+  position: relative;
+  padding: 130px 0;
+  margin-top: -100px;
+  background: #f7f5f0;
+  color: #252525;
+  overflow: hidden;
+}
+
+.specialize-container {
+  width: min(1180px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.specialize-header {
+  max-width: 820px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.specialize-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+
+.specialize-eyebrow span {
+  width: 28px;
+  height: 1px;
+  background: #b8864a;
+}
+
+.specialize-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.specialize-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+
+  text-align: center;
+}
+
+.specialize-title span {
+  display: block;
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.specialize-intro {
+  max-width: 650px;
+  margin: 24px auto 0;
+
+  color: #6d6d69;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CONTENT + IMAGE LAYOUT
+   ========================================================= */
+
+.specialize-layout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.specialize-content {
+  width: 100%;
+  max-width: 540px;
+}
+
+/* =========================================================
+   SPECIALTY POINTS
+   ========================================================= */
+
+.specialize-points {
+  width: 100%;
+}
+
+/* =========================================================
+   INDIVIDUAL POINT
+   ========================================================= */
+
+.specialize-point {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 28px;
+  align-items: start;
+
+  gap: 18px;
+
+  padding: 23px 0;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.14);
+
+  transition:
+    padding-left 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.specialize-point:last-child {
+  border-bottom: 1px solid rgba(37, 37, 37, 0.14);
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.specialize-point-number {
+  padding-top: 2px;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   POINT CONTENT
+   ========================================================= */
+
+.specialize-point-content h3 {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+
+  transition: color 0.3s ease;
+}
+
+.specialize-point-content p {
+  max-width: 390px;
+
+  margin: 7px 0 0;
+
+  color: #777772;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   POINT ARROW
+   ========================================================= */
+
+.specialize-point-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  color: #63858a;
+
+  border: 1px solid rgba(99, 133, 138, 0.35);
+  border-radius: 50%;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.specialize-point-arrow i {
+  width: 13px;
+  height: 13px;
+}
+
+/* =========================================================
+   POINT HOVER
+   ========================================================= */
+
+.specialize-point:hover {
+  padding-left: 8px;
+
+  border-color: rgba(184, 134, 74, 0.45);
+}
+
+.specialize-point:hover .specialize-point-content h3 {
+  color: #b8864a;
+}
+
+.specialize-point:hover .specialize-point-arrow {
+  color: #ffffff;
+  background: #b8864a;
+  border-color: #b8864a;
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   RIGHT IMAGE WRAPPER
+   ========================================================= */
+
+.specialize-visual {
+  position: relative;
+  width: 100%;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.specialize-image {
+  position: relative;
+
+  width: 100%;
+  height: 625px;
+
+  overflow: hidden;
+
+  background: #e6e1d7;
+}
+
+.specialize-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.specialize-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(23, 26, 27, 0.72) 0%,
+    rgba(23, 26, 27, 0.12) 48%,
+    transparent 75%
+  );
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.specialize-image-label {
+  position: absolute;
+
+  left: 28px;
+  bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.specialize-image-label span {
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.specialize-image-label strong {
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.specialize-image:hover img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE META
+   ========================================================= */
+
+.specialize-image-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding-top: 14px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .specialize-section {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialize-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialize-intro {
+  color: #a8aaa5;
+}
+
+body.dark-mode .specialize-point {
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .specialize-point:last-child {
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .specialize-point-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .specialize-point-content p {
+  color: #a8aaa5;
+}
+
+body.dark-mode .specialize-point:hover {
+  border-color: rgba(184, 134, 74, 0.5);
+}
+
+body.dark-mode .specialize-image {
+  background: #222627;
+}
+
+/* =========================================================
+   ABOUT SECTION 5
+   OUR WORK PHILOSOPHY
+   ========================================================= */
+
+.philosophy-section {
+  position: relative;
+margin-top: -115px;
+  padding: 130px 0;
+
+  background: #171a1b;
+  color: #f2f0ea;
+
+  overflow: hidden;
+}
+
+.philosophy-container {
+  width: min(1050px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.philosophy-header {
+  max-width: 800px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.philosophy-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-bottom: 22px;
+}
+
+.philosophy-eyebrow span {
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.philosophy-eyebrow p {
+  margin: 0;
+
+  color: var(--secondary);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.philosophy-title {
+  margin: 0;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+
+  text-align: center;
+}
+
+.philosophy-title span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.philosophy-intro {
+  max-width: 560px;
+
+  margin: 22px auto 0;
+
+  color: #a8aaa5;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+}
+
+/* =========================================================
+   PHILOSOPHY LIST
+   ========================================================= */
+
+.philosophy-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* =========================================================
+   PHILOSOPHY ITEM
+   ========================================================= */
+
+.philosophy-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 145px minmax(0, 1fr);
+
+  min-height: 170px;
+
+  background: #222627;
+
+  border: 1px solid rgba(242, 240, 234, 0.11);
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+/* =========================================================
+   NUMBER AREA
+   ========================================================= */
+
+.philosophy-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+
+  color: #b8864a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: -0.06em;
+
+  border-right: 1px solid rgba(242, 240, 234, 0.12);
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.philosophy-content {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px 42px;
+}
+
+.philosophy-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.philosophy-content h3 {
+  margin: 0;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.philosophy-content p {
+  max-width: 650px;
+
+  margin: 9px 0 0;
+
+  color: #a8aaa5;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   GOLD ACCENT
+   ========================================================= */
+
+.philosophy-accent {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #b8864a;
+
+  transform: scaleY(0);
+
+  transform-origin: center;
+
+  transition: transform 0.3s ease;
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.philosophy-item:hover {
+  border-color: rgba(184, 134, 74, 0.55);
+
+  background: #25292a;
+
+  transform: translateX(5px);
+}
+
+.philosophy-item:hover .philosophy-accent {
+  transform: scaleY(1);
+}
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+body:not(.dark-mode) .philosophy-section {
+  background: #f7f5f0;
+  color: #252525;
+}
+
+body:not(.dark-mode) .philosophy-title {
+  color: #252525;
+}
+
+body:not(.dark-mode) .philosophy-intro {
+  color: #6d6d69;
+}
+
+body:not(.dark-mode) .philosophy-item {
+  background: #ffffff;
+
+  border-color: rgba(37, 37, 37, 0.12);
+}
+
+body:not(.dark-mode) .philosophy-number {
+  border-color: rgba(37, 37, 37, 0.12);
+}
+
+body:not(.dark-mode) .philosophy-content h3 {
+  color: #252525;
+}
+
+body:not(.dark-mode) .philosophy-content p {
+  color: #6d6d69;
+}
+
+body:not(.dark-mode) .philosophy-item:hover {
+  background: #ffffff;
+
+  border-color: rgba(184, 134, 74, 0.55);
+}
+
+/* =========================================================
+   HOME 2 — FINAL CTA SECTION
+   UPDATED — REDUCED HEIGHT
+   ========================================================= */
+
+.final-cta-section {
+  position: relative;
+  width: 100%;
+  padding: 35px 0;
+  background: #f7f5f0;
+  overflow: hidden;
+}
+
+/* =========================================================
+   CTA OUTER BOX
+   ========================================================= */
+
+.final-cta-wrapper {
+  width: min(900px, calc(100% - 50px));
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 10px 5px;
+
+  border: 1px solid rgba(37, 37, 37, 0.16);
+  border-radius: 27px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   CTA INNER BOX
+   ========================================================= */
+
+.final-cta-inner {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(184, 134, 74, 0.2);
+  border-radius: 17px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.final-cta-content {
+  position: relative;
+  z-index: 5;
+
+  width: min(950px, calc(100% - 70px));
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CTA EYEBROW
+   ========================================================= */
+
+.final-cta-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-bottom: 28px;
+}
+
+.final-cta-eyebrow span {
+  display: block;
+
+  width: 44px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.final-cta-eyebrow p {
+  margin: 0;
+
+  color: #63858a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CTA TITLE
+   ========================================================= */
+
+.final-cta-title {
+  margin: 0;
+
+  color: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+
+  text-align: center;
+}
+
+.final-cta-title span {
+  display: block;
+
+  color: #b8864a;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   CTA DESCRIPTION
+   ========================================================= */
+
+.final-cta-description {
+  width: min(850px, 100%);
+
+  margin: 28px auto 0;
+
+  color: #52616a;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CTA BUTTONS
+   ========================================================= */
+
+.final-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 21px;
+
+  margin-top: 35px;
+}
+
+/* =========================================================
+   PRIMARY CTA BUTTON
+   ========================================================= */
+
+.final-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  min-width: 250px;
+  height: 50px;
+
+  padding: 0 28px;
+
+  color: #ffffff;
+
+  background: #b8864a;
+
+  border: 1px solid #b8864a;
+  border-radius: 8px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.final-cta-primary i {
+  width: 19px;
+  height: 19px;
+
+  transition: transform 0.25s ease;
+}
+
+.final-cta-primary:hover {
+  color: #ffffff;
+
+  background: #a9783d;
+
+  border-color: #a9783d;
+
+  transform: translateY(-2px);
+}
+
+.final-cta-primary:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SECONDARY CTA BUTTON
+   ========================================================= */
+
+.final-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  min-width: 150px;
+  height: 50px;
+
+  padding: 0 28px;
+
+  color: #252525;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.2);
+  border-radius: 11px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.final-cta-secondary i {
+  width: 20px;
+  height: 20px;
+
+  stroke-width: 1.8;
+}
+
+.final-cta-secondary:hover {
+  background: #f7f5f0;
+
+  border-color: #b8864a;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
+
+.cta-circle {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border: 1px solid rgba(184, 134, 74, 0.17);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.cta-circle-top {
+  top: -270px;
+  left: -300px;
+}
+
+.cta-circle-bottom {
+  right: -300px;
+  bottom: -310px;
+
+  border-color: rgba(99, 133, 138, 0.16);
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .final-cta-section {
+  background: #171a1b;
+}
+
+body.dark-mode .final-cta-wrapper {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .final-cta-inner {
+  background: #222627;
+
+  border-color: rgba(184, 134, 74, 0.2);
+}
+
+body.dark-mode .final-cta-title {
+  color: #f2f0ea;
+}
+
+body.dark-mode .final-cta-description {
+  color: #a8aaa5;
+}
+
+body.dark-mode .final-cta-secondary {
+  color: #f2f0ea;
+
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.18);
+}
+
+body.dark-mode .final-cta-secondary:hover {
+  background: #292d2e;
+
+  border-color: #b8864a;
+}
+
+body.dark-mode .cta-circle-top {
+  border-color: rgba(184, 134, 74, 0.14);
+}
+
+body.dark-mode .cta-circle-bottom {
+  border-color: rgba(99, 133, 138, 0.14);
+}
+
+
+/* =========================================================
+   CEILINGCRAFT ABOUT PAGE
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   Samsung Galaxy S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* =======================================================
+     ABOUT HERO
+     ======================================================= */
+
+  .about-hero {
+    height: 680px;
+    margin-top: 78px;
+  }
+
+  .about-hero-background img {
+    object-position: center center;
+  }
+
+  .about-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(23, 26, 27, 0.82) 0%,
+      rgba(23, 26, 27, 0.88) 48%,
+      rgba(23, 26, 27, 0.97) 100%
+    );
+  }
+
+  .about-hero-container {
+    width: calc(100% - 36px);
+    min-height: 100%;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-hero-eyebrow {
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+  }
+
+  .about-eyebrow-line {
+    width: 22px;
+  }
+
+  .about-hero-title {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 1.04;
+    letter-spacing: -0.055em;
+  }
+
+  .about-hero-description {
+    max-width: 330px;
+    margin: 21px auto 0;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .about-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    margin-top: 27px;
+  }
+
+  .about-hero-primary,
+  .about-hero-secondary {
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+    padding: 0 18px;
+  }
+
+  .about-hero-bottom {
+    left: 50%;
+    bottom: 18px;
+    width: calc(100% - 36px);
+    justify-content: center;
+  }
+
+  .about-hero-location {
+    justify-content: center;
+    font-size: 8px;
+    letter-spacing: 0.09em;
+    text-align: center;
+  }
+
+
+  /* =======================================================
+     OUR STORY
+     ======================================================= */
+
+  .about-story-section {
+    padding: 85px 0 90px;
+  }
+
+  .about-story-container {
+    width: calc(100% - 36px);
+  }
+
+  .about-story-header {
+    max-width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .about-story-eyebrow {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .about-story-eyebrow span {
+    width: 20px;
+  }
+
+  .about-story-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 0.14em;
+  }
+
+  .about-story-title {
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: -0.055em;
+  }
+
+  .about-story-intro {
+    max-width: 330px;
+    margin: 18px auto 0;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .about-story-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .about-story-image {
+    height: 420px;
+  }
+
+  .about-story-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-story-image-label {
+    left: 18px;
+    bottom: 18px;
+    gap: 9px;
+  }
+
+  .about-story-image-label span {
+    font-size: 10px;
+  }
+
+  .about-story-image-label strong {
+    font-size: 8px;
+    letter-spacing: 0.11em;
+  }
+
+  .about-story-content-eyebrow {
+    margin-bottom: 13px;
+    font-size: 8px;
+  }
+
+  .about-story-content-title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .about-story-description {
+    max-width: 100%;
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 1.75;
+  }
+
+  .about-story-description + .about-story-description {
+    margin-top: 10px;
+  }
+
+  .about-story-principles {
+    margin-top: 27px;
+  }
+
+  .about-story-principle {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .principle-number {
+    font-size: 10px;
+  }
+
+  .principle-content h4 {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .principle-content p {
+    font-size: 10px;
+    line-height: 1.65;
+  }
+
+  .about-story-principle:hover {
+    padding-left: 0;
+  }
+
+
+  /* =======================================================
+     THE CEILINGCRAFT DIFFERENCE
+     ======================================================= */
+
+  .difference-section {
+    padding: 90px 0;
+  }
+
+  .difference-container {
+    width: calc(100% - 36px);
+  }
+
+  .difference-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .difference-eyebrow {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .difference-eyebrow span {
+    width: 20px;
+  }
+
+  .difference-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+
+  .difference-title {
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: -0.055em;
+  }
+
+  .difference-intro {
+    max-width: 330px;
+    margin: 18px auto 0;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .difference-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .difference-card {
+    border-radius: 11px;
+  }
+
+  .difference-card-image {
+    height: 245px;
+  }
+
+  .difference-number {
+    left: 18px;
+    bottom: 17px;
+    font-size: 40px;
+  }
+
+  .difference-card-content {
+    padding: 23px 20px 25px;
+  }
+
+  .difference-label {
+    margin-bottom: 9px;
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+
+  .difference-card-content h3 {
+    font-size: 20px;
+  }
+
+  .difference-card-content p {
+    margin-top: 11px;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .difference-card:hover {
+    transform: none;
+  }
+
+  .difference-card:hover .difference-card-image img {
+    transform: none;
+  }
+
+
+  /* =======================================================
+     WHAT WE SPECIALIZE IN
+     ======================================================= */
+
+  .specialize-section {
+    padding: 90px 0;
+  }
+
+  .specialize-container {
+    width: calc(100% - 36px);
+  }
+
+  .specialize-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .specialize-eyebrow {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .specialize-eyebrow span {
+    width: 20px;
+  }
+
+  .specialize-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+
+  .specialize-title {
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: -0.055em;
+  }
+
+  .specialize-intro {
+    max-width: 330px;
+    margin: 18px auto 0;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .specialize-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .specialize-content {
+    max-width: 100%;
+  }
+
+  .specialize-point {
+    grid-template-columns: 32px minmax(0, 1fr) 25px;
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .specialize-point-number {
+    font-size: 10px;
+  }
+
+  .specialize-point-content h3 {
+    font-size: 13px;
+  }
+
+  .specialize-point-content p {
+    max-width: 100%;
+    margin-top: 6px;
+    font-size: 10px;
+    line-height: 1.65;
+  }
+
+  .specialize-point-arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .specialize-point-arrow i {
+    width: 11px;
+    height: 11px;
+  }
+
+  .specialize-point:hover {
+    padding-left: 0;
+  }
+
+  .specialize-point:hover .specialize-point-arrow {
+    transform: none;
+  }
+
+  .specialize-image {
+    height: 420px;
+  }
+
+  .specialize-image-label {
+    left: 18px;
+    bottom: 18px;
+    gap: 10px;
+  }
+
+  .specialize-image-label span {
+    font-size: 10px;
+  }
+
+  .specialize-image-label strong {
+    font-size: 8px;
+    letter-spacing: 0.11em;
+  }
+
+  .specialize-image-meta {
+    padding-top: 10px;
+    font-size: 7px;
+    letter-spacing: 0.11em;
+  }
+
+
+  /* =======================================================
+     OUR WORK PHILOSOPHY
+     ======================================================= */
+
+  .philosophy-section {
+    padding: 90px 0;
+  }
+
+  .philosophy-container {
+    width: calc(100% - 36px);
+  }
+
+  .philosophy-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .philosophy-eyebrow {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .philosophy-eyebrow span {
+    width: 20px;
+  }
+
+  .philosophy-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+
+  .philosophy-title {
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: -0.055em;
+  }
+
+  .philosophy-intro {
+    max-width: 330px;
+    margin: 18px auto 0;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .philosophy-list {
+    gap: 14px;
+  }
+
+  .philosophy-item {
+    grid-template-columns: 78px minmax(0, 1fr);
+    min-height: 145px;
+    transform: none !important;
+  }
+
+  .philosophy-number {
+    font-size: 36px;
+  }
+
+  .philosophy-content {
+    padding: 22px 18px;
+  }
+
+  .philosophy-label {
+    margin-bottom: 7px;
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+
+  .philosophy-content h3 {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .philosophy-content p {
+    margin-top: 7px;
+    font-size: 10px;
+    line-height: 1.65;
+  }
+
+  .philosophy-item:hover .philosophy-accent {
+    transform: none;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .final-cta-section {
+    padding: 18px 0;
+  }
+
+  .final-cta-wrapper {
+    width: calc(100% - 24px);
+    min-height: 510px;
+    padding: 6px 4px;
+    border-radius: 18px;
+  }
+
+  .final-cta-inner {
+    min-height: 498px;
+    padding: 50px 0;
+    border-radius: 13px;
+  }
+
+  .final-cta-content {
+    width: calc(100% - 34px);
+  }
+
+  .final-cta-eyebrow {
+    gap: 9px;
+    margin-bottom: 25px;
+  }
+
+  .final-cta-eyebrow span {
+    width: 22px;
+  }
+
+  .final-cta-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 0.15em;
+  }
+
+  .final-cta-title {
+    font-size: 40px;
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+  }
+
+  .final-cta-description {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 11px;
+    line-height: 1.75;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .final-cta-primary,
+  .final-cta-secondary {
+    width: 100%;
+    min-width: 0;
+    height: 50px;
+    padding: 0 18px;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .final-cta-primary {
+    gap: 16px;
+  }
+
+  .final-cta-secondary {
+    gap: 11px;
+  }
+
+  .cta-circle {
+    width: 360px;
+    height: 360px;
+  }
+
+  .cta-circle-top {
+    top: -175px;
+    left: -180px;
+  }
+
+  .cta-circle-bottom {
+    right: -180px;
+    bottom: -185px;
+  }
+
+
+  /* =======================================================
+     RTL — MOBILE
+     ======================================================= */
+
+  body.rtl .about-story-content,
+  body.rtl .specialize-content,
+  body.rtl .philosophy-content {
+    text-align: right;
+  }
+
+  body.rtl .about-story-image-label,
+  body.rtl .specialize-image-label {
+    left: auto;
+    right: 18px;
+  }
+
+  body.rtl .difference-number {
+    left: auto;
+    right: 18px;
+  }
+
+  body.rtl .cta-circle-top {
+    left: auto;
+    right: -180px;
+  }
+
+  body.rtl .cta-circle-bottom {
+    right: auto;
+    left: -180px;
+  }
+
+}
+
+
+/* =========================================================
+   iPad Mini
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* HERO */
+
+  .about-hero {
+    height: 720px;
+  }
+
+  .about-hero-container {
+    width: calc(100% - 60px);
+  }
+
+  .about-hero-content {
+    width: 600px;
+  }
+
+  .about-hero-title {
+    font-size: 58px;
+  }
+
+  .about-hero-description {
+    max-width: 520px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .about-hero-bottom {
+    width: calc(100% - 60px);
+    bottom: 23px;
+  }
+
+
+  /* OUR STORY */
+
+  .about-story-section {
+    padding: 105px 0 115px;
+  }
+
+  .about-story-container {
+    width: calc(100% - 60px);
+  }
+
+  .about-story-header {
+    margin-bottom: 55px;
+  }
+
+  .about-story-title {
+    font-size: 50px;
+  }
+
+  .about-story-intro {
+    max-width: 560px;
+    font-size: 13px;
+  }
+
+  .about-story-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-story-image {
+    height: 500px;
+  }
+
+  .about-story-content {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .about-story-content-title {
+    font-size: 32px;
+  }
+
+  .about-story-description {
+    max-width: 620px;
+    font-size: 12px;
+  }
+
+
+  /* DIFFERENCE */
+
+  .difference-section {
+    padding: 105px 0;
+  }
+
+  .difference-container {
+    width: calc(100% - 60px);
+  }
+
+  .difference-header {
+    margin-bottom: 55px;
+  }
+
+  .difference-title {
+    font-size: 50px;
+  }
+
+  .difference-intro {
+    max-width: 570px;
+    font-size: 13px;
+  }
+
+  .difference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .difference-card:nth-child(3) {
+    grid-column: 1 / -1;
+    width: calc(50% - 10px);
+    justify-self: center;
+  }
+
+  .difference-card-image {
+    height: 270px;
+  }
+
+  .difference-card-content {
+    padding: 25px 23px 28px;
+  }
+
+  .difference-card-content h3 {
+    font-size: 21px;
+  }
+
+  .difference-card-content p {
+    font-size: 12px;
+  }
+
+
+  /* SPECIALIZE */
+
+  .specialize-section {
+    padding: 105px 0;
+  }
+
+  .specialize-container {
+    width: calc(100% - 60px);
+  }
+
+  .specialize-header {
+    margin-bottom: 55px;
+  }
+
+  .specialize-title {
+    font-size: 50px;
+  }
+
+  .specialize-intro {
+    max-width: 570px;
+    font-size: 13px;
+  }
+
+  .specialize-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .specialize-content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .specialize-point {
+    grid-template-columns: 38px minmax(0, 1fr) 28px;
+    gap: 16px;
+    padding: 21px 0;
+  }
+
+  .specialize-point-content h3 {
+    font-size: 15px;
+  }
+
+  .specialize-point-content p {
+    max-width: 560px;
+    font-size: 11px;
+  }
+
+  .specialize-visual {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .specialize-image {
+    height: 500px;
+  }
+
+
+  /* PHILOSOPHY */
+
+  .philosophy-section {
+    padding: 105px 0;
+  }
+
+  .philosophy-container {
+    width: calc(100% - 60px);
+  }
+
+  .philosophy-header {
+    margin-bottom: 55px;
+  }
+
+  .philosophy-title {
+    font-size: 50px;
+  }
+
+  .philosophy-intro {
+    font-size: 13px;
+  }
+
+  .philosophy-item {
+    grid-template-columns: 110px minmax(0, 1fr);
+    min-height: 155px;
+  }
+
+  .philosophy-number {
+    font-size: 48px;
+  }
+
+  .philosophy-content {
+    padding: 27px 30px;
+  }
+
+  .philosophy-content h3 {
+    font-size: 21px;
+  }
+
+  .philosophy-content p {
+    font-size: 12px;
+  }
+
+
+  /* FINAL CTA */
+
+  .final-cta-section {
+    padding: 25px 0;
+  }
+
+  .final-cta-wrapper {
+    width: calc(100% - 50px);
+    min-height: 500px;
+    padding: 9px 5px;
+  }
+
+  .final-cta-inner {
+    min-height: 490px;
+    padding: 55px 0;
+  }
+
+  .final-cta-content {
+    width: calc(100% - 60px);
+  }
+
+  .final-cta-title {
+    font-size: 54px;
+  }
+
+  .final-cta-description {
+    width: min(650px, 100%);
+    font-size: 13px;
+  }
+
+  .final-cta-actions {
+    gap: 16px;
+    margin-top: 35px;
+  }
+
+  .final-cta-primary {
+    min-width: 225px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .final-cta-secondary {
+    min-width: 140px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .cta-circle {
+    width: 480px;
+    height: 480px;
+  }
+
+  .cta-circle-top {
+    top: -220px;
+    left: -240px;
+  }
+
+  .cta-circle-bottom {
+    right: -240px;
+    bottom: -250px;
+  }
+
+
+  /* RTL */
+
+  body.rtl .about-story-content,
+  body.rtl .specialize-content,
+  body.rtl .philosophy-content {
+    text-align: right;
+  }
+
+  body.rtl .about-story-image-label,
+  body.rtl .specialize-image-label {
+    left: auto;
+    right: 24px;
+  }
+
+  body.rtl .difference-number {
+    left: auto;
+    right: 23px;
+  }
+
+  body.rtl .cta-circle-top {
+    left: auto;
+    right: -240px;
+  }
+
+  body.rtl .cta-circle-bottom {
+    right: auto;
+    left: -240px;
+  }
+
+}
+
+
+/* =========================================================
+   iPad Pro 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* HERO */
+
+  .about-hero {
+    height: 740px;
+  }
+
+  .about-hero-container {
+    width: calc(100% - 70px);
+  }
+
+  .about-hero-content {
+    width: 650px;
+  }
+
+  .about-hero-title {
+    font-size: 62px;
+  }
+
+  .about-hero-description {
+    max-width: 560px;
+    font-size: 14px;
+  }
+
+  .about-hero-bottom {
+    width: calc(100% - 70px);
+    bottom: 24px;
+  }
+
+
+  /* OUR STORY */
+
+  .about-story-section {
+    padding: 115px 0 125px;
+  }
+
+  .about-story-container {
+    width: calc(100% - 70px);
+  }
+
+  .about-story-title {
+    font-size: 54px;
+  }
+
+  .about-story-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+    gap: 45px;
+  }
+
+  .about-story-image {
+    height: 540px;
+  }
+
+  .about-story-content {
+    max-width: 100%;
+  }
+
+  .about-story-content-title {
+    font-size: 31px;
+  }
+
+  .about-story-description {
+    font-size: 12px;
+  }
+
+  .about-story-principle {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 13px;
+    padding: 17px 0;
+  }
+
+
+  /* DIFFERENCE */
+
+  .difference-section {
+    padding: 115px 0;
+  }
+
+  .difference-container {
+    width: calc(100% - 70px);
+  }
+
+  .difference-title {
+    font-size: 54px;
+  }
+
+  .difference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .difference-card:nth-child(3) {
+    grid-column: 1 / -1;
+    width: calc(50% - 11px);
+    justify-self: center;
+  }
+
+  .difference-card-image {
+    height: 270px;
+  }
+
+  .difference-card-content {
+    padding: 27px 25px 30px;
+  }
+
+  .difference-card-content h3 {
+    font-size: 22px;
+  }
+
+
+  /* SPECIALIZE */
+
+  .specialize-section {
+    padding: 115px 0;
+  }
+
+  .specialize-container {
+    width: calc(100% - 70px);
+  }
+
+  .specialize-title {
+    font-size: 54px;
+  }
+
+  .specialize-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 45px;
+  }
+
+  .specialize-point {
+    grid-template-columns: 36px minmax(0, 1fr) 27px;
+    gap: 14px;
+    padding: 20px 0;
+  }
+
+  .specialize-point-content h3 {
+    font-size: 15px;
+  }
+
+  .specialize-point-content p {
+    max-width: 330px;
+    font-size: 11px;
+  }
+
+  .specialize-image {
+    height: 570px;
+  }
+
+  .specialize-image-label {
+    left: 23px;
+    bottom: 22px;
+  }
+
+
+  /* PHILOSOPHY */
+
+  .philosophy-section {
+    padding: 115px 0;
+  }
+
+  .philosophy-container {
+    width: calc(100% - 70px);
+  }
+
+  .philosophy-title {
+    font-size: 54px;
+  }
+
+  .philosophy-item {
+    grid-template-columns: 125px minmax(0, 1fr);
+    min-height: 160px;
+  }
+
+  .philosophy-number {
+    font-size: 52px;
+  }
+
+  .philosophy-content {
+    padding: 28px 35px;
+  }
+
+  .philosophy-content h3 {
+    font-size: 22px;
+  }
+
+  .philosophy-content p {
+    font-size: 12px;
+  }
+
+
+  /* FINAL CTA */
+
+  .final-cta-section {
+    padding: 28px 0;
+  }
+
+  .final-cta-wrapper {
+    width: calc(100% - 60px);
+    min-height: 510px;
+    padding: 10px 5px;
+  }
+
+  .final-cta-inner {
+    min-height: 500px;
+    padding: 60px 0;
+  }
+
+  .final-cta-content {
+    width: min(800px, calc(100% - 60px));
+  }
+
+  .final-cta-title {
+    font-size: 58px;
+  }
+
+  .final-cta-description {
+    width: min(700px, 100%);
+    font-size: 14px;
+  }
+
+  .final-cta-actions {
+    gap: 18px;
+    margin-top: 38px;
+  }
+
+  .final-cta-primary {
+    min-width: 240px;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .final-cta-secondary {
+    min-width: 145px;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .cta-circle {
+    width: 530px;
+    height: 530px;
+  }
+
+  .cta-circle-top {
+    top: -240px;
+    left: -265px;
+  }
+
+  .cta-circle-bottom {
+    right: -265px;
+    bottom: -270px;
+  }
+
+
+  /* RTL */
+
+  body.rtl .about-story-content,
+  body.rtl .specialize-content,
+  body.rtl .philosophy-content {
+    text-align: right;
+  }
+
+  body.rtl .about-story-image-label,
+  body.rtl .specialize-image-label {
+    left: auto;
+    right: 25px;
+  }
+
+  body.rtl .difference-number {
+    left: auto;
+    right: 24px;
+  }
+
+  body.rtl .cta-circle-top {
+    left: auto;
+    right: -265px;
+  }
+
+  body.rtl .cta-circle-bottom {
+    right: auto;
+    left: -265px;
+  }
+
+}
+
+
+/* =========================================================
+   Nest Hub
+   1024px × 600px
+   IMPORTANT:
+   THIS MUST BE AFTER THE iPAD PRO QUERY
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .about-hero {
+    height: 522px;
+    margin-top: 78px;
+  }
+
+  .about-hero-container {
+    width: calc(100% - 70px);
+  }
+
+  .about-hero-content {
+    width: 620px;
+    padding-bottom: 15px;
+  }
+
+  .about-hero-eyebrow {
+    margin-bottom: 17px;
+    font-size: 10px;
+  }
+
+  .about-hero-title {
+    font-size: 54px;
+  }
+
+  .about-hero-description {
+    max-width: 540px;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .about-hero-actions {
+    margin-top: 23px;
+    gap: 16px;
+  }
+
+  .about-hero-primary,
+  .about-hero-secondary {
+    height: 42px;
+  }
+
+  .about-hero-bottom {
+    width: calc(100% - 70px);
+    bottom: 16px;
+  }
+
+
+  /* =======================================================
+     OUR STORY
+     ======================================================= */
+
+  .about-story-section {
+    padding: 90px 0 100px;
+  }
+
+  .about-story-container {
+    width: calc(100% - 70px);
+  }
+
+  .about-story-header {
+    margin-bottom: 45px;
+  }
+
+  .about-story-title {
+    font-size: 48px;
+  }
+
+  .about-story-intro {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .about-story-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 40px;
+  }
+
+  .about-story-image {
+    height: 470px;
+  }
+
+  .about-story-content-title {
+    font-size: 28px;
+  }
+
+  .about-story-description {
+    margin-top: 14px;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .about-story-principles {
+    margin-top: 24px;
+  }
+
+  .about-story-principle {
+    padding: 14px 0;
+  }
+
+  .principle-content h4 {
+    font-size: 12px;
+  }
+
+  .principle-content p {
+    font-size: 10px;
+  }
+
+
+  /* =======================================================
+     DIFFERENCE
+     ======================================================= */
+
+  .difference-section {
+    padding: 90px 0;
+  }
+
+  .difference-container {
+    width: calc(100% - 70px);
+  }
+
+  .difference-header {
+    margin-bottom: 45px;
+  }
+
+  .difference-title {
+    font-size: 48px;
+  }
+
+  .difference-intro {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .difference-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .difference-card:nth-child(3) {
+    grid-column: auto;
+    width: auto;
+    justify-self: auto;
+  }
+
+  .difference-card-image {
+    height: 205px;
+  }
+
+  .difference-number {
+    left: 17px;
+    bottom: 15px;
+    font-size: 38px;
+  }
+
+  .difference-card-content {
+    padding: 22px 20px 24px;
+  }
+
+  .difference-label {
+    margin-bottom: 8px;
+    font-size: 8px;
+  }
+
+  .difference-card-content h3 {
+    font-size: 18px;
+  }
+
+  .difference-card-content p {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================================
+     SPECIALIZE
+     ======================================================= */
+
+  .specialize-section {
+    padding: 90px 0;
+  }
+
+  .specialize-container {
+    width: calc(100% - 70px);
+  }
+
+  .specialize-header {
+    margin-bottom: 45px;
+  }
+
+  .specialize-title {
+    font-size: 48px;
+  }
+
+  .specialize-intro {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .specialize-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 40px;
+  }
+
+  .specialize-point {
+    grid-template-columns: 32px minmax(0, 1fr) 25px;
+    gap: 12px;
+    padding: 17px 0;
+  }
+
+  .specialize-point-number {
+    font-size: 10px;
+  }
+
+  .specialize-point-content h3 {
+    font-size: 13px;
+  }
+
+  .specialize-point-content p {
+    max-width: 290px;
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .specialize-point-arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .specialize-image {
+    height: 465px;
+  }
+
+  .specialize-image-label {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .specialize-image-label strong {
+    font-size: 9px;
+  }
+
+  .specialize-image-meta {
+    padding-top: 10px;
+    font-size: 7px;
+  }
+
+
+  /* =======================================================
+     PHILOSOPHY
+     ======================================================= */
+
+  .philosophy-section {
+    padding: 90px 0;
+  }
+
+  .philosophy-container {
+    width: calc(100% - 70px);
+  }
+
+  .philosophy-header {
+    margin-bottom: 45px;
+  }
+
+  .philosophy-title {
+    font-size: 48px;
+  }
+
+  .philosophy-intro {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .philosophy-list {
+    gap: 14px;
+  }
+
+  .philosophy-item {
+    grid-template-columns: 105px minmax(0, 1fr);
+    min-height: 135px;
+  }
+
+  .philosophy-number {
+    font-size: 46px;
+  }
+
+  .philosophy-content {
+    padding: 22px 30px;
+  }
+
+  .philosophy-label {
+    margin-bottom: 7px;
+    font-size: 8px;
+  }
+
+  .philosophy-content h3 {
+    font-size: 19px;
+  }
+
+  .philosophy-content p {
+    margin-top: 7px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .final-cta-section {
+    padding: 20px 0;
+  }
+
+  .final-cta-wrapper {
+    width: calc(100% - 70px);
+    min-height: 555px;
+    padding: 8px 5px;
+    border-radius: 23px;
+  }
+
+  .final-cta-inner {
+    min-height: 545px;
+    padding: 45px 0;
+    border-radius: 15px;
+  }
+
+  .final-cta-content {
+    width: min(780px, calc(100% - 60px));
+  }
+
+  .final-cta-eyebrow {
+    gap: 11px;
+    margin-bottom: 25px;
+  }
+
+  .final-cta-eyebrow span {
+    width: 32px;
+  }
+
+  .final-cta-eyebrow p {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+  }
+
+  .final-cta-title {
+    font-size: 54px;
+    line-height: 0.98;
+  }
+
+  .final-cta-description {
+    width: min(700px, 100%);
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .final-cta-actions {
+    gap: 17px;
+    margin-top: 30px;
+  }
+
+  .final-cta-primary {
+    min-width: 235px;
+    height: 50px;
+    padding: 0 24px;
+    gap: 18px;
+    font-size: 14px;
+  }
+
+  .final-cta-secondary {
+    min-width: 145px;
+    height: 50px;
+    padding: 0 22px;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .cta-circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .cta-circle-top {
+    top: -230px;
+    left: -250px;
+  }
+
+  .cta-circle-bottom {
+    right: -250px;
+    bottom: -255px;
+  }
+
+
+  /* =======================================================
+     RTL
+     ======================================================= */
+
+  body.rtl .about-story-content,
+  body.rtl .specialize-content,
+  body.rtl .philosophy-content {
+    text-align: right;
+  }
+
+  body.rtl .about-story-image-label,
+  body.rtl .specialize-image-label {
+    left: auto;
+    right: 20px;
+  }
+
+  body.rtl .difference-number {
+    left: auto;
+    right: 17px;
+  }
+
+  body.rtl .cta-circle-top {
+    left: auto;
+    right: -250px;
+  }
+
+  body.rtl .cta-circle-bottom {
+    right: auto;
+    left: -250px;
+  }
+
+}

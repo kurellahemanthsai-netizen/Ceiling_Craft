@@ -1,0 +1,4680 @@
+/* =========================================================
+   PROCESS PAGE — HERO
+   ========================================================= */
+
+.process-hero {
+  position: relative;
+  min-height: 90vh;
+  margin-top: 78px;
+
+  background-image: url("../images/hero-6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   DARK IMAGE OVERLAY
+   ========================================================= */
+
+.process-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(23, 26, 27, 0.9) 0%,
+    rgba(23, 26, 27, 0.72) 38%,
+    rgba(23, 26, 27, 0.32) 68%,
+    rgba(23, 26, 27, 0.18) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.process-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1240px, calc(100% - 110px));
+  min-height: 90vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.process-hero-content {
+  width: min(700px, 62%);
+
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.process-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.process-hero-eyebrow::before {
+  content: "";
+
+  width: 32px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.process-hero-title {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  line-height: 0.98;
+  font-weight: 450;
+  letter-spacing: -0.055em;
+
+  color: #f2f0ea;
+}
+
+.process-hero-title span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.process-hero-description {
+  max-width: 610px;
+
+  margin: 32px 0 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.85;
+  font-weight: 400;
+
+  color: rgba(242, 240, 234, 0.78);
+}
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.process-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+/* =========================================================
+   COMMON BUTTON
+   ========================================================= */
+
+.process-hero-btn {
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 0 22px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.process-hero-btn svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.7;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.process-hero-btn-primary {
+  background: #b8864a;
+  color: #ffffff;
+}
+
+.process-hero-btn-primary:hover {
+  background: var(--secondary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.process-hero-btn-secondary {
+  border-color: rgba(242, 240, 234, 0.35);
+
+  background: rgba(23, 26, 27, 0.18);
+
+  color: #f2f0ea;
+
+  backdrop-filter: blur(8px);
+}
+
+.process-hero-btn-secondary:hover {
+  border-color: #b8864a;
+  color: #b8864a;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   HERO BOTTOM
+   ========================================================= */
+
+.process-hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 28px;
+
+  border-top: 1px solid rgba(242, 240, 234, 0.16);
+  padding-top: 20px;
+}
+
+/* =========================================================
+   SPECIALIST LABEL
+   ========================================================= */
+
+.process-hero-specialist {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+
+  color: rgba(242, 240, 234, 0.65);
+}
+
+/* =========================================================
+   SCROLL LINK
+   ========================================================= */
+
+.process-hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: rgba(242, 240, 234, 0.72);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.process-hero-scroll svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.5;
+}
+
+.process-hero-scroll:hover {
+  color: #b8864a;
+}
+
+/* =========================================================
+   PROCESS PAGE — SECTION 2
+   THE CEILINGCRAFT APPROACH
+   ========================================================= */
+
+.process-approach {
+  position: relative;
+
+  padding: 135px 0 145px;
+
+  background: #f7f5f0;
+  color: #252525;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.process-approach-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CENTERED HEADER
+   ========================================================= */
+
+.process-approach-header {
+  max-width: 850px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.process-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 23px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.process-section-eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.process-approach-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.03;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.process-approach-header h2 span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.process-approach-header p {
+  max-width: 650px;
+
+  margin: 28px auto 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.85;
+  font-weight: 400;
+
+  color: #252525;
+  opacity: 0.65;
+}
+
+/* =========================================================
+   IMAGE + POINTS LAYOUT
+   ========================================================= */
+
+.process-approach-layout {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 75px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   LEFT IMAGE
+   ========================================================= */
+
+.process-approach-image-wrap {
+  position: relative;
+
+  min-width: 0;
+}
+
+.process-approach-image {
+  width: 100%;
+  height: 570px;
+
+  overflow: hidden;
+
+  background: #eae7df;
+}
+
+.process-approach-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.process-approach-image-wrap:hover .process-approach-image img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.process-approach-image-label {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  padding: 16px 21px;
+
+  background: #252525;
+
+  color: #f2f0ea;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.process-approach-image-label span:first-child {
+  color: #b8864a;
+}
+
+/* =========================================================
+   RIGHT APPROACH POINTS
+   ========================================================= */
+
+.process-approach-points {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.16);
+}
+
+/* =========================================================
+   APPROACH ITEM
+   ========================================================= */
+
+.process-approach-item {
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns: 45px 1fr 25px;
+
+  gap: 18px;
+
+  align-items: start;
+
+  padding: 28px 0 28px;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.16);
+
+  transition:
+    padding-left 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.process-approach-number {
+  padding-top: 3px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   ITEM TITLE
+   ========================================================= */
+
+.process-approach-item-content h3 {
+  margin: 0 0 9px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.3;
+  font-weight: 650;
+
+  color: #252525;
+}
+
+/* =========================================================
+   ITEM DESCRIPTION
+   ========================================================= */
+
+.process-approach-item-content p {
+  max-width: 430px;
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.75;
+
+  color: #252525;
+  opacity: 0.62;
+}
+
+/* =========================================================
+   ITEM ICON
+   ========================================================= */
+
+.process-approach-item > svg {
+  width: 17px;
+  height: 17px;
+
+  margin-top: 3px;
+
+  color: #b8864a;
+
+  stroke-width: 1.5;
+
+  transition: transform 0.3s ease;
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.process-approach-item:hover {
+  padding-left: 10px;
+
+  background: rgba(184, 134, 74, 0.035);
+}
+
+.process-approach-item:hover > svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .process-approach {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-approach-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-approach-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-approach-points {
+  border-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .process-approach-item {
+  border-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .process-approach-item-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-approach-item-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-approach-item:hover {
+  background: rgba(184, 134, 74, 0.05);
+}
+
+/* =========================================================
+   PROCESS PAGE — SECTION 3
+   THE PROCESS
+   ========================================================= */
+
+.process-steps {
+  position: relative;
+
+  padding: 140px 0 150px;
+  margin-top: -150px;
+
+  background: var(site bg);
+  color: #252525;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.process-steps-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CENTERED HEADER
+   ========================================================= */
+
+.process-steps-header {
+  max-width: 800px;
+
+  margin: 0 auto 85px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.process-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 23px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.process-section-eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.process-steps-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.03;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.process-steps-header h2 span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.process-steps-header p {
+  max-width: 590px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  color: #252525;
+  opacity: 0.62;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.process-steps-layout {
+  display: grid;
+
+  grid-template-columns: 0.72fr 1.28fr;
+
+  gap: 80px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   LEFT TIMELINE
+   ========================================================= */
+
+.process-timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 6px;
+}
+
+/* =========================================================
+   VERTICAL LINE
+   ========================================================= */
+
+.process-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  bottom: 8px;
+  left: 23px;
+
+  width: 1px;
+
+  background: rgba(37, 37, 37, 0.18);
+}
+
+/* =========================================================
+   PROCESS STEP
+   ========================================================= */
+
+.process-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 47px 1fr;
+
+  gap: 22px;
+
+  min-height: 108px;
+
+  padding-bottom: 30px;
+}
+
+.process-step:last-child {
+  padding-bottom: 0;
+}
+
+/* =========================================================
+   MARKER
+   ========================================================= */
+
+.process-step-marker {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding-top: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(184, 134, 74, 0.55);
+
+  border-radius: 50%;
+}
+
+.process-step-marker span {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   STEP CONTENT
+   ========================================================= */
+
+.process-step-content {
+  padding-top: 3px;
+}
+
+.process-step-content h3 {
+  margin: 0 0 9px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  font-weight: 650;
+
+  color: #252525;
+}
+
+.process-step-content p {
+  max-width: 330px;
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.75;
+
+  color: #252525;
+  opacity: 0.6;
+}
+
+/* =========================================================
+   ACTIVE STEP
+   ========================================================= */
+
+.process-step.active .process-step-marker {
+  background: #b8864a;
+
+  border-color: #b8864a;
+}
+
+.process-step.active .process-step-marker span {
+  color: #ffffff;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.process-steps-image-wrap {
+  position: relative;
+
+  min-width: 0;
+}
+
+.process-steps-image {
+  width: 100%;
+  height: 570px;
+
+  overflow: hidden;
+
+  background: #eae7df;
+}
+
+.process-steps-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.process-steps-image-wrap:hover .process-steps-image img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE CAPTION
+   ========================================================= */
+
+.process-steps-image-caption {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 16px 21px;
+
+  background: #252525;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
+  color: #f2f0ea;
+}
+
+.process-steps-image-caption span:first-child {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .process-steps {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-steps-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-steps-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-timeline::before {
+  background: rgba(242, 240, 234, 0.16);
+}
+
+body.dark-mode .process-step-marker {
+  background: #171a1b;
+  border-color: rgba(184, 134, 74, 0.6);
+}
+
+body.dark-mode .process-step-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-step-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-step.active .process-step-marker {
+  background: #b8864a;
+}
+
+/* =========================================================
+   PROCESS PAGE — SECTION 3
+   RTL LAYOUT
+   IMAGE LEFT / TIMELINE RIGHT
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+body.rtl .process-steps {
+  direction: rtl;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body.rtl .process-steps-header {
+  direction: rtl;
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+
+   IMPORTANT:
+   Keep the OUTER GRID LTR.
+
+   This guarantees physical positioning:
+
+   COLUMN 1 = LEFT
+   COLUMN 2 = RIGHT
+
+   RTL:
+   IMAGE    |    TIMELINE
+   LEFT     |    RIGHT
+   ========================================================= */
+
+body.rtl .process-steps-layout {
+  direction: ltr;
+
+  display: grid;
+
+  grid-template-columns: 1.28fr 0.72fr;
+
+  gap: 80px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   IMAGE
+   PHYSICAL LEFT
+   ========================================================= */
+
+body.rtl .process-steps-image-wrap {
+  grid-column: 1;
+  grid-row: 1;
+
+  direction: ltr;
+}
+
+/* =========================================================
+   TIMELINE
+   PHYSICAL RIGHT
+   ========================================================= */
+
+body.rtl .process-timeline {
+  grid-column: 2;
+  grid-row: 1;
+
+  position: relative;
+
+  width: 100%;
+
+  padding: 0;
+
+  direction: rtl;
+}
+
+/* =========================================================
+   VERTICAL TIMELINE LINE
+   RIGHT SIDE
+   ========================================================= */
+
+body.rtl .process-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 18px;
+  bottom: 18px;
+
+  right: 18px;
+  left: auto;
+
+  width: 1px;
+
+  background: rgba(37, 37, 37, 0.18);
+
+  z-index: 0;
+}
+
+/* =========================================================
+   PROCESS STEP
+   ========================================================= */
+
+body.rtl .process-step {
+  position: relative;
+
+  display: block;
+
+  min-height: 108px;
+
+  padding: 0 58px 30px 0;
+
+  text-align: right;
+
+  direction: rtl;
+}
+
+body.rtl .process-step:last-child {
+  padding-bottom: 0;
+}
+
+/* =========================================================
+   MARKER
+   RIGHT SIDE
+   ========================================================= */
+
+body.rtl .process-step-marker {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  left: auto;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(184, 134, 74, 0.55);
+
+  border-radius: 50%;
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+body.rtl .process-step-marker span {
+  display: block;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.62rem;
+  line-height: 1;
+
+  font-weight: 700;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   ACTIVE MARKER
+   ========================================================= */
+
+body.rtl .process-step.active .process-step-marker {
+  background: #b8864a;
+
+  border-color: #b8864a;
+}
+
+body.rtl .process-step.active .process-step-marker span {
+  color: #ffffff;
+}
+
+/* =========================================================
+   STEP CONTENT
+   CONTENT TO THE LEFT OF TIMELINE
+   ========================================================= */
+
+body.rtl .process-step-content {
+  width: 100%;
+
+  padding-top: 2px;
+
+  text-align: right;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+body.rtl .process-step-content h3 {
+  margin: 0 0 9px;
+
+  text-align: right;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+body.rtl .process-step-content p {
+  max-width: 330px;
+
+  margin: 0 0 0 auto;
+
+  text-align: right;
+}
+
+/* =========================================================
+   IMAGE CAPTION
+   MOVE TO LEFT
+   ========================================================= */
+
+body.rtl .process-steps-image-caption {
+  right: auto;
+  left: 0;
+
+  direction: ltr;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode.rtl .process-steps {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .process-steps-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .process-steps-header p {
+  color: #f2f0ea;
+}
+
+/* Timeline */
+
+body.dark-mode.rtl .process-timeline::before {
+  background: rgba(242, 240, 234, 0.16);
+}
+
+/* Marker */
+
+body.dark-mode.rtl .process-step-marker {
+  background: #171a1b;
+
+  border-color: rgba(184, 134, 74, 0.6);
+}
+
+/* Content */
+
+body.dark-mode.rtl .process-step-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode.rtl .process-step-content p {
+  color: #f2f0ea;
+}
+
+/* Active marker */
+
+body.dark-mode.rtl .process-step.active .process-step-marker {
+  background: #b8864a;
+
+  border-color: #b8864a;
+}
+
+body.dark-mode.rtl .process-step.active .process-step-marker span {
+  color: #ffffff;
+}
+
+/* =========================================================
+   PROCESS PAGE — SECTION 4
+   THE TRANSFORMATION
+   ========================================================= */
+
+.process-transformation {
+  position: relative;
+
+  padding: 140px 0 145px;
+  margin-top: -120px;
+
+  background: #f7f5f0;
+  color: #252525;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.process-transformation-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.process-transformation-header {
+  max-width: 780px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.process-transformation-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.03;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.process-transformation-header h2 span {
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.process-transformation-header p {
+  max-width: 590px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  color: #252525;
+  opacity: 0.62;
+}
+
+/* =========================================================
+   TRANSFORMATION GRID
+   ========================================================= */
+
+.process-transformation-grid {
+  display: grid;
+
+  grid-template-columns: 0.95fr 0.22fr 1.35fr;
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   IMAGE BLOCKS
+   ========================================================= */
+
+.transformation-before,
+.transformation-after {
+  position: relative;
+
+  min-width: 0;
+}
+
+.transformation-image {
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+
+  background: #eae7df;
+}
+
+.transformation-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.transformation-before:hover img,
+.transformation-after:hover img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   BEFORE / AFTER LABEL
+   ========================================================= */
+
+.transformation-label {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 17px;
+
+  min-width: 220px;
+
+  padding: 17px 21px;
+
+  background: #252525;
+
+  color: #f2f0ea;
+}
+
+.transformation-number {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  color: #b8864a;
+}
+
+.transformation-label div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.transformation-stage {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+  color: rgba(242, 240, 234, 0.65);
+}
+
+.transformation-label strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 650;
+
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   DURING
+   ========================================================= */
+
+.transformation-during {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DURING LINES
+   ========================================================= */
+
+.transformation-during-line {
+  width: 1px;
+  height: 75px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   DURING NUMBER
+   ========================================================= */
+
+.transformation-during-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  margin: 18px 0;
+
+  border: 1px solid #b8864a;
+
+  border-radius: 50%;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   DURING CONTENT
+   ========================================================= */
+
+.transformation-during .transformation-stage {
+  margin-bottom: 10px;
+
+  color: #b8864a;
+}
+
+.transformation-during h3 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  font-weight: 650;
+
+  color: #252525;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .process-transformation {
+  background: #171a1b;
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-transformation-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-transformation-header p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .transformation-during h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-transformation-statement p {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   CEILINGCRAFT
+   PROCESS PAGE — SECTION 5
+   WHAT YOU CAN EXPECT
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.process-expect {
+  position: relative;
+
+  width: 100%;
+
+  padding: 140px 0 150px;
+  margin-top: -100px;
+  background: var(site bg);
+
+  color: #252525;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.process-expect-container {
+  width: min(1240px, calc(100% - 110px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.process-expect-header {
+  max-width: 850px;
+
+  margin: 0 auto 78px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.process-expect-header .process-section-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 24px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.19em;
+
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.process-expect-header .process-section-eyebrow::before {
+  content: "";
+
+  display: block;
+
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.process-expect-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  line-height: 1.03;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+
+  color: #252525;
+}
+
+.process-expect-header h2 span {
+  display: inline;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.process-expect-intro {
+  max-width: 630px;
+
+  margin: 28px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.92rem;
+
+  line-height: 1.85;
+
+  font-weight: 400;
+
+  color: #252525;
+
+  opacity: 0.62;
+}
+
+/* =========================================================
+   EXPECTATIONS LIST
+   ========================================================= */
+
+.process-expect-list {
+  width: 100%;
+
+  border-top: 1px solid rgba(37, 37, 37, 0.16);
+}
+
+/* =========================================================
+   EXPECTATION ITEM
+   ========================================================= */
+
+.process-expect-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 65px minmax(0, 1fr) 35px;
+
+  column-gap: 25px;
+
+  align-items: start;
+
+  width: 100%;
+
+  min-height: 145px;
+
+  padding: 35px 0;
+
+  border-bottom: 1px solid rgba(37, 37, 37, 0.16);
+
+  transition:
+    background-color 0.35s ease,
+    padding-left 0.35s ease,
+    padding-right 0.35s ease;
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.process-expect-number {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-start;
+
+  padding-top: 2px;
+}
+
+.process-expect-number span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid rgba(184, 134, 74, 0.55);
+
+  border-radius: 50%;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.61rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  color: #b8864a;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.process-expect-content {
+  min-width: 0;
+}
+
+/* =========================================================
+   SMALL KICKER
+   ========================================================= */
+
+.process-expect-kicker {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.58rem;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: #63858a;
+
+  opacity: 0.9;
+}
+
+/* =========================================================
+   ITEM HEADING
+   ========================================================= */
+
+.process-expect-content h3 {
+  margin: 0 0 9px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 1.18rem;
+
+  line-height: 1.35;
+
+  font-weight: 650;
+
+  letter-spacing: -0.015em;
+
+  color: #252525;
+}
+
+/* =========================================================
+   ITEM DESCRIPTION
+   ========================================================= */
+
+.process-expect-content p {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.84rem;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  color: #252525;
+
+  opacity: 0.58;
+}
+
+/* =========================================================
+   ARROW ICON
+   ========================================================= */
+
+.process-expect-icon {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-end;
+
+  padding-top: 3px;
+}
+
+.process-expect-icon svg {
+  width: 17px;
+  height: 17px;
+
+  color: #b8864a;
+
+  stroke-width: 1.5;
+
+  transition: transform 0.35s ease;
+}
+
+/* =========================================================
+   ITEM HOVER
+   ========================================================= */
+
+.process-expect-item:hover {
+  padding-left: 14px;
+
+  background: rgba(184, 134, 74, 0.035);
+}
+
+.process-expect-item:hover .process-expect-number span {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+.process-expect-item:hover .process-expect-icon svg {
+  transform: translate(4px, -4px);
+}
+
+
+
+/* =========================================================
+   =========================================================
+   DARK MODE
+   =========================================================
+   ========================================================= */
+
+body.dark-mode .process-expect {
+  background: #171a1b;
+
+  color: #f2f0ea;
+}
+
+/* HEADER */
+
+body.dark-mode .process-expect-header h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-expect-intro {
+  color: #f2f0ea;
+}
+
+/* LIST */
+
+body.dark-mode .process-expect-list {
+  border-top-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .process-expect-item {
+  border-bottom-color: rgba(242, 240, 234, 0.14);
+}
+
+body.dark-mode .process-expect-content h3 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-expect-content p {
+  color: #f2f0ea;
+}
+
+/* NUMBER */
+
+body.dark-mode .process-expect-number span {
+  background: #171a1b;
+
+  border-color: rgba(184, 134, 74, 0.6);
+
+  color: #b8864a;
+}
+
+/* HOVER */
+
+body.dark-mode .process-expect-item:hover {
+  background: rgba(184, 134, 74, 0.05);
+}
+
+body.dark-mode .process-expect-item:hover .process-expect-number span {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+/* STANDARD */
+
+body.dark-mode .process-expect-standard-steps span {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-expect-standard-steps span:last-child {
+  color: #b8864a;
+}
+
+body.dark-mode .process-expect-standard-description {
+  color: #f2f0ea;
+}
+
+/* CLOSING */
+
+body.dark-mode .process-expect-statement p {
+  color: #f2f0ea;
+}
+
+/* =========================================================
+   =========================================================
+   RTL
+   =========================================================
+   ========================================================= */
+
+body.rtl .process-expect {
+  direction: rtl;
+}
+
+body.rtl .process-expect-header {
+  direction: rtl;
+
+  text-align: center;
+}
+
+body.rtl .process-expect-intro {
+  text-align: center;
+}
+
+/* =========================================================
+   RTL LIST
+   ========================================================= */
+
+body.rtl .process-expect-list {
+  direction: rtl;
+}
+
+body.rtl .process-expect-item {
+  direction: rtl;
+
+  grid-template-columns: 35px minmax(0, 1fr) 65px;
+
+  text-align: right;
+}
+
+body.rtl .process-expect-number {
+  grid-column: 3;
+
+  grid-row: 1;
+
+  justify-content: flex-end;
+
+  text-align: right;
+}
+
+body.rtl .process-expect-content {
+  grid-column: 2;
+
+  grid-row: 1;
+
+  text-align: right;
+}
+
+body.rtl .process-expect-icon {
+  grid-column: 1;
+
+  grid-row: 1;
+
+  justify-content: flex-start;
+}
+
+body.rtl .process-expect-item:hover {
+  padding-left: 0;
+
+  padding-right: 14px;
+}
+
+body.rtl .process-expect-item:hover .process-expect-icon svg {
+  transform: translate(-4px, -4px);
+}
+
+/* =========================================================
+   RTL STANDARD
+   ========================================================= */
+
+body.rtl .process-expect-standard {
+  direction: rtl;
+}
+
+body.rtl .process-expect-standard-heading {
+  direction: rtl;
+}
+
+body.rtl .process-expect-standard-steps {
+  direction: rtl;
+}
+
+body.rtl .process-expect-statement {
+  direction: rtl;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DARK + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .process-expect {
+  background: #171a1b;
+}
+
+/* =========================================================
+   CEILINGCRAFT
+   PROCESS PAGE — SECTION 6
+   FINAL CTA
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.process-final-cta {
+  position: relative;
+  margin-top: -90px;
+  width: 100%;
+
+  padding: 80px 0 90px;
+
+  background: #f7f5f0;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   MAIN CTA BOX
+   ========================================================= */
+
+.process-final-cta-box {
+  position: relative;
+
+  width: min(900px, calc(100% - 70px));
+
+  min-height: 500px;
+
+  margin: 0 auto;
+
+  padding: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(37, 37, 37, 0.12);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   INNER GOLD BORDER
+   ========================================================= */
+
+.process-final-cta-box::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 10px;
+
+  border: 1px solid rgba(184, 134, 74, 0.42);
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   INNER CONTENT
+   ========================================================= */
+
+.process-final-cta-inner {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  min-height: 478px;
+
+  padding: 55px 65px 28px;
+}
+
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
+
+.process-final-cta-circle {
+  position: absolute;
+
+  border: 1px solid rgba(184, 134, 74, 0.13);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.process-final-cta-circle-one {
+  width: 410px;
+  height: 410px;
+
+  top: -205px;
+  right: -100px;
+}
+
+.process-final-cta-circle-two {
+  width: 360px;
+  height: 360px;
+
+  bottom: -200px;
+  left: -115px;
+
+  border-color: rgba(99, 133, 138, 0.13);
+}
+
+/* =========================================================
+   TOP EYEBROW
+   ========================================================= */
+
+.process-final-cta-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+}
+
+.process-final-cta-eyebrow span {
+  display: block;
+
+  width: 28px;
+  height: 1px;
+
+  background: #b8864a;
+}
+
+.process-final-cta-eyebrow p {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.62rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  color: #63858a;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.process-final-cta-content {
+  position: relative;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.process-final-cta-content h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 3.5rem;
+
+  line-height: 0.98;
+
+  font-weight: 600;
+
+  letter-spacing: -0.06em;
+
+  color: #252525;
+}
+
+.process-final-cta-content h2 span {
+  display: block;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.process-final-cta-content p {
+  max-width: 580px;
+
+  margin: 27px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.9rem;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  color: #252525;
+
+  opacity: 0.62;
+}
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.process-final-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 34px;
+
+  padding: 15px 22px 15px 25px;
+
+  background: var(--primary);
+
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.72rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  color: #f2f0ea;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.process-final-cta-button svg {
+  width: 16px;
+  height: 16px;
+
+  stroke-width: 1.6;
+
+  color: white;
+
+  transition: transform 0.3s ease;
+}
+
+.process-final-cta-button:hover {
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+.process-final-cta-button:hover svg {
+  color: #ffffff;
+
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   FOOTER AREA
+   ========================================================= */
+
+.process-final-cta-footer {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  width: 100%;
+}
+
+.process-final-cta-footer-line {
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(37, 37, 37, 0.12);
+}
+
+.process-final-cta-footer-content {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.process-final-cta-footer-content span {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.55rem;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  color: #63858a;
+}
+
+.process-final-cta-footer-content strong {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.66rem;
+
+  line-height: 1;
+
+  font-weight: 750;
+
+  letter-spacing: 0.13em;
+
+  color: #b8864a;
+}
+
+/* =========================================================
+   =========================================================
+   DARK MODE
+   =========================================================
+   ========================================================= */
+
+body.dark-mode .process-final-cta {
+  background: #171a1b;
+}
+
+body.dark-mode .process-final-cta-box {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .process-final-cta-box::before {
+  border-color: rgba(184, 134, 74, 0.42);
+}
+
+body.dark-mode .process-final-cta-content h2 {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-final-cta-content p {
+  color: #f2f0ea;
+}
+
+body.dark-mode .process-final-cta-button {
+  background: #f2f0ea;
+
+  border-color: #f2f0ea;
+
+  color: #252525;
+}
+
+body.dark-mode .process-final-cta-button svg {
+  color: #b8864a;
+}
+
+body.dark-mode .process-final-cta-button:hover {
+  background: #b8864a;
+
+  border-color: #b8864a;
+
+  color: #ffffff;
+}
+
+body.dark-mode .process-final-cta-button:hover svg {
+  color: #ffffff;
+}
+
+body.dark-mode .process-final-cta-footer-line {
+  background: rgba(242, 240, 234, 0.12);
+}
+
+body.dark-mode .process-final-cta-footer-content span {
+  color: #63858a;
+}
+
+/* =========================================================
+   =========================================================
+   RTL
+   =========================================================
+   ========================================================= */
+
+body.rtl .process-final-cta {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-inner {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-content {
+  text-align: center;
+}
+
+body.rtl .process-final-cta-eyebrow {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-footer {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-footer-content {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-button {
+  direction: rtl;
+}
+
+body.rtl .process-final-cta-button:hover svg {
+  transform: translate(-3px, -3px);
+}
+
+/* =========================================================
+   DARK + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .process-final-cta {
+  background: #171a1b;
+}
+
+
+/* =========================================================
+   CEILINGCRAFT PROCESS PAGE
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* ---------------------------------------------------------
+     COMMON CONTAINERS
+     --------------------------------------------------------- */
+
+  .process-hero-container,
+  .process-approach-container,
+  .process-steps-container,
+  .process-transformation-container,
+  .process-expect-container {
+    width: calc(100% - 32px);
+  }
+
+
+  /* =========================================================
+     SECTION 1 — HERO
+     ========================================================= */
+
+  .process-hero {
+    min-height: 760px;
+    margin-top: 68px;
+    background-position: center center;
+  }
+
+  .process-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(23, 26, 27, 0.90) 0%,
+      rgba(23, 26, 27, 0.72) 48%,
+      rgba(23, 26, 27, 0.40) 100%
+    );
+  }
+
+  .process-hero-container {
+    min-height: 760px;
+    width: calc(100% - 32px);
+  }
+
+  .process-hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 85px;
+    padding-bottom: 45px;
+  }
+
+  .process-hero-eyebrow {
+    gap: 9px;
+    margin-bottom: 19px;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+  }
+
+  .process-hero-eyebrow::before {
+    width: 23px;
+  }
+
+  .process-hero-title {
+    max-width: 330px;
+    font-size: 2.65rem;
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+  }
+
+  .process-hero-description {
+    max-width: 320px;
+    margin-top: 23px;
+    font-size: 0.78rem;
+    line-height: 1.8;
+  }
+
+  .process-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 28px;
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .process-hero-btn {
+    width: 100%;
+    min-height: 45px;
+    padding: 0 17px;
+    font-size: 0.69rem;
+  }
+
+  .process-hero-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .process-hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .process-hero-specialist {
+    font-size: 0.55rem;
+    letter-spacing: 0.13em;
+  }
+
+  .process-hero-scroll {
+    font-size: 0.55rem;
+    letter-spacing: 0.13em;
+  }
+
+  .process-hero-scroll svg {
+    width: 13px;
+    height: 13px;
+  }
+
+
+  /* =========================================================
+     SECTION 2 — THE CEILINGCRAFT APPROACH
+     ========================================================= */
+
+  .process-approach {
+    padding: 75px 0 80px;
+  }
+
+  .process-approach-container {
+    width: calc(100% - 32px);
+  }
+
+  .process-approach-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .process-section-eyebrow {
+    gap: 9px;
+    margin-bottom: 18px;
+    font-size: 0.57rem;
+    letter-spacing: 0.15em;
+  }
+
+  .process-section-eyebrow::before {
+    width: 22px;
+  }
+
+  .process-approach-header h2 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+
+  .process-approach-header p {
+    max-width: 330px;
+    margin-top: 20px;
+    font-size: 0.76rem;
+    line-height: 1.8;
+  }
+
+  .process-approach-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .process-approach-image {
+    height: 370px;
+  }
+
+  .process-approach-image-label {
+    gap: 10px;
+    padding: 11px 13px;
+    font-size: 0.49rem;
+    letter-spacing: 0.10em;
+  }
+
+  .process-approach-points {
+    width: 100%;
+  }
+
+  .process-approach-item {
+    grid-template-columns: 35px minmax(0, 1fr) 20px;
+    gap: 12px;
+    padding: 21px 0;
+  }
+
+  .process-approach-number {
+    font-size: 0.59rem;
+  }
+
+  .process-approach-item-content h3 {
+    margin-bottom: 7px;
+    font-size: 0.94rem;
+  }
+
+  .process-approach-item-content p {
+    max-width: 100%;
+    font-size: 0.72rem;
+    line-height: 1.7;
+  }
+
+  .process-approach-item > svg {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  /* =========================================================
+     SECTION 3 — THE PROCESS
+     ========================================================= */
+
+  .process-steps {
+    padding: 80px 0 85px;
+
+    /* IMPORTANT:
+       Remove desktop overlap on mobile */
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .process-steps-container {
+    width: calc(100% - 32px);
+  }
+
+  .process-steps-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .process-steps-header h2 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+
+  .process-steps-header p {
+    max-width: 320px;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+
+  /* Mobile = timeline first, image second */
+
+  .process-steps-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .process-timeline {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .process-timeline::before {
+    top: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .process-step {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 16px;
+    min-height: 0;
+    padding-bottom: 28px;
+  }
+
+  .process-step-marker {
+    width: 36px;
+    height: 36px;
+    padding-top: 8px;
+  }
+
+  .process-step-marker span {
+    font-size: 0.58rem;
+  }
+
+  .process-step-content {
+    padding-top: 1px;
+  }
+
+  .process-step-content h3 {
+    margin-bottom: 7px;
+    font-size: 0.94rem;
+  }
+
+  .process-step-content p {
+    max-width: 100%;
+    font-size: 0.72rem;
+    line-height: 1.7;
+  }
+
+  .process-steps-image-wrap {
+    width: 100%;
+  }
+
+  .process-steps-image {
+    height: 340px;
+  }
+
+  .process-steps-image-caption {
+    gap: 10px;
+    padding: 11px 13px;
+    font-size: 0.47rem;
+    letter-spacing: 0.09em;
+  }
+
+  /* RTL mobile */
+
+  body.rtl .process-steps-layout {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.rtl .process-steps-image-wrap {
+    order: 2;
+    width: 100%;
+  }
+
+  body.rtl .process-timeline {
+    order: 1;
+    width: 100%;
+    padding: 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-timeline::before {
+    top: 18px;
+    bottom: 18px;
+    right: 18px;
+    left: auto;
+  }
+
+  body.rtl .process-step {
+    display: block;
+    min-height: 0;
+    padding: 0 52px 28px 0;
+    text-align: right;
+    direction: rtl;
+  }
+
+  body.rtl .process-step-marker {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+  }
+
+  body.rtl .process-step-content {
+    width: 100%;
+    padding-top: 1px;
+    text-align: right;
+  }
+
+  body.rtl .process-step-content h3,
+  body.rtl .process-step-content p {
+    text-align: right;
+  }
+
+  body.rtl .process-step-content p {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  body.rtl .process-steps-image-caption {
+    right: auto;
+    left: 0;
+    direction: ltr;
+  }
+
+
+  /* =========================================================
+     SECTION 4 — THE TRANSFORMATION
+     ========================================================= */
+
+  .process-transformation {
+    padding: 80px 0 85px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .process-transformation-container {
+    width: calc(100% - 32px);
+  }
+
+  .process-transformation-header {
+    max-width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .process-transformation-header h2 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+
+  .process-transformation-header p {
+    max-width: 320px;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+
+  .process-transformation-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .transformation-before,
+  .transformation-during,
+  .transformation-after {
+    width: 100%;
+  }
+
+  .transformation-before {
+    order: 1;
+  }
+
+  .transformation-during {
+    order: 2;
+    min-height: 150px;
+    padding: 12px 0;
+  }
+
+  .transformation-after {
+    order: 3;
+  }
+
+  .transformation-image {
+    height: 300px;
+  }
+
+  .transformation-label {
+    min-width: 175px;
+    gap: 11px;
+    padding: 12px 14px;
+  }
+
+  .transformation-number {
+    font-size: 0.57rem;
+  }
+
+  .transformation-stage {
+    font-size: 0.49rem;
+    letter-spacing: 0.11em;
+  }
+
+  .transformation-label strong {
+    font-size: 0.65rem;
+  }
+
+  .transformation-during-line {
+    height: 40px;
+  }
+
+  .transformation-during-number {
+    width: 34px;
+    height: 34px;
+    margin: 12px 0;
+    font-size: 0.57rem;
+  }
+
+  .transformation-during .transformation-stage {
+    margin-bottom: 7px;
+  }
+
+  .transformation-during h3 {
+    font-size: 0.82rem;
+  }
+
+  .process-transformation-statement {
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 40px;
+  }
+
+  .process-transformation-statement > span {
+    width: 28px;
+  }
+
+  .process-transformation-statement p {
+    max-width: 300px;
+    font-size: 0.73rem;
+    line-height: 1.7;
+  }
+
+  /* RTL */
+
+  body.rtl .process-transformation-grid {
+    direction: rtl;
+  }
+
+  body.rtl .transformation-before {
+    order: 1;
+  }
+
+  body.rtl .transformation-during {
+    order: 2;
+  }
+
+  body.rtl .transformation-after {
+    order: 3;
+  }
+
+  body.rtl .transformation-label {
+    left: auto;
+    right: 0;
+    direction: rtl;
+  }
+
+  body.rtl .transformation-label div {
+    text-align: right;
+  }
+
+
+  /* =========================================================
+     SECTION 5 — WHAT YOU CAN EXPECT
+     ========================================================= */
+
+  .process-expect {
+    padding: 80px 0 85px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+
+    background: #f7f5f0;
+  }
+
+  .process-expect-container {
+    width: calc(100% - 32px);
+  }
+
+  .process-expect-header {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .process-expect-header .process-section-eyebrow {
+    margin-bottom: 18px;
+    font-size: 0.57rem;
+  }
+
+  .process-expect-header h2 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+
+  .process-expect-intro {
+    max-width: 320px;
+    margin-top: 20px;
+    font-size: 0.74rem;
+    line-height: 1.8;
+  }
+
+  .process-expect-item {
+    grid-template-columns: 38px minmax(0, 1fr) 22px;
+    column-gap: 13px;
+    min-height: 0;
+    padding: 24px 0;
+  }
+
+  .process-expect-number span {
+    width: 32px;
+    height: 32px;
+    font-size: 0.56rem;
+  }
+
+  .process-expect-kicker {
+    margin-bottom: 6px;
+    font-size: 0.49rem;
+    letter-spacing: 0.12em;
+  }
+
+  .process-expect-content h3 {
+    margin-bottom: 7px;
+    font-size: 0.92rem;
+  }
+
+  .process-expect-content p {
+    max-width: 100%;
+    font-size: 0.71rem;
+    line-height: 1.75;
+  }
+
+  .process-expect-icon {
+    padding-top: 2px;
+  }
+
+  .process-expect-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .process-expect-standard {
+    max-width: 100%;
+    margin-top: 55px;
+  }
+
+  .process-expect-standard-heading {
+    gap: 10px;
+    margin-bottom: 19px;
+  }
+
+  .process-expect-standard-line {
+    width: 25px;
+  }
+
+  .process-expect-standard-eyebrow {
+    font-size: 0.49rem;
+    letter-spacing: 0.14em;
+  }
+
+  .process-expect-standard-steps {
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 15px;
+  }
+
+  .process-expect-standard-steps span {
+    font-size: 0.61rem;
+    letter-spacing: 0.10em;
+  }
+
+  .process-expect-standard-steps svg {
+    width: 9px;
+    height: 9px;
+  }
+
+  .process-expect-standard-description {
+    font-size: 0.7rem;
+  }
+
+  .process-expect-statement {
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 48px;
+  }
+
+  .process-expect-statement-line {
+    flex: 0 0 auto;
+    width: 28px;
+  }
+
+  .process-expect-statement p {
+    max-width: 300px;
+    font-size: 0.73rem;
+    line-height: 1.7;
+  }
+
+  /* RTL */
+
+  body.rtl .process-expect-item {
+    grid-template-columns: 22px minmax(0, 1fr) 38px;
+    column-gap: 13px;
+    direction: rtl;
+  }
+
+  body.rtl .process-expect-number {
+    grid-column: 3;
+    justify-content: flex-end;
+  }
+
+  body.rtl .process-expect-content {
+    grid-column: 2;
+    text-align: right;
+  }
+
+  body.rtl .process-expect-icon {
+    grid-column: 1;
+    justify-content: flex-start;
+  }
+
+  body.rtl .process-expect-item:hover {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+
+  /* =========================================================
+     SECTION 6 — FINAL CTA
+     ========================================================= */
+
+  .process-final-cta {
+    padding: 55px 0 65px;
+  }
+
+  .process-final-cta-box {
+    width: calc(100% - 28px);
+    min-height: 510px;
+    padding: 7px;
+  }
+
+  .process-final-cta-box::before {
+    inset: 7px;
+  }
+
+  .process-final-cta-inner {
+    min-height: 494px;
+    padding: 38px 24px 22px;
+  }
+
+  .process-final-cta-circle-one {
+    width: 270px;
+    height: 270px;
+    top: -135px;
+    right: -75px;
+  }
+
+  .process-final-cta-circle-two {
+    width: 240px;
+    height: 240px;
+    bottom: -135px;
+    left: -80px;
+  }
+
+  .process-final-cta-eyebrow {
+    gap: 8px;
+  }
+
+  .process-final-cta-eyebrow span {
+    width: 20px;
+  }
+
+  .process-final-cta-eyebrow p {
+    font-size: 0.49rem;
+    letter-spacing: 0.14em;
+  }
+
+  .process-final-cta-content {
+    max-width: 100%;
+  }
+
+  .process-final-cta-content h2 {
+    font-size: 2.55rem;
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .process-final-cta-content p {
+    max-width: 290px;
+    margin-top: 21px;
+    font-size: 0.73rem;
+    line-height: 1.75;
+  }
+
+  .process-final-cta-button {
+    min-height: 44px;
+    margin-top: 27px;
+    padding: 0 17px;
+    gap: 9px;
+    font-size: 0.67rem;
+  }
+
+  .process-final-cta-button svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .process-final-cta-footer {
+    width: 100%;
+  }
+
+  .process-final-cta-footer-line {
+    display: none;
+  }
+
+  .process-final-cta-footer-content {
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+  }
+
+  .process-final-cta-footer-content span {
+    font-size: 0.48rem;
+    letter-spacing: 0.11em;
+  }
+
+  .process-final-cta-footer-content strong {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+  }
+
+
+  /* =========================================================
+     DARK MODE — MOBILE
+     ========================================================= */
+
+  body.dark-mode .process-steps,
+  body.dark-mode .process-expect {
+    background: #171a1b;
+  }
+
+  body.dark-mode .process-approach {
+    background: #171a1b;
+  }
+
+  body.dark-mode .process-transformation {
+    background: #171a1b;
+  }
+
+  body.dark-mode .process-final-cta {
+    background: #171a1b;
+  }
+
+  body.dark-mode .process-final-cta-box {
+    background: #222627;
+  }
+
+  body.dark-mode .process-final-cta-content h2 {
+    color: #f2f0ea;
+  }
+
+  body.dark-mode .process-final-cta-content p {
+    color: #f2f0ea;
+  }
+
+  body.dark-mode .process-final-cta-button {
+    background: #b8864a;
+    border-color: #b8864a;
+  }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* ---------------------------------------------------------
+     COMMON
+     --------------------------------------------------------- */
+
+  .process-hero-container,
+  .process-approach-container,
+  .process-steps-container,
+  .process-transformation-container,
+  .process-expect-container {
+    width: calc(100% - 60px);
+  }
+
+
+  /* =========================================================
+     SECTION 1 — HERO
+     ========================================================= */
+
+  .process-hero {
+    min-height: 720px;
+    margin-top: 72px;
+  }
+
+  .process-hero-container {
+    min-height: 720px;
+  }
+
+  .process-hero-content {
+    width: min(570px, 72%);
+    padding-top: 90px;
+    padding-bottom: 65px;
+  }
+
+  .process-hero-title {
+    font-size: 3.55rem;
+  }
+
+  .process-hero-description {
+    max-width: 500px;
+    font-size: 0.88rem;
+  }
+
+  .process-hero-actions {
+    margin-top: 32px;
+  }
+
+  .process-hero-btn {
+    min-height: 48px;
+    padding: 0 19px;
+    font-size: 0.73rem;
+  }
+
+
+  /* =========================================================
+     SECTION 2 — APPROACH
+     ========================================================= */
+
+  .process-approach {
+    padding: 95px 0 105px;
+  }
+
+  .process-approach-header {
+    margin-bottom: 58px;
+  }
+
+  .process-approach-header h2 {
+    font-size: 3.05rem;
+  }
+
+  .process-approach-header p {
+    max-width: 570px;
+    font-size: 0.84rem;
+  }
+
+  .process-approach-layout {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 38px;
+  }
+
+  .process-approach-image {
+    height: 500px;
+  }
+
+  .process-approach-image-label {
+    padding: 13px 16px;
+    font-size: 0.55rem;
+  }
+
+  .process-approach-item {
+    grid-template-columns: 38px minmax(0, 1fr) 20px;
+    gap: 13px;
+    padding: 22px 0;
+  }
+
+  .process-approach-item-content h3 {
+    font-size: 1rem;
+  }
+
+  .process-approach-item-content p {
+    font-size: 0.75rem;
+  }
+
+
+  /* =========================================================
+     SECTION 3 — PROCESS
+     ========================================================= */
+
+  .process-steps {
+    padding: 100px 0 110px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-steps-header {
+    margin-bottom: 60px;
+  }
+
+  .process-steps-header h2 {
+    font-size: 3.05rem;
+  }
+
+  .process-steps-header p {
+    max-width: 520px;
+    font-size: 0.82rem;
+  }
+
+  .process-steps-layout {
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 38px;
+  }
+
+  .process-timeline {
+    padding-left: 2px;
+  }
+
+  .process-timeline::before {
+    left: 19px;
+  }
+
+  .process-step {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 14px;
+    min-height: 105px;
+    padding-bottom: 25px;
+  }
+
+  .process-step-marker {
+    width: 34px;
+    height: 34px;
+    padding-top: 7px;
+  }
+
+  .process-step-content h3 {
+    font-size: 0.96rem;
+  }
+
+  .process-step-content p {
+    max-width: 100%;
+    font-size: 0.73rem;
+  }
+
+  .process-steps-image {
+    height: 520px;
+  }
+
+  .process-steps-image-caption {
+    padding: 13px 16px;
+    font-size: 0.53rem;
+  }
+
+  /* RTL */
+
+  body.rtl .process-steps-layout {
+    direction: ltr;
+    grid-template-columns: 1.22fr 0.78fr;
+  }
+
+  body.rtl .process-steps-image-wrap {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.rtl .process-timeline {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-timeline::before {
+    right: 17px;
+    left: auto;
+  }
+
+  body.rtl .process-step {
+    display: block;
+    padding: 0 51px 25px 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-step-marker {
+    right: 0;
+    left: auto;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+  }
+
+  body.rtl .process-step-content {
+    padding-top: 1px;
+    text-align: right;
+  }
+
+  body.rtl .process-step-content h3,
+  body.rtl .process-step-content p {
+    text-align: right;
+  }
+
+  body.rtl .process-steps-image-caption {
+    right: auto;
+    left: 0;
+  }
+
+
+  /* =========================================================
+     SECTION 4 — TRANSFORMATION
+     ========================================================= */
+
+  .process-transformation {
+    padding: 100px 0 110px;
+    margin-top: 0;
+  }
+
+  .process-transformation-header {
+    margin-bottom: 58px;
+  }
+
+  .process-transformation-header h2 {
+    font-size: 3.05rem;
+  }
+
+  .process-transformation-header p {
+    max-width: 520px;
+    font-size: 0.82rem;
+  }
+
+  .process-transformation-grid {
+    grid-template-columns: 1fr 70px 1fr;
+    gap: 15px;
+  }
+
+  .transformation-image {
+    height: 390px;
+  }
+
+  .transformation-label {
+    min-width: 170px;
+    padding: 13px 15px;
+    gap: 10px;
+  }
+
+  .transformation-stage {
+    font-size: 0.51rem;
+  }
+
+  .transformation-label strong {
+    font-size: 0.68rem;
+  }
+
+  .transformation-during-line {
+    height: 55px;
+  }
+
+  .transformation-during-number {
+    width: 35px;
+    height: 35px;
+    margin: 14px 0;
+  }
+
+  .transformation-during h3 {
+    font-size: 0.83rem;
+  }
+
+  .process-transformation-statement {
+    margin-top: 50px;
+  }
+
+  /* RTL */
+
+  body.rtl .process-transformation-grid {
+    direction: rtl;
+  }
+
+  body.rtl .transformation-label {
+    left: auto;
+    right: 0;
+  }
+
+
+  /* =========================================================
+     SECTION 5 — EXPECT
+     ========================================================= */
+
+  .process-expect {
+    padding: 100px 0 110px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-expect-header {
+    margin-bottom: 60px;
+  }
+
+  .process-expect-header h2 {
+    font-size: 3.05rem;
+  }
+
+  .process-expect-intro {
+    max-width: 560px;
+    font-size: 0.81rem;
+  }
+
+  .process-expect-item {
+    grid-template-columns: 48px minmax(0, 1fr) 28px;
+    column-gap: 18px;
+    min-height: 125px;
+    padding: 29px 0;
+  }
+
+  .process-expect-number span {
+    width: 34px;
+    height: 34px;
+  }
+
+  .process-expect-kicker {
+    font-size: 0.53rem;
+  }
+
+  .process-expect-content h3 {
+    font-size: 1rem;
+  }
+
+  .process-expect-content p {
+    max-width: 580px;
+    font-size: 0.75rem;
+  }
+
+  .process-expect-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .process-expect-standard {
+    margin-top: 68px;
+  }
+
+  .process-expect-standard-steps {
+    gap: 14px;
+  }
+
+  .process-expect-standard-steps span {
+    font-size: 0.68rem;
+  }
+
+  .process-expect-statement {
+    margin-top: 62px;
+  }
+
+  /* RTL */
+
+  body.rtl .process-expect-item {
+    grid-template-columns: 28px minmax(0, 1fr) 48px;
+    direction: rtl;
+  }
+
+  body.rtl .process-expect-number {
+    grid-column: 3;
+  }
+
+  body.rtl .process-expect-content {
+    grid-column: 2;
+  }
+
+  body.rtl .process-expect-icon {
+    grid-column: 1;
+  }
+
+
+  /* =========================================================
+     SECTION 6 — FINAL CTA
+     ========================================================= */
+
+  .process-final-cta {
+    padding: 70px 0 80px;
+  }
+
+  .process-final-cta-box {
+    width: calc(100% - 60px);
+    min-height: 470px;
+    padding: 9px;
+  }
+
+  .process-final-cta-box::before {
+    inset: 9px;
+  }
+
+  .process-final-cta-inner {
+    min-height: 452px;
+    padding: 50px 45px 25px;
+  }
+
+  .process-final-cta-circle-one {
+    width: 340px;
+    height: 340px;
+    top: -170px;
+    right: -85px;
+  }
+
+  .process-final-cta-circle-two {
+    width: 300px;
+    height: 300px;
+    bottom: -165px;
+    left: -95px;
+  }
+
+  .process-final-cta-content h2 {
+    font-size: 3.15rem;
+  }
+
+  .process-final-cta-content p {
+    max-width: 500px;
+    font-size: 0.81rem;
+  }
+
+  .process-final-cta-button {
+    min-height: 48px;
+    margin-top: 28px;
+    padding: 0 20px;
+    font-size: 0.72rem;
+  }
+
+  .process-final-cta-footer-content span {
+    font-size: 0.53rem;
+  }
+
+  .process-final-cta-footer-content strong {
+    font-size: 0.76rem;
+  }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* ---------------------------------------------------------
+     COMMON
+     --------------------------------------------------------- */
+
+  .process-hero-container,
+  .process-approach-container,
+  .process-steps-container,
+  .process-transformation-container,
+  .process-expect-container {
+    width: calc(100% - 70px);
+  }
+
+
+  /* =========================================================
+     SECTION 1 — HERO
+     ========================================================= */
+
+  .process-hero {
+    min-height: 760px;
+    margin-top: 74px;
+  }
+
+  .process-hero-container {
+    min-height: 760px;
+  }
+
+  .process-hero-content {
+    width: min(620px, 68%);
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .process-hero-title {
+    font-size: 4rem;
+  }
+
+  .process-hero-description {
+    max-width: 560px;
+    font-size: 0.92rem;
+  }
+
+
+  /* =========================================================
+     SECTION 2 — APPROACH
+     ========================================================= */
+
+  .process-approach {
+    padding: 115px 0 125px;
+  }
+
+  .process-approach-header {
+    margin-bottom: 68px;
+  }
+
+  .process-approach-header h2 {
+    font-size: 3.3rem;
+  }
+
+  .process-approach-header p {
+    max-width: 620px;
+    font-size: 0.89rem;
+  }
+
+  .process-approach-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .process-approach-image {
+    height: 540px;
+  }
+
+  .process-approach-item {
+    grid-template-columns: 42px minmax(0, 1fr) 22px;
+    gap: 15px;
+    padding: 25px 0;
+  }
+
+  .process-approach-item-content h3 {
+    font-size: 1.04rem;
+  }
+
+  .process-approach-item-content p {
+    font-size: 0.79rem;
+  }
+
+
+  /* =========================================================
+     SECTION 3 — PROCESS
+     ========================================================= */
+
+  .process-steps {
+    padding: 120px 0 130px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-steps-header {
+    margin-bottom: 72px;
+  }
+
+  .process-steps-header h2 {
+    font-size: 3.3rem;
+  }
+
+  .process-steps-header p {
+    max-width: 560px;
+    font-size: 0.87rem;
+  }
+
+  .process-steps-layout {
+    grid-template-columns: 0.76fr 1.24fr;
+    gap: 55px;
+  }
+
+  .process-timeline::before {
+    left: 20px;
+  }
+
+  .process-step {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 17px;
+    min-height: 108px;
+    padding-bottom: 28px;
+  }
+
+  .process-step-marker {
+    width: 36px;
+    height: 36px;
+    padding-top: 8px;
+  }
+
+  .process-step-content h3 {
+    font-size: 1rem;
+  }
+
+  .process-step-content p {
+    max-width: 310px;
+    font-size: 0.76rem;
+  }
+
+  .process-steps-image {
+    height: 550px;
+  }
+
+  /* RTL */
+
+  body.rtl .process-steps-layout {
+    direction: ltr;
+    grid-template-columns: 1.24fr 0.76fr;
+    gap: 55px;
+  }
+
+  body.rtl .process-steps-image-wrap {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.rtl .process-timeline {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-timeline::before {
+    right: 18px;
+    left: auto;
+  }
+
+  body.rtl .process-step {
+    display: block;
+    padding: 0 54px 28px 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-step-marker {
+    right: 0;
+    left: auto;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+  }
+
+  body.rtl .process-step-content {
+    text-align: right;
+  }
+
+  body.rtl .process-step-content h3,
+  body.rtl .process-step-content p {
+    text-align: right;
+  }
+
+  body.rtl .process-steps-image-caption {
+    right: auto;
+    left: 0;
+  }
+
+
+  /* =========================================================
+     SECTION 4 — TRANSFORMATION
+     ========================================================= */
+
+  .process-transformation {
+    padding: 120px 0 130px;
+    margin-top: 0;
+  }
+
+  .process-transformation-header {
+    margin-bottom: 68px;
+  }
+
+  .process-transformation-header h2 {
+    font-size: 3.3rem;
+  }
+
+  .process-transformation-header p {
+    max-width: 560px;
+    font-size: 0.87rem;
+  }
+
+  .process-transformation-grid {
+    grid-template-columns: 0.95fr 75px 1.35fr;
+    gap: 18px;
+  }
+
+  .transformation-image {
+    height: 440px;
+  }
+
+  .transformation-label {
+    min-width: 190px;
+    padding: 15px 17px;
+  }
+
+  .transformation-during-line {
+    height: 65px;
+  }
+
+  .transformation-during-number {
+    width: 36px;
+    height: 36px;
+    margin: 16px 0;
+  }
+
+  .process-transformation-statement {
+    margin-top: 58px;
+  }
+
+
+  /* =========================================================
+     SECTION 5 — EXPECT
+     ========================================================= */
+
+  .process-expect {
+    padding: 120px 0 130px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-expect-header {
+    margin-bottom: 70px;
+  }
+
+  .process-expect-header h2 {
+    font-size: 3.3rem;
+  }
+
+  .process-expect-intro {
+    max-width: 600px;
+    font-size: 0.86rem;
+  }
+
+  .process-expect-item {
+    grid-template-columns: 58px minmax(0, 1fr) 32px;
+    column-gap: 22px;
+    min-height: 135px;
+    padding: 32px 0;
+  }
+
+  .process-expect-number span {
+    width: 36px;
+    height: 36px;
+  }
+
+  .process-expect-content h3 {
+    font-size: 1.08rem;
+  }
+
+  .process-expect-content p {
+    max-width: 660px;
+    font-size: 0.78rem;
+  }
+
+  .process-expect-standard {
+    margin-top: 75px;
+  }
+
+  .process-expect-statement {
+    margin-top: 68px;
+  }
+
+  /* RTL */
+
+  body.rtl .process-expect-item {
+    grid-template-columns: 32px minmax(0, 1fr) 58px;
+    direction: rtl;
+  }
+
+  body.rtl .process-expect-number {
+    grid-column: 3;
+  }
+
+  body.rtl .process-expect-content {
+    grid-column: 2;
+  }
+
+  body.rtl .process-expect-icon {
+    grid-column: 1;
+  }
+
+
+  /* =========================================================
+     SECTION 6 — FINAL CTA
+     ========================================================= */
+
+  .process-final-cta {
+    padding: 75px 0 85px;
+  }
+
+  .process-final-cta-box {
+    width: calc(100% - 70px);
+    min-height: 480px;
+    padding: 10px;
+  }
+
+  .process-final-cta-box::before {
+    inset: 10px;
+  }
+
+  .process-final-cta-inner {
+    min-height: 458px;
+    padding: 52px 55px 27px;
+  }
+
+  .process-final-cta-circle-one {
+    width: 370px;
+    height: 370px;
+    top: -185px;
+    right: -90px;
+  }
+
+  .process-final-cta-circle-two {
+    width: 330px;
+    height: 330px;
+    bottom: -180px;
+    left: -105px;
+  }
+
+  .process-final-cta-content h2 {
+    font-size: 3.5rem;
+  }
+
+  .process-final-cta-content p {
+    max-width: 550px;
+    font-size: 0.85rem;
+  }
+
+  .process-final-cta-button {
+    min-height: 50px;
+    margin-top: 30px;
+    padding: 0 21px;
+    font-size: 0.74rem;
+  }
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   MUST COME LAST
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =========================================================
+     COMMON
+     ========================================================= */
+
+  .process-hero-container,
+  .process-approach-container,
+  .process-steps-container,
+  .process-transformation-container,
+  .process-expect-container {
+    width: calc(100% - 80px);
+  }
+
+
+  /* =========================================================
+     SECTION 1 — HERO
+     ========================================================= */
+
+  .process-hero {
+    min-height: 610px;
+    margin-top: 70px;
+  }
+
+  .process-hero-container {
+    min-height: 610px;
+  }
+
+  .process-hero-content {
+    width: min(580px, 65%);
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  .process-hero-title {
+    font-size: 3.55rem;
+  }
+
+  .process-hero-description {
+    max-width: 520px;
+    margin-top: 22px;
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .process-hero-actions {
+    margin-top: 25px;
+  }
+
+  .process-hero-btn {
+    min-height: 45px;
+    padding: 0 18px;
+    font-size: 0.69rem;
+  }
+
+  .process-hero-bottom {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+
+  /* =========================================================
+     SECTION 2 — APPROACH
+     ========================================================= */
+
+  .process-approach {
+    padding: 75px 0 85px;
+  }
+
+  .process-approach-header {
+    margin-bottom: 45px;
+  }
+
+  .process-approach-header h2 {
+    font-size: 2.9rem;
+  }
+
+  .process-approach-header p {
+    max-width: 540px;
+    margin-top: 18px;
+    font-size: 0.76rem;
+  }
+
+  .process-approach-layout {
+    gap: 42px;
+  }
+
+  .process-approach-image {
+    height: 390px;
+  }
+
+  .process-approach-item {
+    padding: 19px 0;
+  }
+
+  .process-approach-item-content h3 {
+    font-size: 0.94rem;
+  }
+
+  .process-approach-item-content p {
+    font-size: 0.69rem;
+    line-height: 1.65;
+  }
+
+
+  /* =========================================================
+     SECTION 3 — PROCESS
+     ========================================================= */
+
+  .process-steps {
+    padding: 78px 0 88px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-steps-header {
+    margin-bottom: 45px;
+  }
+
+  .process-steps-header h2 {
+    font-size: 2.9rem;
+  }
+
+  .process-steps-header p {
+    max-width: 520px;
+    margin-top: 18px;
+    font-size: 0.76rem;
+  }
+
+  .process-steps-layout {
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 45px;
+  }
+
+  .process-step {
+    min-height: 90px;
+    padding-bottom: 20px;
+  }
+
+  .process-step-content h3 {
+    font-size: 0.91rem;
+    margin-bottom: 6px;
+  }
+
+  .process-step-content p {
+    max-width: 290px;
+    font-size: 0.68rem;
+    line-height: 1.65;
+  }
+
+  .process-steps-image {
+    height: 420px;
+  }
+
+  .process-steps-image-caption {
+    padding: 10px 13px;
+    font-size: 0.47rem;
+  }
+
+  /* RTL */
+
+  body.rtl .process-steps-layout {
+    direction: ltr;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 45px;
+  }
+
+  body.rtl .process-steps-image-wrap {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.rtl .process-timeline {
+    grid-column: 2;
+    grid-row: 1;
+    direction: rtl;
+    padding: 0;
+  }
+
+  body.rtl .process-timeline::before {
+    right: 17px;
+    left: auto;
+  }
+
+  body.rtl .process-step {
+    display: block;
+    min-height: 90px;
+    padding: 0 50px 20px 0;
+    direction: rtl;
+  }
+
+  body.rtl .process-step-marker {
+    right: 0;
+    left: auto;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+  }
+
+  body.rtl .process-step-content {
+    text-align: right;
+  }
+
+  body.rtl .process-step-content h3,
+  body.rtl .process-step-content p {
+    text-align: right;
+  }
+
+  body.rtl .process-steps-image-caption {
+    right: auto;
+    left: 0;
+  }
+
+
+  /* =========================================================
+     SECTION 4 — TRANSFORMATION
+     ========================================================= */
+
+  .process-transformation {
+    padding: 78px 0 88px;
+    margin-top: 0;
+  }
+
+  .process-transformation-header {
+    margin-bottom: 45px;
+  }
+
+  .process-transformation-header h2 {
+    font-size: 2.9rem;
+  }
+
+  .process-transformation-header p {
+    max-width: 520px;
+    font-size: 0.76rem;
+  }
+
+  .process-transformation-grid {
+    grid-template-columns: 0.95fr 60px 1.35fr;
+    gap: 13px;
+  }
+
+  .transformation-image {
+    height: 350px;
+  }
+
+  .transformation-label {
+    min-width: 160px;
+    padding: 11px 13px;
+  }
+
+  .transformation-stage {
+    font-size: 0.47rem;
+  }
+
+  .transformation-label strong {
+    font-size: 0.63rem;
+  }
+
+  .transformation-during-line {
+    height: 42px;
+  }
+
+  .transformation-during-number {
+    width: 33px;
+    height: 33px;
+    margin: 11px 0;
+  }
+
+  .transformation-during h3 {
+    font-size: 0.76rem;
+  }
+
+  .process-transformation-statement {
+    margin-top: 40px;
+  }
+
+  .process-transformation-statement p {
+    font-size: 0.72rem;
+  }
+
+
+  /* =========================================================
+     SECTION 5 — EXPECT
+     ========================================================= */
+
+  .process-expect {
+    padding: 78px 0 88px;
+    margin-top: 0;
+    background: #f7f5f0;
+  }
+
+  .process-expect-header {
+    margin-bottom: 48px;
+  }
+
+  .process-expect-header h2 {
+    font-size: 2.9rem;
+  }
+
+  .process-expect-intro {
+    max-width: 540px;
+    margin-top: 18px;
+    font-size: 0.75rem;
+  }
+
+  .process-expect-item {
+    min-height: 105px;
+    padding: 24px 0;
+    grid-template-columns: 48px minmax(0, 1fr) 25px;
+    column-gap: 18px;
+  }
+
+  .process-expect-number span {
+    width: 33px;
+    height: 33px;
+  }
+
+  .process-expect-kicker {
+    font-size: 0.49rem;
+  }
+
+  .process-expect-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .process-expect-content p {
+    max-width: 600px;
+    font-size: 0.69rem;
+    line-height: 1.7;
+  }
+
+  .process-expect-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .process-expect-standard {
+    margin-top: 55px;
+  }
+
+  .process-expect-standard-heading {
+    margin-bottom: 18px;
+  }
+
+  .process-expect-standard-steps {
+    gap: 13px;
+    margin-bottom: 15px;
+  }
+
+  .process-expect-standard-steps span {
+    font-size: 0.64rem;
+  }
+
+  .process-expect-standard-description {
+    font-size: 0.7rem;
+  }
+
+  .process-expect-statement {
+    margin-top: 48px;
+  }
+
+  .process-expect-statement p {
+    font-size: 0.74rem;
+  }
+
+  /* RTL */
+
+  body.rtl .process-expect-item {
+    grid-template-columns: 25px minmax(0, 1fr) 48px;
+    direction: rtl;
+  }
+
+  body.rtl .process-expect-number {
+    grid-column: 3;
+  }
+
+  body.rtl .process-expect-content {
+    grid-column: 2;
+  }
+
+  body.rtl .process-expect-icon {
+    grid-column: 1;
+  }
+
+
+  /* =========================================================
+     SECTION 6 — FINAL CTA
+     ========================================================= */
+
+  .process-final-cta {
+    padding: 52px 0 58px;
+  }
+
+  .process-final-cta-box {
+    width: calc(100% - 80px);
+    min-height: 430px;
+    padding: 9px;
+  }
+
+  .process-final-cta-box::before {
+    inset: 9px;
+  }
+
+  .process-final-cta-inner {
+    min-height: 412px;
+    padding: 36px 55px 20px;
+  }
+
+  .process-final-cta-circle-one {
+    width: 330px;
+    height: 330px;
+    top: -165px;
+    right: -85px;
+  }
+
+  .process-final-cta-circle-two {
+    width: 290px;
+    height: 290px;
+    bottom: -155px;
+    left: -90px;
+  }
+
+  .process-final-cta-eyebrow p {
+    font-size: 0.49rem;
+  }
+
+  .process-final-cta-content h2 {
+    font-size: 3.05rem;
+  }
+
+  .process-final-cta-content p {
+    max-width: 520px;
+    margin-top: 20px;
+    font-size: 0.76rem;
+    line-height: 1.7;
+  }
+
+  .process-final-cta-button {
+    min-height: 45px;
+    margin-top: 25px;
+    padding: 0 18px;
+    font-size: 0.69rem;
+  }
+
+  .process-final-cta-footer-content span {
+    font-size: 0.49rem;
+  }
+
+  .process-final-cta-footer-content strong {
+    font-size: 0.71rem;
+  }
+}
+
+
+/* =========================================================
+   FINAL SAFETY OVERRIDES
+   These prevent the desktop negative margins from
+   creating overlaps at responsive sizes.
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+  .process-steps,
+  .process-transformation,
+  .process-expect {
+    margin-top: 0;
+  }
+
+}
+
+
+/* =========================================================
+   FINAL DARK MODE CTA COLOR FIX
+   ========================================================= */
+
+.process-final-cta-button {
+  background: #b8864a;
+  border-color: #b8864a;
+}
+
+.process-final-cta-button:hover {
+  background: #63858a;
+  border-color: #63858a;
+}

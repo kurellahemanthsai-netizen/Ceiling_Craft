@@ -1,0 +1,1054 @@
+/* =========================================================
+   CEILINGCRAFT
+   404 ERROR PAGE
+   COMPACT CENTERED BOX
+   NO SCROLL
+   SAME HTML STRUCTURE
+   ========================================================= */
+
+:root {
+  --error-primary: #B8864A;
+  --error-secondary: #63858A;
+
+  --error-bg: #F7F5F0;
+  --error-surface: #FFFFFF;
+
+  --error-text: #252525;
+  --error-muted: #6D6A64;
+
+  --error-border: rgba(37, 37, 37, 0.14);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html:has(.error-page),
+body:has(.error-page) {
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.error-page {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  min-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  background: var(--error-bg);
+  color: var(--error-text);
+
+  font-family: "Manrope", sans-serif;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.error-page *,
+.error-page *::before,
+.error-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ARCHITECTURAL CIRCLES
+   ========================================================= */
+
+.error-page::before {
+  content: "";
+
+  position: absolute;
+
+  width: 620px;
+  height: 620px;
+
+  right: -310px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 1px solid rgba(184, 134, 74, 0.10);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.error-page::after {
+  content: "";
+
+  position: absolute;
+
+  width: 460px;
+  height: 460px;
+
+  left: -230px;
+  bottom: -230px;
+
+  border: 1px solid rgba(99, 133, 138, 0.10);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TOP CONTROLS
+   ========================================================= */
+
+.error-page-controls {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  z-index: 100;
+}
+
+.error-control-btn {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(37, 37, 37, 0.12);
+
+  border-radius: 50%;
+
+  background: #FFFFFF;
+
+  color: var(--error-secondary);
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.error-control-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.error-control-btn:hover {
+  background: var(--error-secondary);
+
+  border-color: var(--error-secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   COMPACT CENTER BOX
+   ========================================================= */
+
+.error-page-container {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(720px, calc(100% - 30px));
+
+  height: min(500px, calc(100dvh - 80px));
+
+  min-height: 0;
+
+  margin: 0 auto;
+
+  padding: 24px 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: var(--error-surface);
+
+  border: 1px solid rgba(184, 134, 74, 0.30);
+
+  overflow: hidden;
+
+  box-shadow:
+    0 18px 50px rgba(37, 37, 37, 0.07);
+}
+
+
+/* Inner gold border */
+
+.error-page-container::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 9px;
+
+  border: 1px solid rgba(184, 134, 74, 0.18);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LOGO
+   SAME HTML STRUCTURE
+   ========================================================= */
+
+.booking-logo {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-bottom: 11px;
+}
+
+.booking-logo > a {
+  width: 56px;
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 56px;
+
+  text-decoration: none;
+}
+
+.booking-logo > a img {
+  width: 56px;
+  height: 56px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   LOGO TEXT
+   ========================================================= */
+
+.logo-text {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.logo-text h1 {
+  display: flex;
+
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 23px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+
+  white-space: nowrap;
+}
+
+.logo-text p {
+  margin: 4px 0 0;
+  padding: 0;
+
+  color: var(--error-muted);
+
+  font-size: 6.5px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 1.35px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.ceiling {
+  color: var(--error-primary);
+}
+
+.craft {
+  color: var(--error-secondary);
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.error-page-eyebrow {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-bottom: 5px;
+}
+
+.error-page-eyebrow span {
+  width: 24px;
+  height: 1px;
+
+  background: var(--error-primary);
+}
+
+.error-page-eyebrow p {
+  margin: 0;
+
+  color: var(--error-primary);
+
+  font-size: 0.54rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.20em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   404 NUMBER
+   ========================================================= */
+
+.error-page-number {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  margin: 0 0 3px;
+
+  color: var(--error-text);
+
+  font-size: clamp(5.5rem, 9vw, 7.5rem);
+
+  font-weight: 500;
+
+  line-height: 0.78;
+
+  letter-spacing: -0.1em;
+}
+
+.error-page-number > span {
+  display: block;
+}
+
+.error-page-number-center {
+  width: clamp(58px, 7vw, 78px);
+  height: clamp(58px, 7vw, 78px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--error-primary);
+
+  border-radius: 50%;
+
+  color: var(--error-primary);
+}
+
+.error-page-number-center svg {
+  width: 50%;
+  height: 50%;
+
+  stroke-width: 1;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.error-page-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+
+  max-width: 550px;
+
+  margin: 0 auto;
+}
+
+.error-page-content h1 {
+  margin: 0;
+
+  color: var(--error-text);
+
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+
+  line-height: 1.06;
+
+  letter-spacing: -0.05em;
+
+  font-weight: 600;
+}
+
+.error-page-content h1 span {
+  display: block;
+
+  color: var(--error-primary);
+}
+
+.error-page-content p {
+  max-width: 470px;
+
+  margin: 9px auto 0;
+
+  color: rgba(37, 37, 37, 0.60);
+
+  font-size: 0.67rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.error-page-actions {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 15px;
+}
+
+.error-page-actions a {
+  min-height: 40px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 19px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 0.61rem;
+
+  font-weight: 800;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.error-page-actions svg {
+  width: 13px;
+  height: 13px;
+}
+
+.error-page-primary {
+  background: var(--error-primary);
+
+  border: 1px solid var(--error-primary);
+
+  color: #FFFFFF;
+}
+
+.error-page-primary:hover {
+  background: var(--error-secondary);
+
+  border-color: var(--error-secondary);
+
+  transform: translateY(-2px);
+}
+
+.error-page-secondary {
+  background: transparent;
+
+  border: 1px solid rgba(37, 37, 37, 0.20);
+
+  color: var(--error-text);
+}
+
+.error-page-secondary:hover {
+  background: var(--error-secondary);
+
+  border-color: var(--error-secondary);
+
+  color: #FFFFFF;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl .error-page {
+  direction: rtl;
+}
+
+body.rtl .error-page-controls {
+  right: auto;
+  left: 18px;
+}
+
+body.rtl .booking-logo {
+  direction: ltr;
+}
+
+body.rtl .error-page-primary svg,
+body.rtl .error-page-secondary svg {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .error-page {
+  background: #171A1B;
+
+  color: #F2F0EA;
+}
+
+body.dark-mode .error-page-container {
+  background: #222627;
+
+  border-color: rgba(184, 134, 74, 0.30);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-mode .error-page-container::before {
+  border-color: rgba(184, 134, 74, 0.18);
+}
+
+body.dark-mode .error-control-btn {
+  background: #222627;
+
+  border-color: rgba(242, 240, 234, 0.12);
+
+  color: #63858A;
+}
+
+body.dark-mode .error-control-btn:hover {
+  background: #63858A;
+
+  border-color: #63858A;
+
+  color: #FFFFFF;
+}
+
+body.dark-mode .logo-text p {
+  color: rgba(242, 240, 234, 0.45);
+}
+
+body.dark-mode .error-page-number {
+  color: #F2F0EA;
+}
+
+body.dark-mode .error-page-content h1 {
+  color: #F2F0EA;
+}
+
+body.dark-mode .error-page-content p {
+  color: rgba(242, 240, 234, 0.60);
+}
+
+body.dark-mode .error-page-secondary {
+  border-color: rgba(242, 240, 234, 0.18);
+
+  color: #F2F0EA;
+}
+
+body.dark-mode .error-page-secondary:hover {
+  background: #63858A;
+
+  border-color: #63858A;
+
+  color: #FFFFFF;
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  .error-page {
+    height: 100svh;
+
+    padding: 8px;
+  }
+
+  .error-page-container {
+    width: calc(100% - 16px);
+
+    height: calc(100svh - 100px);
+
+    padding: 18px 12px;
+  }
+
+  .error-page-container::before {
+    inset: 7px;
+  }
+
+  .error-page-controls {
+    top: 8px;
+    right: 8px;
+
+    gap: 5px;
+  }
+
+  body.rtl .error-page-controls {
+    right: auto;
+    left: 8px;
+  }
+
+  .error-control-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .error-control-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  /* Logo */
+
+  .booking-logo {
+    gap: 8px;
+
+    margin-bottom: 8px;
+  }
+
+  .booking-logo > a {
+    width: 42px;
+    height: 40px;
+
+    flex: 0 0 42px;
+  }
+
+  .booking-logo > a img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .logo-text p {
+    margin-top: 3px;
+
+    font-size: 5px;
+
+    letter-spacing: 1px;
+  }
+
+
+  /* Eyebrow */
+
+  .error-page-eyebrow {
+    gap: 5px;
+
+    margin-bottom: 4px;
+  }
+
+  .error-page-eyebrow span {
+    width: 16px;
+  }
+
+  .error-page-eyebrow p {
+    font-size: 0.42rem;
+  }
+
+
+  /* 404 */
+
+  .error-page-number {
+    font-size: 4.7rem;
+
+    gap: 3px;
+
+    margin-bottom: 4px;
+  }
+
+  .error-page-number-center {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  /* Content */
+
+  .error-page-content {
+    max-width: 275px;
+  }
+
+  .error-page-content h1 {
+    font-size: 1.45rem;
+  }
+
+  .error-page-content p {
+    margin-top: 7px;
+
+    font-size: 0.56rem;
+
+    line-height: 1.5;
+  }
+
+
+  /* Buttons */
+
+  .error-page-actions {
+    flex-direction: column;
+
+    width: 100%;
+
+    max-width: 225px;
+
+    gap: 5px;
+
+    margin-top: 11px;
+  }
+
+  .error-page-actions a {
+    width: 100%;
+
+    min-height: 35px;
+
+    font-size: 0.58rem;
+  }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .error-page {
+    padding: 15px;
+  }
+
+  .error-page-container {
+    width: 560px;
+
+    max-width: calc(100% - 30px);
+
+    height: 440px;
+
+    max-height: calc(100dvh - 40px);
+
+    padding: 22px 28px;
+  }
+
+  .booking-logo {
+    margin-bottom: 10px;
+  }
+
+  .booking-logo > a {
+    width: 50px;
+    height: 48px;
+
+    flex: 0 0 50px;
+  }
+
+  .booking-logo > a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text h1 {
+    font-size: 21px;
+  }
+
+  .logo-text p {
+    font-size: 6px;
+  }
+
+  .error-page-number {
+    font-size: 6.8rem;
+  }
+
+  .error-page-number-center {
+    width: 72px;
+    height: 72px;
+  }
+
+  .error-page-content h1 {
+    font-size: 2.05rem;
+  }
+
+  .error-page-content p {
+    font-size: 0.63rem;
+  }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .error-page {
+    padding: 15px;
+  }
+
+  .error-page-container {
+    width: 650px;
+
+    max-width: calc(100% - 40px);
+
+    height: 470px;
+
+    max-height: calc(100dvh - 40px);
+
+    padding: 24px 32px;
+  }
+
+  .booking-logo {
+    margin-bottom: 11px;
+  }
+
+  .booking-logo > a {
+    width: 54px;
+    height: 52px;
+
+    flex: 0 0 54px;
+  }
+
+  .booking-logo > a img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .logo-text h1 {
+    font-size: 22px;
+  }
+
+  .error-page-number {
+    font-size: 7.6rem;
+  }
+
+  .error-page-number-center {
+    width: 82px;
+    height: 82px;
+  }
+
+  .error-page-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* =========================================================
+   NEST HUB
+   MUST BE LAST
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .error-page {
+    padding: 8px;
+  }
+
+  .error-page-container {
+    width: 650px;
+
+    max-width: calc(100% - 30px);
+
+    height: 430px;
+
+    max-height: calc(100dvh - 16px);
+
+    padding: 18px 30px;
+  }
+
+  .error-page-controls {
+    top: 7px;
+    right: 10px;
+  }
+
+  body.rtl .error-page-controls {
+    right: auto;
+    left: 10px;
+  }
+
+  .booking-logo {
+    gap: 8px;
+
+    margin-bottom: 5px;
+  }
+
+  .booking-logo > a {
+    width: 40px;
+    height: 38px;
+
+    flex: 0 0 40px;
+  }
+
+  .booking-logo > a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .logo-text p {
+    margin-top: 3px;
+
+    font-size: 4.8px;
+  }
+
+  .error-page-eyebrow {
+    margin-bottom: 2px;
+  }
+
+  .error-page-number {
+    font-size: 5.1rem;
+
+    gap: 3px;
+  }
+
+  .error-page-number-center {
+    width: 50px;
+    height: 50px;
+  }
+
+  .error-page-content h1 {
+    font-size: 1.65rem;
+  }
+
+  .error-page-content p {
+    margin-top: 5px;
+
+    font-size: 0.52rem;
+  }
+
+  .error-page-actions {
+    margin-top: 8px;
+  }
+
+  .error-page-actions a {
+    min-height: 32px;
+
+    font-size: 0.56rem;
+  }
+}

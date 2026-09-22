@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Process</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="process.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     CEILINGCRAFT
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="CeilingCraft Home">
+            <img src="images/logo.png" alt="CeilingCraft Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="ceiling">Ceiling</span
+              ><span class="craft">Craft</span>
+            </h1>
+
+            <p>Specialty Ceiling Services</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="index.html" class="avtive">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             OUR WORK
+        ================================================== -->
+
+            <!-- <li>
+
+          <a href="our-work.html">
+
+            <span>Our Work</span>
+
+          </a>
+
+        </li> -->
+
+            <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+            <li>
+              <a href="process.html">
+                <span>Process</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             PRICING
+        ================================================== -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- =================================================
+           MOBILE ESTIMATE BUTTON
+      ================================================== -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- =================================================
+           RTL TOGGLE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DARK MODE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DESKTOP FREE ESTIMATE BUTTON
+      ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- =================================================
+           MOBILE MENU
+      ================================================== -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     PROCESS PAGE — HERO
+     ========================================================= -->
+
+    <section class="process-hero" id="processHero">
+      <div class="process-hero-overlay"></div>
+
+      <div class="process-hero-container">
+        <div class="process-hero-content">
+          <span class="process-hero-eyebrow"> OUR PROCESS </span>
+
+          <h1 class="process-hero-title">
+            A Clear Process.<br />
+            <span>A Better Ceiling.</span>
+          </h1>
+
+          <p class="process-hero-description">
+            From the first look at your ceiling to the final finish, our process
+            is built around careful preparation, controlled work, and attention
+            to the details that make the finished space feel complete.
+          </p>
+
+          <div class="process-hero-actions">
+            <a
+              href="#contact"
+              class="process-hero-btn process-hero-btn-primary"
+            >
+              <span>Get a Free Estimate</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a
+              href="#process"
+              class="process-hero-btn process-hero-btn-secondary"
+            >
+              <span>See How It Works</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="process-hero-bottom">
+          <span class="process-hero-specialist">
+            RESIDENTIAL CEILING SPECIALISTS
+          </span>
+
+          <a href="#process" class="process-hero-scroll">
+            <span>SCROLL TO EXPLORE</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PROCESS PAGE — SECTION 2
+     THE CEILINGCRAFT APPROACH
+     ========================================================= -->
+
+    <section class="process-approach" id="approach">
+      <div class="process-approach-container">
+        <!-- CENTERED HEADING -->
+        <div class="process-approach-header">
+          <span class="process-section-eyebrow">
+            THE CEILINGCRAFT APPROACH
+          </span>
+
+          <h2>
+            Every Good Finish Starts With a
+            <span>Thoughtful Process.</span>
+          </h2>
+
+          <p>
+            Removing an old ceiling texture is more than simply scraping away
+            the surface. The condition of the ceiling, the surrounding space,
+            and the finish you want all influence how the work should be
+            approached.
+          </p>
+        </div>
+
+        <!-- IMAGE + APPROACH POINTS -->
+        <div class="process-approach-layout">
+          <!-- LEFT IMAGE -->
+          <div class="process-approach-image-wrap">
+            <div class="process-approach-image">
+              <img
+                src="images/approach.jpeg"
+                alt="CeilingCraft ceiling preparation and finishing"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="process-approach-image-label">
+              <span>01</span>
+              <span>PREPARATION &amp; PRECISION</span>
+            </div>
+          </div>
+
+          <!-- RIGHT POINTS -->
+          <div class="process-approach-points">
+            <!-- POINT 01 -->
+            <article class="process-approach-item">
+              <span class="process-approach-number">01</span>
+
+              <div class="process-approach-item-content">
+                <h3>Prepare Carefully</h3>
+
+                <p>
+                  We begin by preparing the space and protecting the areas
+                  around the ceiling before the work begins.
+                </p>
+              </div>
+
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+
+            <!-- POINT 02 -->
+            <article class="process-approach-item">
+              <span class="process-approach-number">02</span>
+
+              <div class="process-approach-item-content">
+                <h3>Work With Control</h3>
+
+                <p>
+                  Texture removal is approached carefully to avoid unnecessary
+                  disruption to the surface beneath.
+                </p>
+              </div>
+
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+
+            <!-- POINT 03 -->
+            <article class="process-approach-item">
+              <span class="process-approach-number">03</span>
+
+              <div class="process-approach-item-content">
+                <h3>Refine the Surface</h3>
+
+                <p>
+                  Once the texture is removed, imperfections are addressed and
+                  the ceiling is prepared for its next finish.
+                </p>
+              </div>
+
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+
+            <!-- POINT 04 -->
+            <article class="process-approach-item">
+              <span class="process-approach-number">04</span>
+
+              <div class="process-approach-item-content">
+                <h3>Finish With Intention</h3>
+
+                <p>
+                  The final result should feel clean, consistent, and naturally
+                  connected to the rest of your interior.
+                </p>
+              </div>
+
+              <i data-lucide="arrow-up-right"></i>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PROCESS PAGE — SECTION 3
+     THE PROCESS
+     ========================================================= -->
+
+    <section class="process-steps" id="process">
+      <div class="process-steps-container">
+        <!-- CENTERED HEADER -->
+        <div class="process-steps-header">
+          <span class="process-section-eyebrow"> THE PROCESS </span>
+
+          <h2>
+            From First Look to
+            <span>Final Finish.</span>
+          </h2>
+
+          <p>
+            Every step is carefully considered, from preparing the space to
+            refining the surface and completing the final finish.
+          </p>
+        </div>
+
+        <!-- TIMELINE + IMAGE -->
+        <div class="process-steps-layout">
+          <!-- LEFT TIMELINE -->
+          <div class="process-timeline">
+            <!-- STEP 01 -->
+            <article class="process-step active">
+              <div class="process-step-marker">
+                <span>01</span>
+              </div>
+
+              <div class="process-step-content">
+                <h3>Initial Assessment</h3>
+
+                <p>
+                  We look at the existing ceiling, understand its condition, and
+                  discuss the finish you're looking for.
+                </p>
+              </div>
+            </article>
+
+            <!-- STEP 02 -->
+            <article class="process-step">
+              <div class="process-step-marker">
+                <span>02</span>
+              </div>
+
+              <div class="process-step-content">
+                <h3>Surface Preparation</h3>
+
+                <p>
+                  The room and surrounding areas are carefully prepared before
+                  ceiling work begins.
+                </p>
+              </div>
+            </article>
+
+            <!-- STEP 03 -->
+            <article class="process-step">
+              <div class="process-step-marker">
+                <span>03</span>
+              </div>
+
+              <div class="process-step-content">
+                <h3>Texture Removal</h3>
+
+                <p>
+                  The existing popcorn or ceiling texture is carefully removed
+                  using a controlled approach.
+                </p>
+              </div>
+            </article>
+
+            <!-- STEP 04 -->
+            <article class="process-step">
+              <div class="process-step-marker">
+                <span>04</span>
+              </div>
+
+              <div class="process-step-content">
+                <h3>Surface Refinement</h3>
+
+                <p>
+                  The exposed ceiling is repaired, sanded, and refined to create
+                  a suitable surface for finishing.
+                </p>
+              </div>
+            </article>
+
+            <!-- STEP 05 -->
+            <article class="process-step">
+              <div class="process-step-marker">
+                <span>05</span>
+              </div>
+
+              <div class="process-step-content">
+                <h3>Final Finish</h3>
+
+                <p>
+                  The ceiling receives its final preparation and finish, leaving
+                  the space cleaner and more refined.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="process-steps-image-wrap">
+            <div class="process-steps-image">
+              <img
+                src="images/final.jpeg"
+                alt="CeilingCraft ceiling finishing process"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="process-steps-image-caption">
+              <span>CEILINGCRAFT</span>
+
+              <span>FROM PREPARATION TO FINISH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PROCESS PAGE — SECTION 4
+     THE TRANSFORMATION
+     ========================================================= -->
+
+    <section class="process-transformation" id="transformation">
+      <div class="process-transformation-container">
+        <!-- HEADER -->
+        <div class="process-transformation-header">
+          <span class="process-section-eyebrow"> THE TRANSFORMATION </span>
+
+          <h2>
+            From Texture to a
+            <span>Cleaner Finish.</span>
+          </h2>
+
+          <p>
+            The process changes more than the ceiling. It changes how the entire
+            room feels, creating a cleaner and more intentional finish.
+          </p>
+        </div>
+
+        <!-- TRANSFORMATION VISUAL -->
+        <div class="process-transformation-grid">
+          <!-- BEFORE -->
+          <article class="transformation-before">
+            <div class="transformation-image">
+              <img
+                src="images/before-popcorn.png"
+                alt="Popcorn ceiling before removal"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="transformation-label">
+              <span class="transformation-number">01</span>
+
+              <div>
+                <span class="transformation-stage">BEFORE</span>
+                <strong>The Existing Ceiling</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- DURING -->
+          <article class="transformation-during">
+            <div class="transformation-during-line"></div>
+
+            <div class="transformation-during-number">02</div>
+
+            <span class="transformation-stage"> DURING </span>
+
+            <h3>
+              Texture<br />
+              Removal
+            </h3>
+
+            <div class="transformation-during-line"></div>
+          </article>
+
+          <!-- AFTER -->
+          <article class="transformation-after">
+            <div class="transformation-image">
+              <img
+                src="images/after-popcorn.jpeg"
+                alt="Smooth finished ceiling after popcorn removal"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="transformation-label">
+              <span class="transformation-number">03</span>
+
+              <div>
+                <span class="transformation-stage">AFTER</span>
+                <strong>A Refined Finish</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- BOTTOM STATEMENT -->
+        
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CEILINGCRAFT
+     PROCESS PAGE — SECTION 5
+     WHAT YOU CAN EXPECT
+     ========================================================= -->
+
+<section class="process-expect" id="expect">
+
+  <div class="process-expect-container">
+
+    <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+    <header class="process-expect-header">
+
+      <span class="process-section-eyebrow">
+        WHAT YOU CAN EXPECT
+      </span>
+
+      <h2>
+        A Process Designed
+        <span>Around Your Space.</span>
+      </h2>
+
+      <p class="process-expect-intro">
+        Every project follows a considered process built around
+        preparation, precision, and a clean finish. From the first
+        conversation to the final walkthrough, each stage has a
+        clear purpose.
+      </p>
+
+    </header>
+
+
+    <!-- =====================================================
+         EXPECTATIONS LIST
+         ===================================================== -->
+
+    <div class="process-expect-list">
+
+
+      <!-- ===================================================
+           01 — CLEAR COMMUNICATION
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>01</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            THE FIRST STEP
+          </span>
+
+          <h3>
+            Clear Communication
+          </h3>
+
+          <p>
+            From the first conversation to the final walkthrough,
+            we keep the process clear so you know what is happening,
+            what comes next, and what to expect throughout the project.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================
+           02 — CAREFUL PREPARATION
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>02</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            BEFORE THE WORK
+          </span>
+
+          <h3>
+            Careful Preparation
+          </h3>
+
+          <p>
+            We prepare the room and surrounding surfaces before
+            ceiling work begins, helping keep the project controlled,
+            organized, and ready for the work ahead.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================
+           03 — CONTROLLED REMOVAL
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>03</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            THE TRANSITION
+          </span>
+
+          <h3>
+            Controlled Removal
+          </h3>
+
+          <p>
+            Existing ceiling texture is approached carefully,
+            with attention to the surface underneath and the
+            condition of the ceiling as the old texture is removed.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================
+           04 — SURFACE REFINEMENT
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>04</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            THE DETAIL
+          </span>
+
+          <h3>
+            Surface Refinement
+          </h3>
+
+          <p>
+            Once the texture is removed, attention shifts to the
+            surface itself. Imperfections are addressed and the
+            ceiling is prepared for the finishing stage.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================
+           05 — CLEAN FINISHING
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>05</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            THE FINAL LAYER
+          </span>
+
+          <h3>
+            Clean Finishing
+          </h3>
+
+          <p>
+            The final stage brings everything together with careful
+            finishing and a surface designed to feel clean, balanced,
+            consistent, and complete.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================
+           06 — A MORE COMPLETE SPACE
+           =================================================== -->
+
+      <article class="process-expect-item">
+
+        <div class="process-expect-number">
+          <span>06</span>
+        </div>
+
+        <div class="process-expect-content">
+
+          <span class="process-expect-kicker">
+            THE RESULT
+          </span>
+
+          <h3>
+            A More Complete Space
+          </h3>
+
+          <p>
+            The result is more than a different ceiling. It is a
+            room that feels cleaner, brighter, and more intentional,
+            with the ceiling becoming part of the overall space.
+          </p>
+
+        </div>
+
+        <div class="process-expect-icon">
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+      </article>
+
+    </div>
+
+
+  
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     CEILINGCRAFT
+     PROCESS PAGE — SECTION 6
+     FINAL CTA
+     ========================================================= -->
+
+<section class="process-final-cta" id="contact">
+
+  <div class="process-final-cta-box">
+
+    <!-- Decorative architectural circles -->
+    <span class="process-final-cta-circle process-final-cta-circle-one"></span>
+    <span class="process-final-cta-circle process-final-cta-circle-two"></span>
+
+
+    <div class="process-final-cta-inner">
+
+      <!-- ===================================================
+           TOP EYEBROW
+           =================================================== -->
+
+      <div class="process-final-cta-eyebrow">
+
+        <span></span>
+
+        <p>
+          READY TO GET STARTED?
+        </p>
+
+
+      </div>
+
+
+      <!-- ===================================================
+           MAIN CONTENT
+           =================================================== -->
+
+      <div class="process-final-cta-content">
+
+        <h2>
+          A Better Ceiling
+          <span>Starts With A Look.</span>
+        </h2>
+
+        <p>
+          Tell us about your ceiling and what you're looking
+          to change. We'll help you understand the next step
+          and what your space may need.
+        </p>
+
+        <a href="#estimate" class="process-final-cta-button">
+          <span>Get a Free Estimate</span>
+
+          <i
+            data-lucide="arrow-up-right"
+            aria-hidden="true">
+          </i>
+        </a>
+
+      </div>
+
+
+      <!-- ===================================================
+           BOTTOM BRAND AREA
+           =================================================== -->
+
+      <div class="process-final-cta-footer">
+
+        <div class="process-final-cta-footer-line"></div>
+
+        <div class="process-final-cta-footer-content">
+
+          <span>
+            RESIDENTIAL CEILING SPECIALISTS
+          </span>
+
+          <strong>
+            CEILINGCRAFT
+          </strong>
+
+        </div>
+
+        <div class="process-final-cta-footer-line"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- =========================================================
+     CEILINGCRAFT
+     FOOTER
+     ========================================================= -->
+
+   <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="CeilingCraft Home">
+              <img src="images/logo.png" alt="CeilingCraft Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>Specialty Ceiling Services</p>
+            </div>
+          </div>
+
+          <!-- BRAND DESCRIPTION -->
+
+          <p class="footer-about">
+            CeilingCraft specializes in popcorn ceiling and texture removal,
+            ceiling repairs, texture matching, and professional repainting to
+            create smooth, clean, beautifully finished spaces.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- <li>
+          <a href="our-work.html">Our Work</a>
+        </li> -->
+            <li>
+              <a href="process.html">Process</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#popcorn-removal">
+                Popcorn Ceiling Removal
+              </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Texture Removal </a>
+            </li>
+
+            <li>
+              <a href="services.html#texture-matching"> Texture Matching </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Ceiling Repair </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Repainting & Finishing </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Removal Process </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CEILING SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aditional Services</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming soon </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing Guide </a>
+            </li>
+
+            <li>
+              <a href="process.html"> Our Process </a>
+            </li>
+
+            <li>
+              <a href="about.html"> Our Approach </a>
+            </li>
+
+            <li>
+              <a href="contact.html#estimate"> Request an Estimate </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +91 (040) 123-0897 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@ceilingcraft.com"> info@ceilingcraft.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#estimate" class="footer-book-btn">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="ceiling">Ceiling</span><span class="craft">Craft</span>.
+          All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

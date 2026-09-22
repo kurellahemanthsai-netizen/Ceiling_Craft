@@ -1,0 +1,1432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Pricing</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="pricing.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     CEILINGCRAFT
+     HEADER
+     ========================================================= -->
+
+   <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="CeilingCraft Home">
+            <img src="images/logo.png" alt="CeilingCraft Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="ceiling">Ceiling</span
+              ><span class="craft">Craft</span>
+            </h1>
+
+            <p>Specialty Ceiling Services</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="index.html" class="avtive">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             OUR WORK
+        ================================================== -->
+
+            <!-- <li>
+
+          <a href="our-work.html">
+
+            <span>Our Work</span>
+
+          </a>
+
+        </li> -->
+
+            <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+            <li>
+              <a href="process.html">
+                <span>Process</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             PRICING
+        ================================================== -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- =================================================
+           MOBILE ESTIMATE BUTTON
+      ================================================== -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- =================================================
+           RTL TOGGLE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DARK MODE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DESKTOP FREE ESTIMATE BUTTON
+      ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- =================================================
+           MOBILE MENU
+      ================================================== -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     PRICING HERO
+     ========================================================= -->
+
+    <section class="pricing-hero" id="pricing">
+      <!-- Background Overlay -->
+      <div class="pricing-hero-overlay"></div>
+
+      <div class="pricing-hero-container">
+        <!-- Hero Content -->
+        <div class="pricing-hero-content">
+          <span class="pricing-hero-eyebrow"> PRICING </span>
+
+          <h1>
+            A Better Ceiling.
+            <span>A Clearer Investment.</span>
+          </h1>
+
+          <p class="pricing-hero-description">
+            Every ceiling is different. Our pricing is based on the size,
+            condition, existing texture, preparation required, and finish your
+            space needs.
+          </p>
+
+          <div class="pricing-hero-actions">
+            <a href="#estimate" class="pricing-hero-primary">
+              <span>Get a Free Estimate</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#pricing-factors" class="pricing-hero-secondary">
+              <span>See How Pricing Works</span>
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Information -->
+        <div class="pricing-hero-bottom">
+          <div class="pricing-hero-bottom-line"></div>
+
+          <div class="pricing-hero-bottom-content">
+            <span>RESIDENTIAL CEILING SPECIALISTS</span>
+            <span>CEILINGCRAFT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRICING FACTORS
+     ========================================================= -->
+
+    <section class="pricing-factors" id="pricing-factors">
+      <div class="pricing-factors-container">
+        <!-- Header -->
+        <header class="pricing-factors-header">
+          <span class="pricing-section-eyebrow">
+            WHAT DETERMINES YOUR PRICE?
+          </span>
+
+          <h2>
+            Every Ceiling Has
+            <span>Different Requirements.</span>
+          </h2>
+
+          <p>
+            The cost of ceiling work depends on more than the size of the room.
+            We look at the existing surface, the work required, and the finish
+            you're looking for before determining the scope of the project.
+          </p>
+        </header>
+
+        <!-- Factors -->
+        <div class="pricing-factors-list">
+          <!-- 01 -->
+          <article class="pricing-factor-item">
+            <div class="pricing-factor-number">
+              <span>01</span>
+            </div>
+
+            <div class="pricing-factor-content">
+              <span class="pricing-factor-kicker"> PROJECT SCALE </span>
+
+              <h3>Ceiling Size</h3>
+
+              <p>
+                The overall area of the ceiling affects the amount of
+                preparation, removal, finishing, and materials required.
+              </p>
+            </div>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="maximize-2" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="pricing-factor-item">
+            <div class="pricing-factor-number">
+              <span>02</span>
+            </div>
+
+            <div class="pricing-factor-content">
+              <span class="pricing-factor-kicker"> EXISTING SURFACE </span>
+
+              <h3>Existing Texture</h3>
+
+              <p>
+                Different textures can require different removal or matching
+                techniques and levels of preparation.
+              </p>
+            </div>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="layers-3" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="pricing-factor-item">
+            <div class="pricing-factor-number">
+              <span>03</span>
+            </div>
+
+            <div class="pricing-factor-content">
+              <span class="pricing-factor-kicker"> SURFACE CONDITION </span>
+
+              <h3>Surface Condition</h3>
+
+              <p>
+                Cracks, uneven areas, previous repairs, or other surface issues
+                may require additional refinement before finishing.
+              </p>
+            </div>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="scan-line" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="pricing-factor-item">
+            <div class="pricing-factor-number">
+              <span>04</span>
+            </div>
+
+            <div class="pricing-factor-content">
+              <span class="pricing-factor-kicker"> PROJECT PREPARATION </span>
+
+              <h3>Preparation Required</h3>
+
+              <p>
+                Protecting the room and properly preparing the surrounding space
+                are important parts of creating a clean working environment.
+              </p>
+            </div>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article class="pricing-factor-item">
+            <div class="pricing-factor-number">
+              <span>05</span>
+            </div>
+
+            <div class="pricing-factor-content">
+              <span class="pricing-factor-kicker"> FINAL APPEARANCE </span>
+
+              <h3>Desired Finish</h3>
+
+              <p>
+                The final appearance you're looking for can influence the level
+                of surface refinement and finishing work required.
+              </p>
+            </div>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 03 — OUR SERVICES & PRICING
+     ========================================================= -->
+
+    <section class="pricing-services" id="services-pricing">
+      <div class="pricing-services-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <header class="pricing-services-header">
+          <span class="pricing-section-eyebrow"> OUR SERVICES </span>
+
+          <h2>
+            Choose the Work
+            <span>Your Ceiling Needs.</span>
+          </h2>
+
+          <p>
+            Every project has its own requirements. Explore our specialty
+            services and request a custom estimate based on your ceiling, its
+            condition, and the finish you're looking for.
+          </p>
+        </header>
+
+        <!-- =====================================================
+         SERVICE CARDS
+         ===================================================== -->
+
+        <div class="pricing-services-grid">
+          <!-- ===================================================
+           CARD 01 — POPCORN CEILING REMOVAL
+           =================================================== -->
+
+          <article class="pricing-service-card">
+            <div class="pricing-service-card-top">
+              <div class="pricing-service-number">01</div>
+
+              <div class="pricing-service-icon">
+                <i data-lucide="layers-2" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="pricing-service-card-content">
+              <span class="pricing-service-category">
+                CEILING TRANSFORMATION
+              </span>
+
+              <h3>
+                Popcorn Ceiling
+                <span>Removal</span>
+              </h3>
+
+              <p class="pricing-service-description">
+                Remove outdated popcorn texture and prepare the ceiling for a
+                cleaner, more refined surface.
+              </p>
+
+              <!-- PRICE -->
+
+              <div class="pricing-service-price">
+                <span class="pricing-service-price-label"> STARTING AT </span>
+
+                <strong>
+                  $3.50
+                  <small>/ sq. ft.</small>
+                </strong>
+              </div>
+
+              <div class="pricing-service-divider"></div>
+
+              <!-- FEATURES -->
+
+              <ul class="pricing-service-features">
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Ceiling assessment</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Surface preparation</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Texture removal</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Surface refinement</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Cleanup</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BUTTON -->
+
+            <a href="#estimate" class="pricing-service-button">
+              <span> Request an Estimate </span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- ===================================================
+           CARD 02 — TEXTURE MATCHING
+           FEATURED
+           =================================================== -->
+
+          <article class="pricing-service-card pricing-service-card-featured">
+            <!-- Featured Label -->
+
+            <div class="pricing-service-featured-label">
+              <span></span>
+
+              <p>MOST REQUESTED</p>
+
+              <span></span>
+            </div>
+
+            <div class="pricing-service-card-top">
+              <div class="pricing-service-number">02</div>
+
+              <div class="pricing-service-icon">
+                <i data-lucide="scan-line" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="pricing-service-card-content">
+              <span class="pricing-service-category"> SURFACE DETAIL </span>
+
+              <h3>
+                Texture
+                <span>Matching</span>
+              </h3>
+
+              <p class="pricing-service-description">
+                Match and blend existing ceiling textures to create a more
+                consistent and intentional appearance.
+              </p>
+
+              <!-- PRICE -->
+
+              <div class="pricing-service-price">
+                <span class="pricing-service-price-label"> STARTING AT </span>
+
+                <strong>
+                  $4.50
+                  <small>/ sq. ft.</small>
+                </strong>
+              </div>
+
+              <div class="pricing-service-divider"></div>
+
+              <!-- FEATURES -->
+
+              <ul class="pricing-service-features">
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Texture assessment</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Texture matching</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Surface blending</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Refinement work</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Finish preparation</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BUTTON -->
+
+            <a href="#estimate" class="pricing-service-button">
+              <span> Request an Estimate </span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- ===================================================
+           CARD 03 — REPAINTING & FINISHING
+           =================================================== -->
+
+          <article class="pricing-service-card">
+            <div class="pricing-service-card-top">
+              <div class="pricing-service-number">03</div>
+
+              <div class="pricing-service-icon">
+                <i data-lucide="paintbrush" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="pricing-service-card-content">
+              <span class="pricing-service-category"> FINAL FINISH </span>
+
+              <h3>
+                Repainting &
+                <span>Finishing</span>
+              </h3>
+
+              <p class="pricing-service-description">
+                Complete the ceiling with consistent coverage and a clean finish
+                that works naturally with the room.
+              </p>
+
+              <!-- PRICE -->
+
+              <div class="pricing-service-price">
+                <span class="pricing-service-price-label"> STARTING AT </span>
+
+                <strong>
+                  $2.50
+                  <small>/ sq. ft.</small>
+                </strong>
+              </div>
+
+              <div class="pricing-service-divider"></div>
+
+              <!-- FEATURES -->
+
+              <ul class="pricing-service-features">
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Surface preparation</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Consistent coverage</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Finish application</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Interior-matched appearance</span>
+                </li>
+
+                <li>
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Final walkthrough</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BUTTON -->
+
+            <a href="#estimate" class="pricing-service-button">
+              <span> Request an Estimate </span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 04 — WHAT'S INCLUDED?
+     ========================================================= -->
+
+    <section class="pricing-included" id="included">
+      <div class="pricing-included-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <header class="pricing-included-header">
+          <span class="pricing-section-eyebrow"> WHAT'S INCLUDED? </span>
+
+          <h2>
+            More Than a Price.
+            <span>A Complete Process.</span>
+          </h2>
+
+          <p>
+            Your estimate covers more than the visible ceiling work. Each
+            project is approached with preparation, protection, refinement, and
+            finishing in mind.
+          </p>
+        </header>
+
+        <!-- =====================================================
+         IMAGE + CONTENT
+         ===================================================== -->
+
+        <div class="pricing-included-layout">
+          <!-- ===================================================
+           LEFT — IMAGE
+           =================================================== -->
+
+          <div class="pricing-included-image-wrap">
+            <div class="pricing-included-image">
+              <img
+                src="images/pricing.jpeg"
+                alt="CeilingCraft ceiling preparation and finishing"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="pricing-included-image-label">
+              <span>CEILINGCRAFT</span>
+
+              <span>FROM PREPARATION TO FINISH</span>
+            </div>
+          </div>
+
+          <!-- ===================================================
+           RIGHT — POINTS
+           =================================================== -->
+
+          <div class="pricing-included-points">
+            <!-- 01 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">01</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> THE FIRST STEP </span>
+
+                <h3>Initial Assessment</h3>
+
+                <p>
+                  Understanding the existing ceiling, its condition, and the
+                  requirements of the project.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+
+            <!-- 02 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">02</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> BEFORE THE WORK </span>
+
+                <h3>Project Preparation</h3>
+
+                <p>
+                  Preparing the space and surrounding areas before ceiling work
+                  begins.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+
+            <!-- 03 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">03</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> PROTECTION </span>
+
+                <h3>Surface Protection</h3>
+
+                <p>
+                  Protecting surrounding areas and maintaining a controlled
+                  working environment.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+
+            <!-- 04 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">04</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> CEILING WORK </span>
+
+                <h3>Ceiling Work</h3>
+
+                <p>
+                  Removing, matching, or treating the existing ceiling surface
+                  according to the project scope.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+
+            <!-- 05 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">05</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> SURFACE DETAIL </span>
+
+                <h3>Surface Refinement</h3>
+
+                <p>
+                  Refining the surface so it is properly prepared for the
+                  desired final appearance.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+
+            <!-- 06 -->
+
+            <article class="pricing-included-item">
+              <div class="pricing-included-number">06</div>
+
+              <div class="pricing-included-content">
+                <span class="pricing-included-kicker"> FINAL STAGE </span>
+
+                <h3>Final Finishing</h3>
+
+                <p>
+                  Completing the ceiling with attention to consistency,
+                  appearance, and the finished space.
+                </p>
+              </div>
+
+              <div class="pricing-included-icon">
+                <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05 — PRICING FAQ -->
+
+    <section class="pricing-faq" id="faq">
+      <div class="pricing-faq-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <header class="pricing-faq-header">
+          <span class="pricing-section-eyebrow"> PRICING FAQ </span>
+
+          <h2>
+            Questions Before
+            <span>You Get Started.</span>
+          </h2>
+
+          <p>
+            A few common questions about estimates, pricing, and what can affect
+            the final cost of your ceiling project.
+          </p>
+        </header>
+
+        <!-- =====================================================
+         FAQ LIST
+         ===================================================== -->
+
+        <div class="pricing-faq-list">
+          <!-- ===================================================
+           FAQ 01
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 01 </span>
+
+              <span class="pricing-faq-question-text">
+                Is the price per square foot fixed?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  Starting prices are a general guide. Final pricing depends on
+                  the ceiling size, existing texture, surface condition,
+                  preparation required, and desired finish.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           FAQ 02
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 02 </span>
+
+              <span class="pricing-faq-question-text">
+                Do you provide free estimates?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  Yes. The estimate is based on the specific requirements of
+                  your ceiling and the scope of work involved.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           FAQ 03
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 03 </span>
+
+              <span class="pricing-faq-question-text">
+                Does ceiling condition affect the price?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  Yes. Additional preparation or surface refinement may be
+                  required when the existing ceiling needs more work before the
+                  final finish can be applied.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           FAQ 04
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 04 </span>
+
+              <span class="pricing-faq-question-text">
+                Can you remove popcorn texture and repaint the ceiling?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  Yes. Popcorn ceiling removal can be followed by surface
+                  refinement and repainting to create a cleaner finished
+                  appearance.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           FAQ 05
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 05 </span>
+
+              <span class="pricing-faq-question-text">
+                Does the estimate include preparation and cleanup?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  The project scope will identify the preparation, protection,
+                  ceiling work, finishing, and cleanup included in your
+                  estimate.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           FAQ 06
+           =================================================== -->
+
+          <article class="pricing-faq-item">
+            <button
+              class="pricing-faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="pricing-faq-number"> 06 </span>
+
+              <span class="pricing-faq-question-text">
+                Can the final price change after the estimate?
+              </span>
+
+              <span class="pricing-faq-icon">
+                <i data-lucide="plus" aria-hidden="true"></i>
+              </span>
+            </button>
+
+            <div class="pricing-faq-answer">
+              <div class="pricing-faq-answer-inner">
+                <p>
+                  If conditions are discovered that differ significantly from
+                  what was visible during the initial assessment, the scope may
+                  need to be reviewed before additional work is performed.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  <!-- SECTION 06 —
+    FINAL CTA  -->
+
+    <section class="pricing-final-cta" id="estimate">
+      <div class="pricing-final-cta-box">
+        <!-- Decorative circles -->
+
+        <span class="pricing-final-cta-circle pricing-final-cta-circle-one">
+        </span>
+
+        <span class="pricing-final-cta-circle pricing-final-cta-circle-two">
+        </span>
+
+        <div class="pricing-final-cta-inner">
+          <!-- ===================================================
+           EYEBROW
+           =================================================== -->
+
+          <div class="pricing-final-cta-eyebrow">
+            <span></span>
+
+            <p>READY TO GET STARTED?</p>
+
+            
+          </div>
+
+          <!-- ===================================================
+           MAIN CONTENT
+           =================================================== -->
+
+          <div class="pricing-final-cta-content">
+            <h2>
+              Your Ceiling.
+              <span>Your Next Step.</span>
+            </h2>
+
+            <p>
+              Tell us about your ceiling, the space you're working with, and
+              what you'd like to change. We'll help you understand the work
+              involved and provide a clear, project-specific estimate.
+            </p>
+
+            <a href="#contact" class="pricing-final-cta-button">
+              <span> Get a Free Estimate </span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"> </i>
+            </a>
+          </div>
+
+          <!-- ===================================================
+           FOOTER
+           =================================================== -->
+
+          <div class="pricing-final-cta-footer">
+            <div class="pricing-final-cta-footer-left">
+              <span> RESIDENTIAL CEILING SPECIALISTS </span>
+            </div>
+
+            <div class="pricing-final-cta-footer-right">
+              <span> CEILING </span>
+
+              <strong> CRAFT </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CEILINGCRAFT
+     FOOTER
+     ========================================================= -->
+
+   <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="CeilingCraft Home">
+              <img src="images/logo.png" alt="CeilingCraft Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>Specialty Ceiling Services</p>
+            </div>
+          </div>
+
+          <!-- BRAND DESCRIPTION -->
+
+          <p class="footer-about">
+            CeilingCraft specializes in popcorn ceiling and texture removal,
+            ceiling repairs, texture matching, and professional repainting to
+            create smooth, clean, beautifully finished spaces.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- <li>
+          <a href="our-work.html">Our Work</a>
+        </li> -->
+            <li>
+              <a href="process.html">Process</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#popcorn-removal">
+                Popcorn Ceiling Removal
+              </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Texture Removal </a>
+            </li>
+
+            <li>
+              <a href="services.html#texture-matching"> Texture Matching </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Ceiling Repair </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Repainting & Finishing </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Removal Process </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CEILING SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aditional Services</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming soon </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing Guide </a>
+            </li>
+
+            <li>
+              <a href="process.html"> Our Process </a>
+            </li>
+
+            <li>
+              <a href="about.html"> Our Approach </a>
+            </li>
+
+            <li>
+              <a href="contact.html#estimate"> Request an Estimate </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +91 (040) 123-0897 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@ceilingcraft.com"> info@ceilingcraft.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#estimate" class="footer-book-btn">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="ceiling">Ceiling</span><span class="craft">Craft</span>.
+          All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="pricing.js"></script>
+  </body>
+</html>

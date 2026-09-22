@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Services</title>
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="service-d.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     CEILINGCRAFT
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="CeilingCraft Home">
+            <img src="images/logo.png" alt="CeilingCraft Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="ceiling">Ceiling</span
+              ><span class="craft">Craft</span>
+            </h1>
+
+            <p>Specialty Ceiling Services</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="index.html" class="avtive">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+            <li>
+              <a href="services.html" class="active">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             OUR WORK
+        ================================================== -->
+
+            <!-- <li>
+
+          <a href="our-work.html">
+
+            <span>Our Work</span>
+
+          </a>
+
+        </li> -->
+
+            <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+            <li>
+              <a href="process.html">
+                <span>Process</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             PRICING
+        ================================================== -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- =================================================
+           MOBILE ESTIMATE BUTTON
+      ================================================== -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- =================================================
+           RTL TOGGLE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DARK MODE
+      ================================================== -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+           DESKTOP FREE ESTIMATE BUTTON
+      ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- =================================================
+           MOBILE MENU
+      ================================================== -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL
+     SECTION 1 — HERO
+     ========================================================= -->
+
+    <section class="popcorn-hero" id="popcorn-hero">
+      <!-- Background Image -->
+      <div class="popcorn-hero-image">
+        <img
+          src="images/hero-5.jpeg"
+          alt="Residential ceiling before popcorn texture removal"
+        />
+      </div>
+
+      <!-- Dark Overlay -->
+      <div class="popcorn-hero-overlay"></div>
+
+      <!-- =======================================================
+       HERO CONTENT
+       ======================================================= -->
+
+      <div class="popcorn-hero-container">
+        <div class="popcorn-hero-content">
+          <!-- Eyebrow -->
+          <div class="popcorn-hero-eyebrow">
+            <span class="popcorn-eyebrow-line"></span>
+
+            <span>Popcorn Ceiling Removal</span>
+          </div>
+
+          <!-- Heading -->
+          <h1 class="popcorn-hero-title">
+            Remove the Texture.
+            <span>Reveal a Better Ceiling.</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="popcorn-hero-description">
+            Transform an outdated popcorn ceiling into a cleaner, smoother
+            surface designed to complement the rest of your interior.
+          </p>
+
+          <!-- Actions -->
+          <div class="popcorn-hero-actions">
+            <a href="contact.html#estimate" class="popcorn-hero-primary">
+              <span>Get a Free Estimate</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#popcorn-process" class="popcorn-hero-secondary">
+              <span>See Our Process</span>
+
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- =======================================================
+       BOTTOM INFORMATION
+       ======================================================= -->
+
+      <div class="popcorn-hero-bottom">
+        <div class="popcorn-hero-specialist">
+          <span class="popcorn-specialist-dot"></span>
+
+          <span>Residential Ceiling Specialists</span>
+        </div>
+
+        <a href="#popcorn-why" class="popcorn-hero-scroll">
+          <span>Explore the Service</span>
+
+          <i data-lucide="arrow-down" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL — WHY REMOVE
+     ========================================================= -->
+
+    <section class="popcorn-why" id="popcorn-why">
+      <div class="popcorn-why-container">
+        <!-- Section Header -->
+        <div class="popcorn-why-header">
+          <span class="popcorn-why-eyebrow">
+            <span></span>
+
+            WHY REMOVE IT?
+          </span>
+
+          <h2 class="popcorn-why-title">
+            A Cleaner Ceiling
+            <span>Changes the Entire Room.</span>
+          </h2>
+
+          <p class="popcorn-why-intro">
+            Popcorn texture can make an otherwise updated interior feel dated.
+            Removing it creates a smoother, cleaner surface that allows the rest
+            of your space to stand out.
+          </p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="popcorn-why-grid">
+          <!-- Image -->
+          <div class="popcorn-why-image-wrap">
+            <div class="popcorn-why-image">
+              <img
+                src="images/cleaner.jpeg"
+                alt="Popcorn ceiling texture inside a residential room"
+              />
+            </div>
+
+            <div class="popcorn-why-image-label">
+              <span class="popcorn-why-label-line"></span>
+              <span>BEFORE REMOVAL</span>
+            </div>
+          </div>
+
+          <!-- Reasons -->
+          <div class="popcorn-why-points">
+            <!-- Point 01 -->
+            <article class="popcorn-why-point">
+              <div class="popcorn-why-number">01</div>
+
+              <div class="popcorn-why-point-content">
+                <h3>A More Modern Appearance</h3>
+
+                <p>
+                  Removing the textured surface gives the ceiling a cleaner,
+                  more contemporary appearance that works naturally with updated
+                  interiors.
+                </p>
+              </div>
+
+              <div class="popcorn-why-arrow">
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </div>
+            </article>
+
+            <!-- Point 02 -->
+            <article class="popcorn-why-point">
+              <div class="popcorn-why-number">02</div>
+
+              <div class="popcorn-why-point-content">
+                <h3>Easier to Keep Clean</h3>
+
+                <p>
+                  Deep ceiling texture can collect dust and make routine
+                  cleaning more difficult. A smoother surface is easier to
+                  maintain over time.
+                </p>
+              </div>
+
+              <div class="popcorn-why-arrow">
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </div>
+            </article>
+
+            <!-- Point 03 -->
+            <article class="popcorn-why-point">
+              <div class="popcorn-why-number">03</div>
+
+              <div class="popcorn-why-point-content">
+                <h3>A Lighter Visual Feel</h3>
+
+                <p>
+                  Removing heavy ceiling texture can make the room feel more
+                  open and balanced, allowing light, furniture and architectural
+                  details to read more clearly.
+                </p>
+              </div>
+
+              <div class="popcorn-why-arrow">
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </div>
+            </article>
+
+            <!-- Point 04 -->
+            <article class="popcorn-why-point">
+              <div class="popcorn-why-number">04</div>
+
+              <div class="popcorn-why-point-content">
+                <h3>A More Refined Finish</h3>
+
+                <p>
+                  Once the texture is removed, the ceiling can be repaired,
+                  refined and prepared for a finish that feels intentional
+                  rather than overlooked.
+                </p>
+              </div>
+
+              <div class="popcorn-why-arrow">
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL — PROCESS
+     ========================================================= -->
+
+    <section class="popcorn-process" id="popcorn-process">
+      <div class="popcorn-process-container">
+        <!-- Section Header -->
+        <div class="popcorn-process-header">
+          <span class="popcorn-process-eyebrow">
+            <span></span>
+            OUR PROCESS
+          </span>
+
+          <h2 class="popcorn-process-title">
+            From Textured to
+            <span>Refined.</span>
+          </h2>
+
+          <p class="popcorn-process-intro">
+            Removing popcorn texture is more than scraping the ceiling. We
+            carefully prepare, remove, repair and refine the surface so the
+            finished ceiling feels clean and intentional.
+          </p>
+        </div>
+
+        <!-- Process Timeline -->
+        <div class="popcorn-process-timeline">
+          <!-- Step 01 -->
+          <article class="popcorn-process-step">
+            <div class="popcorn-process-top">
+              <span class="popcorn-process-number"> 01 </span>
+
+              <span class="popcorn-process-line"></span>
+            </div>
+
+            <div class="popcorn-process-content">
+              <h3>Surface Preparation</h3>
+
+              <p>
+                We prepare the room and ceiling carefully before removal begins,
+                helping protect surrounding surfaces and creating a controlled
+                work area.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 02 -->
+          <article class="popcorn-process-step">
+            <div class="popcorn-process-top">
+              <span class="popcorn-process-number"> 02 </span>
+
+              <span class="popcorn-process-line"></span>
+            </div>
+
+            <div class="popcorn-process-content">
+              <h3>Texture Removal</h3>
+
+              <p>
+                The existing popcorn texture is carefully removed from the
+                ceiling to reveal the surface underneath without rushing the
+                process.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 03 -->
+          <article class="popcorn-process-step">
+            <div class="popcorn-process-top">
+              <span class="popcorn-process-number"> 03 </span>
+
+              <span class="popcorn-process-line"></span>
+            </div>
+
+            <div class="popcorn-process-content">
+              <h3>Surface Repair</h3>
+
+              <p>
+                Once the texture is gone, we address imperfections, uneven areas
+                and surface details that need attention before the ceiling can
+                be refined.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 04 -->
+          <article class="popcorn-process-step">
+            <div class="popcorn-process-top">
+              <span class="popcorn-process-number"> 04 </span>
+
+              <span class="popcorn-process-line"></span>
+            </div>
+
+            <div class="popcorn-process-content">
+              <h3>Sanding & Refinement</h3>
+
+              <p>
+                The surface is refined to create a more consistent, smoother
+                foundation ready for the finishing stage.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 05 -->
+          <article class="popcorn-process-step">
+            <div class="popcorn-process-top">
+              <span class="popcorn-process-number"> 05 </span>
+
+              <span
+                class="popcorn-process-line popcorn-process-line-last"
+              ></span>
+            </div>
+
+            <div class="popcorn-process-content">
+              <h3>Final Preparation</h3>
+
+              <p>
+                The ceiling is prepared for its final finish, leaving the
+                surface ready for repainting and a clean, cohesive appearance.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL
+     SECTION 4 — THE TRANSFORMATION
+     ========================================================= -->
+
+    <section class="popcorn-transformation" id="popcorn-transformation">
+      <div class="popcorn-transformation-container">
+        <!-- =====================================================
+         SECTION HEADER
+         ===================================================== -->
+
+        <div class="popcorn-transformation-header">
+          <div class="popcorn-transformation-eyebrow">
+            <span class="transformation-eyebrow-line"></span>
+
+            <span> The Transformation </span>
+          </div>
+
+          <h2 class="popcorn-transformation-title">
+            See the Ceiling
+            <span>Change.</span>
+          </h2>
+
+          <p class="popcorn-transformation-description">
+            From an outdated textured surface to a cleaner, more refined ceiling
+            — every stage of the transformation has a purpose.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         TRANSFORMATION CONTENT
+         ===================================================== -->
+
+        <div class="popcorn-transformation-grid">
+          <!-- ===================================================
+           LEFT COLUMN
+           =================================================== -->
+
+          <div class="popcorn-transformation-left">
+            <!-- =================================================
+             BEFORE
+             ================================================= -->
+
+            <article class="transformation-stage transformation-before">
+              <div class="transformation-stage-image">
+                <img
+                  src="images/before.png"
+                  alt="Popcorn textured ceiling before removal"
+                />
+
+                <div class="transformation-stage-label">
+                  <span class="transformation-stage-number"> 01 </span>
+
+                  <span class="transformation-stage-type"> Before </span>
+                </div>
+              </div>
+
+              <div class="transformation-stage-content">
+                <h3>Original Texture</h3>
+
+                <p>
+                  The existing popcorn texture gives the ceiling a heavier,
+                  dated appearance.
+                </p>
+              </div>
+            </article>
+
+            <!-- =================================================
+             TRANSFORMATION / DURING
+             ================================================= -->
+
+            <article class="transformation-stage transformation-during">
+              <div class="transformation-stage-image">
+                <img
+                  src="images/during.png"
+                  alt="Ceiling during popcorn texture removal"
+                />
+
+                <div class="transformation-stage-label">
+                  <span class="transformation-stage-number"> 02 </span>
+
+                  <span class="transformation-stage-type">
+                    Transformation
+                  </span>
+                </div>
+              </div>
+
+              <div class="transformation-stage-content">
+                <h3>Surface Refinement</h3>
+
+                <p>
+                  The texture is removed and the surface is prepared for a
+                  smoother final appearance.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- ===================================================
+           RIGHT COLUMN — AFTER
+           =================================================== -->
+
+          <article class="transformation-after">
+            <div class="transformation-after-image">
+              <img
+                src="images/refined-finish.jpeg"
+                alt="Smooth finished ceiling after popcorn removal"
+              />
+
+              <!-- Dark image overlay -->
+              <div class="transformation-after-overlay"></div>
+
+              <!-- After content -->
+              <div class="transformation-after-content">
+                <div class="transformation-after-meta">
+                  <span class="transformation-after-number"> 03 </span>
+
+                  <span class="transformation-after-line"></span>
+
+                  <span class="transformation-after-label"> After </span>
+                </div>
+
+                <h3>
+                  A Cleaner,
+                  <span>More Refined Finish.</span>
+                </h3>
+
+                <p>
+                  A smooth ceiling allows the architecture, lighting and
+                  interior details of the room to take center stage.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL
+     SECTION 5 — WHAT YOU CAN EXPECT
+     ========================================================= -->
+
+    <section class="popcorn-expect" id="popcorn-expect">
+      <div class="popcorn-expect-container">
+        <!-- =====================================================
+         CENTERED SECTION HEADER
+         ===================================================== -->
+
+        <div class="popcorn-expect-intro">
+          <div class="popcorn-expect-eyebrow">
+            <span class="line"></span>
+            WHAT YOU CAN EXPECT
+          </div>
+
+          <h2 class="popcorn-expect-title">
+            A Better Process.
+            <span>A Better Finish.</span>
+          </h2>
+
+          <p class="popcorn-expect-description">
+            Removing a popcorn ceiling can change the entire feel of a room. We
+            focus not only on the finished surface, but also on creating a
+            clean, controlled and thoughtful experience throughout the work.
+          </p>
+        </div>
+
+        <!-- =====================================================
+         EXPECTATION LIST
+         ===================================================== -->
+
+        <div class="popcorn-expect-list">
+          <!-- ===================================================
+           01 — CAREFUL PREPARATION
+           =================================================== -->
+
+          <article class="popcorn-expect-item">
+            <div class="popcorn-expect-number">01</div>
+
+            <div class="popcorn-expect-content">
+              <h3>Careful Preparation</h3>
+
+              <p>
+                Your space is prepared before the removal process begins,
+                helping keep the work area organized and controlled.
+              </p>
+            </div>
+
+            <div class="popcorn-expect-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           02 — CONTROLLED REMOVAL
+           =================================================== -->
+
+          <article class="popcorn-expect-item">
+            <div class="popcorn-expect-number">02</div>
+
+            <div class="popcorn-expect-content">
+              <h3>Controlled Removal</h3>
+
+              <p>
+                We approach the existing texture carefully, working through the
+                removal process without treating every ceiling the same.
+              </p>
+            </div>
+
+            <div class="popcorn-expect-icon">
+              <i data-lucide="layers-2" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           03 — SURFACE DETAILS
+           =================================================== -->
+
+          <article class="popcorn-expect-item">
+            <div class="popcorn-expect-number">03</div>
+
+            <div class="popcorn-expect-content">
+              <h3>Attention to Surface Details</h3>
+
+              <p>
+                Once the texture is removed, we focus on the condition of the
+                surface and the details that influence the final result.
+              </p>
+            </div>
+
+            <div class="popcorn-expect-icon">
+              <i data-lucide="scan-line" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           04 — CLEAN FINISHING
+           =================================================== -->
+
+          <article class="popcorn-expect-item">
+            <div class="popcorn-expect-number">04</div>
+
+            <div class="popcorn-expect-content">
+              <h3>Clean Finishing</h3>
+
+              <p>
+                The ceiling is refined and prepared for its final finish so the
+                result feels consistent with the rest of the room.
+              </p>
+            </div>
+
+            <div class="popcorn-expect-icon">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ===================================================
+           05 — CEILING THAT FITS THE ROOM
+           =================================================== -->
+
+          <article class="popcorn-expect-item">
+            <div class="popcorn-expect-number">05</div>
+
+            <div class="popcorn-expect-content">
+              <h3>A Ceiling That Fits the Room</h3>
+
+              <p>
+                The finished ceiling should feel like part of the overall
+                interior rather than something that draws attention away from
+                it.
+              </p>
+            </div>
+
+            <div class="popcorn-expect-icon">
+              <i data-lucide="home" aria-hidden="true"></i>
+            </div>
+          </article>
+        </div>
+
+       
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POPCORN CEILING REMOVAL
+     SECTION 6 — FINAL CTA
+     ========================================================= -->
+
+    <section class="popcorn-final-cta" id="popcorn-final-cta">
+      <div class="popcorn-final-cta-box">
+        <!-- Inner border -->
+        <div class="popcorn-final-cta-inner">
+          <!-- Decorative circles -->
+          <span class="popcorn-cta-circle popcorn-cta-circle-one"></span>
+          <span class="popcorn-cta-circle popcorn-cta-circle-two"></span>
+
+          <!-- ===================================================
+           CTA CONTENT
+           =================================================== -->
+
+          <div class="popcorn-final-cta-content">
+            <div class="popcorn-final-cta-eyebrow">
+              <span class="popcorn-cta-eyebrow-line"></span>
+
+              <span> READY FOR A CLEANER CEILING? </span>
+            </div>
+
+            <h2 class="popcorn-final-cta-title">
+              Leave the Popcorn
+              <span>Ceiling Behind.</span>
+            </h2>
+
+            <p class="popcorn-final-cta-description">
+              Get a clear estimate and take the first step toward a smoother,
+              more refined ceiling.
+            </p>
+
+            <a href="contact.html#estimate" class="popcorn-final-cta-button">
+              <span>Get a Free Estimate</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- ===================================================
+           CTA FOOTER
+           =================================================== -->
+
+          <div class="popcorn-final-cta-footer">
+            <div class="popcorn-final-cta-specialist">
+              <span class="popcorn-cta-dot"></span>
+
+              <span> Residential Ceiling Specialists </span>
+            </div>
+
+            <div class="popcorn-final-cta-brand">
+              <span class="cta-brand-ceiling"> CEILING </span>
+
+              <span class="cta-brand-craft"> CRAFT </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     CEILINGCRAFT
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="CeilingCraft Home">
+              <img src="images/logo.png" alt="CeilingCraft Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="ceiling">Ceiling</span
+                ><span class="craft">Craft</span>
+              </h1>
+
+              <p>Specialty Ceiling Services</p>
+            </div>
+          </div>
+
+          <!-- BRAND DESCRIPTION -->
+
+          <p class="footer-about">
+            CeilingCraft specializes in popcorn ceiling and texture removal,
+            ceiling repairs, texture matching, and professional repainting to
+            create smooth, clean, beautifully finished spaces.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- <li>
+          <a href="our-work.html">Our Work</a>
+        </li> -->
+            <li>
+              <a href="process.html">Process</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#popcorn-removal">
+                Popcorn Ceiling Removal
+              </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Texture Removal </a>
+            </li>
+
+            <li>
+              <a href="services.html#texture-matching"> Texture Matching </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Ceiling Repair </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Repainting & Finishing </a>
+            </li>
+
+            <li>
+              <a href="service-d.html"> Removal Process </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CEILING SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aditional Services</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming soon </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing Guide </a>
+            </li>
+
+            <li>
+              <a href="process.html"> Our Process </a>
+            </li>
+
+            <li>
+              <a href="about.html"> Our Approach </a>
+            </li>
+
+            <li>
+              <a href="contact.html#estimate"> Request an Estimate </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +91 (040) 123-0897 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@ceilingcraft.com"> info@ceilingcraft.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#estimate" class="footer-book-btn">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="ceiling">Ceiling</span><span class="craft">Craft</span>.
+          All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="global.js"></script>
+  </body>
+</html>
