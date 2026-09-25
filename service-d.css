@@ -789,6 +789,7 @@ body.dark-mode .popcorn-process-intro {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-left: 35px;
 }
 
 .popcorn-process-number {
@@ -944,7 +945,7 @@ body.dark-mode .popcorn-process-statement p {
 
 .popcorn-transformation {
   position: relative;
-margin-top: -150px;
+margin-top: -125px;
   padding: 135px 0 145px;
 
   background: #f7f5f0;

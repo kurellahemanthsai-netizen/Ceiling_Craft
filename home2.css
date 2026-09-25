@@ -1110,6 +1110,9 @@ body.dark-mode .specialty-services-title {
 
   text-decoration: none;
 }
+.service-card-link:hover{
+color: var(--secondary);
+}
 
 .service-card-link i {
   width: 16px;
@@ -1180,7 +1183,7 @@ margin-top: -125px;
 
   gap: 11px;
 
-  color: #b8864a;
+  color: var(--secondary);
 
   font-family: "Manrope", sans-serif;
   font-size: 11px;
@@ -1190,8 +1193,7 @@ margin-top: -125px;
   text-transform: uppercase;
 }
 
-.transformation-header .section-eyebrow::before,
-.transformation-header .section-eyebrow::after {
+.transformation-header .section-eyebrow::before {
   content: "";
 
   width: 28px;
